@@ -35,7 +35,8 @@
                 <td class="style2">
                     &nbsp;</td>
                 <td>
-                    &nbsp;</td>
+                    <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+                </td>
                 <td>
                     &nbsp;</td>
                 <td>
