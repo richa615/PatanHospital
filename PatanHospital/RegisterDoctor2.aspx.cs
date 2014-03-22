@@ -10,6 +10,9 @@ using System.Xml;
 using System.Data;
 using System.Web.Configuration;
 using System.Configuration;
+using System.Net;
+using System.Net.Mail;
+
 
 namespace PatanHospital
 {
@@ -20,6 +23,7 @@ namespace PatanHospital
             Label1.Text = "" + Session["ssn"];
             
         }
+
         private void Insert_data()
         {
             Configuration rootWebConfig = WebConfigurationManager.OpenWebConfiguration("/HospitalServer");
