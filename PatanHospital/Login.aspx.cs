@@ -82,7 +82,7 @@ namespace PatanHospital
                 ConnectionStringSettings connectionString = rootWebConfig.ConnectionStrings.ConnectionStrings["HospitalServerConnectionString"];
                 SqlConnection sqlConnection = new SqlConnection(connectionString.ToString());
                 sqlConnection.Open();
-                SqlCommand cmd = new SqlCommand("select * from DoctorCrediantials where email =@email and password=@password", sqlConnection);
+                SqlCommand cmd = new SqlCommand("select * from DoctorCrediantials where email=@email and password=@password", sqlConnection);
                 cmd.Parameters.AddWithValue("@email", TextBox1.Text);
                 cmd.Parameters.AddWithValue("@password", TextBox2.Text);
                 SqlDataAdapter da = new SqlDataAdapter(cmd);

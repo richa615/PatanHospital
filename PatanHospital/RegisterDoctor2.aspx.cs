@@ -33,41 +33,12 @@ namespace PatanHospital
             string dateofgraduation = TextBox3.Text;
             string speciality = DropDownList1.SelectedValue;
             string npi = TextBox4.Text;
-           // string ssn = Label1.Text;
            
-
             cmd.Parameters.AddWithValue("@education", education);
             cmd.Parameters.AddWithValue("@residency", residency);
             cmd.Parameters.AddWithValue("@dateofgraduation", dateofgraduation);
             cmd.Parameters.AddWithValue("@speciality", speciality);
             cmd.Parameters.AddWithValue("@npi", npi);
-           // cmd.Parameters.AddWithValue("@ssn", ssn);
-
-
-
-           /* string strQuery = "update Course set Material_Name=@Name, ContentType=@ContentType, Data=@Data where CID=" + Session["CID"];
-
-            SqlCommand cmd = new SqlCommand(strQuery);
-
-            cmd.Parameters.Add("@Name", SqlDbType.VarChar).Value = filename;
-
-            cmd.Parameters.Add("@ContentType", SqlDbType.VarChar).Value = "application/vnd.ms-word";
-
-            cmd.Parameters.Add("@Data", SqlDbType.Binary).Value = bytes;
-
-
-            String strConnString = System.Configuration.ConfigurationManager
-
-            .ConnectionStrings["EdupointConnectionString"].ConnectionString;
-
-            SqlConnection con = new SqlConnection(strConnString);
-
-            cmd.CommandType = CommandType.Text;
-
-            cmd.Connection = con;*/
-
-            
-
             sqlConnection.Open();
             cmd.ExecuteNonQuery();
             sqlConnection.Close();
@@ -76,6 +47,27 @@ namespace PatanHospital
         protected void Button1_Click(object sender, EventArgs e)
         {
             Insert_data();
+            Response.Redirect("RegisterDoctor.aspx");
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+             
+             Configuration rootWebConfig = WebConfigurationManager.OpenWebConfiguration("/HospitalServer");
+             ConnectionStringSettings connectionString = rootWebConfig.ConnectionStrings.ConnectionStrings["HospitalServerConnectionString"];
+             SqlConnection sqlConnection = new SqlConnection(connectionString.ToString());
+             sqlConnection.Open();
+             string Query1 = "Delete from DoctorAddress where DSSN ='" + this.Label1.Text + "'; ";
+             SqlCommand cmd = new SqlCommand(Query1, sqlConnection);
+
+             string Query2 = "Delete from DoctorCrediantials where SSN ='" +Session["ssn"] + "'; ";
+             SqlCommand cmd1 = new SqlCommand(Query2, sqlConnection);
+
+             cmd.ExecuteNonQuery();
+             cmd1.ExecuteNonQuery();
+             sqlConnection.Close();
+             Response.Redirect("RegisterDoctor.aspx");
+             
         }
     }
 }

@@ -99,7 +99,7 @@
                 <td class="style2">
                     Gender:</td>
                 <td>
-                    <asp:DropDownList ID="DropDownList1" runat="server" Height="16px" Width="154px">
+                    <asp:DropDownList ID="DropDownList1" runat="server" Height="20px" Width="154px">
                     <asp:ListItem Value="Male">Male</asp:ListItem>
 	                <asp:ListItem Value="Female">Female</asp:ListItem></asp:DropDownList>
                 </td>
@@ -124,23 +124,11 @@
             </tr>
             <tr>
                 <td class="style2">
-                    &nbsp;</td>
+                    Address1:</td>
                 <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td>
-                    <asp:Button ID="Button1" runat="server" Height="27px" onclick="Button1_Click" 
-                        Text="Next" Width="78px" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="Button2" runat="server" Height="25px" onclick="Button2_Click" 
-                        Text="Cancel" Width="133px" />
+                    <asp:TextBox ID="TextBox6" runat="server" Width="181px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" 
+                        ControlToValidate="TextBox6" ErrorMessage="Address is Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
                 <td>
                     &nbsp;</td>
@@ -149,19 +137,10 @@
             </tr>
             <tr>
                 <td class="style2">
-                    &nbsp;</td>
+                    Address2:</td>
                 <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
+                    <asp:TextBox ID="TextBox7" runat="server" Width="181px"></asp:TextBox>
+                </td>
                 <td>
                     &nbsp;</td>
                 <td>
@@ -169,39 +148,13 @@
             </tr>
             <tr>
                 <td class="style2">
-                    &nbsp;</td>
+                    City:</td>
                 <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
+                    <asp:TextBox ID="TextBox8" runat="server" Width="181px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" 
+                        ControlToValidate="TextBox8" ErrorMessage="City name is required" 
+                        ForeColor="Red"></asp:RequiredFieldValidator>
+                </td>
                 <td>
                     &nbsp;</td>
                 <td>
@@ -266,6 +219,114 @@
 	<asp:ListItem Value="WY">Wyoming</asp:ListItem>
                     </asp:DropDownList>
                 </td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style2">
+                    ZipCode:</td>
+                <td>
+                    <asp:TextBox ID="TextBox9" runat="server" Width="181px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" 
+                        ControlToValidate="TextBox9" ErrorMessage="ZipCode is Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                </td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style2">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style2">
+                    &nbsp;</td>
+                <td>
+                    <asp:Button ID="Button1" runat="server" Height="27px" onclick="Button1_Click" 
+                        Text="Next" Width="78px" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="Button2" runat="server" Height="25px" onclick="Button2_Click" 
+                        Text="Cancel" Width="133px" CausesValidation="False" />
+                </td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style2">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style2">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style2">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style2">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style2">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style2">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style2">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
                 <td>
                     &nbsp;</td>
                 <td>

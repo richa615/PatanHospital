@@ -46,6 +46,8 @@
                     Education:</td>
                 <td>
                     <asp:TextBox ID="TextBox1" runat="server" Width="150px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
+                        ControlToValidate="TextBox1" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
                 <td>
                     &nbsp;</td>
@@ -57,6 +59,8 @@
                     Residency:</td>
                 <td>
                     <asp:TextBox ID="TextBox2" runat="server" Width="150px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
+                        ControlToValidate="TextBox2" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
                 <td>
                     &nbsp;</td>
@@ -68,6 +72,8 @@
                     Date of Graduation:</td>
                 <td>
                     <asp:TextBox ID="TextBox3" runat="server" Width="150px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
+                        ControlToValidate="TextBox3" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
                 <td>
                     &nbsp;</td>
@@ -79,7 +85,41 @@
                     Speciality:</td>
                 <td>
                     <asp:DropDownList ID="DropDownList1" runat="server" Width="150px">
+                            <asp:ListItem Value="Acupuncture">Acupuncture</asp:ListItem>
+	                        <asp:ListItem Value="Addiction Psychiatry">Addiction Psychiatry</asp:ListItem>
+	                        <asp:ListItem Value="Adolescent Medicine">Adolescent Medicine</asp:ListItem>
+	                        <asp:ListItem Value="Allergy/Immunology">Allergy/Immunology</asp:ListItem>
+	                        <asp:ListItem Value="Anesthesiology">Anesthesiology</asp:ListItem>
+                            <asp:ListItem Value="Bacteriology/Microbiology">Bacteriology/Microbiology</asp:ListItem>
+	                        <asp:ListItem Value="Cardiovascular Disease">Cardiovascular Disease</asp:ListItem>
+	                        <asp:ListItem Value="Child Neurology">Child Neurology</asp:ListItem>
+	                        <asp:ListItem Value="Chiropractic">Chiropractic</asp:ListItem>
+	                        <asp:ListItem Value="Dentistry">Dentistry</asp:ListItem>
+	                        <asp:ListItem Value="Dermatology">Dermatology</asp:ListItem>
+	                        <asp:ListItem Value="Dermatopathology">Dermatopathology</asp:ListItem>
+	                        <asp:ListItem Value="Dietician">Dietician</asp:ListItem>
+	                        <asp:ListItem Value="Gynecology">Gynecology</asp:ListItem>
+	                        <asp:ListItem Value="Hematology">Hematology</asp:ListItem>
+	                        <asp:ListItem Value="Hospice">Hospice</asp:ListItem>
+	                        <asp:ListItem Value="Oncology">Oncology</asp:ListItem>
+	                        <asp:ListItem Value="Naprapath">Naprapath</asp:ListItem>
+	                        <asp:ListItem Value="Nephrology">Nephrology</asp:ListItem>
+	                        <asp:ListItem Value="Neurology">Neurology</asp:ListItem>
+	                        <asp:ListItem Value="Nutritionist">Nutritionist</asp:ListItem>
+	                        <asp:ListItem Value="Obstetrics">Obstetrics</asp:ListItem>
+	                        <asp:ListItem Value="Optometry">Optometry</asp:ListItem>
+	                        <asp:ListItem Value="Otolaryngology">Otolaryngology</asp:ListItem>
+	                        <asp:ListItem Value="Pathology">Pathology</asp:ListItem>
+	                        <asp:ListItem Value="Pediatrics">Pediatrics</asp:ListItem>
+	                        <asp:ListItem Value="Pharmacy">Pharmacy</asp:ListItem>
+	                        <asp:ListItem Value="Podiatry">Podiatry</asp:ListItem>
+	                        <asp:ListItem Value="Psychiatry">Psychiatry</asp:ListItem>
+	                        <asp:ListItem Value="Radiology">Radiology</asp:ListItem>
+	                        <asp:ListItem Value="Rheumatology">Rheumatology</asp:ListItem>
+	                        <asp:ListItem Value="Telemedicine">Telemedicine</asp:ListItem>
+	                        <asp:ListItem Value="Urology">Urology</asp:ListItem>
                     </asp:DropDownList>
+
                 </td>
                 <td>
                     &nbsp;</td>
@@ -91,6 +131,8 @@
                     NPI:</td>
                 <td>
                     <asp:TextBox ID="TextBox4" runat="server" Width="150px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" 
+                        ControlToValidate="TextBox4" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
                 <td>
                     &nbsp;</td>
@@ -112,9 +154,10 @@
                     &nbsp;</td>
                 <td>
                     <asp:Button ID="Button1" runat="server" Height="25px" onclick="Button1_Click" 
-                        Text="Next" Width="108px" />
+                        Text="Save" Width="108px" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="Button2" runat="server" Text="Cancel" />
+                    <asp:Button ID="Button2" runat="server" Text="Cancel" onclick="Button2_Click" 
+                        CausesValidation="False" />
                 </td>
                 <td>
                     &nbsp;</td>
