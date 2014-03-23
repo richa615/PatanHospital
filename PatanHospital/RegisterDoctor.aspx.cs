@@ -24,40 +24,6 @@ namespace PatanHospital
             Label2.Visible = false;
         }
 
-        public void SendEmail(string address, string subject, string message)
-        {
-            string email = "edupointdotnet@gmail.com";
-            string pwd = "edupoint2013";
-
-            var loginInfo = new NetworkCredential(email, pwd);
-            var msg = new MailMessage();
-            var smtpClient = new SmtpClient("smtp.gmail.com", 587);
-
-            msg.From = new MailAddress(email, "Edupoint Institute");
-            msg.To.Add(new MailAddress(address));
-            msg.Subject = subject;
-            msg.Body = message;
-            msg.IsBodyHtml = true;
-
-            smtpClient.EnableSsl = true;
-            smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
-            smtpClient.UseDefaultCredentials = false;
-            smtpClient.Credentials = loginInfo;
-            smtpClient.Send(msg);
-        }
-        
-        private static string CreateRandomPassword(int passwordLength)
-        {
-            string allowedChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789!@$?_-";
-            char[] chars = new char[passwordLength];
-            Random rd = new Random();
-            for (int i = 0; i < passwordLength; i++)
-            {
-                chars[i] = allowedChars[rd.Next(0, allowedChars.Length)];
-            }
-            return new string(chars);
-        }
-
         private void Insert_data()
         {
             Configuration rootWebConfig = WebConfigurationManager.OpenWebConfiguration("/HospitalServer");
@@ -66,13 +32,11 @@ namespace PatanHospital
             
             
 
-                SqlCommand cmd = new SqlCommand("insert into DoctorCrediantials (Fname,Lname,SSN,Phone,Gender,email,password) Values( @fname,@lname,@ssn,@phone,@gender,@email, @password)", sqlConnection);
+                SqlCommand cmd = new SqlCommand("insert into DoctorCrediantials (Fname,Lname,SSN,Phone,Gender,email) Values( @fname,@lname,@ssn,@phone,@gender,@email)", sqlConnection);
                 cmd.CommandType = CommandType.Text;
 
                 SqlCommand cmd1 = new SqlCommand("insert into DoctorAddress (Address1,Address2,City,State,Zipcode,DSSN) Values( @address1,@address2,@city,@state,@zipcode,@dssn)", sqlConnection);
                 cmd.CommandType = CommandType.Text;
-                
-               
 
                 string fname = TextBox1.Text;
                 string lname = TextBox2.Text;
@@ -80,7 +44,6 @@ namespace PatanHospital
                 string phone = TextBox4.Text;
                 string gender = DropDownList1.SelectedValue;
                 string email = TextBox5.Text;
-                string password = CreateRandomPassword(10);
 
                 string address1 = TextBox6.Text;
                 string address2 = TextBox7.Text;
@@ -94,7 +57,6 @@ namespace PatanHospital
                 cmd.Parameters.AddWithValue("@phone", phone);
                 cmd.Parameters.AddWithValue("@gender", gender);
                 cmd.Parameters.AddWithValue("@email", email);
-                cmd.Parameters.AddWithValue("@password", password);
 
                 cmd1.Parameters.AddWithValue("@address1", address1);  
                 cmd1.Parameters.AddWithValue("@address2", address2);
@@ -102,7 +64,7 @@ namespace PatanHospital
                 cmd1.Parameters.AddWithValue("@state", state);
                 cmd1.Parameters.AddWithValue("@zipcode", zipcode);
                 cmd1.Parameters.AddWithValue("@dssn",ssn );
-                
+
                 sqlConnection.Open();
                 cmd.ExecuteNonQuery();
                 cmd1.ExecuteNonQuery();
@@ -166,12 +128,12 @@ namespace PatanHospital
             {
                 Insert_data();
                 Session["ssn"] = TextBox3.Text;
+                Session["email"] = TextBox5.Text;
                 Response.Redirect("RegisterDoctor2.aspx");
             }
             catch (Exception ex)
             {
-                Check_SSN();
-                
+                Check_SSN(); 
             }
 
         }

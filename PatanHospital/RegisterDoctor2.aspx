@@ -187,7 +187,7 @@
             </tr>
         </table>
     
-        <asp:Label ID="Label1" runat="server"></asp:Label>
+        <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
     
         <br />
         <br />
