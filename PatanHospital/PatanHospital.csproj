@@ -75,6 +75,7 @@
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="UpdateDoctor.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -188,6 +189,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDoctor.aspx.cs">
+      <DependentUpon>UpdateDoctor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateDoctor.aspx.designer.cs">
+      <DependentUpon>UpdateDoctor.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

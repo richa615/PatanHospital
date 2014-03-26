@@ -7,16 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace PatanHospital
 {
-    public partial class AdminHome : System.Web.UI.Page
+    public partial class UpdateDoctor : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("UpdateDoctor.aspx");
         }
     }
 }
