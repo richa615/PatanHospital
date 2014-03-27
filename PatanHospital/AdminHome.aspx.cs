@@ -16,6 +16,20 @@ namespace PatanHospital
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            Response.Redirect("RegisterPatient.aspx");
+        }
+        protected void Button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("RegisterDoctor.aspx");
+        }
+
+        protected void Button7_Click(object sender, EventArgs e)
+        {
             Response.Redirect("UpdateDoctor.aspx");
         }
     }

@@ -77,7 +77,7 @@
                 <td class="style4">
                     &nbsp;</td>
                 <td class="style3">
-                    <asp:Button ID="Button2" runat="server" onclick="Button1_Click" 
+                    <asp:Button ID="Button2" runat="server" onclick="Button2_Click" 
                         Text="Register a Doctor" Width="150px" />
                 </td>
                 <td>
@@ -98,12 +98,12 @@
             <tr>
                 <td class="style2">
                     <asp:Button ID="Button5" runat="server" Text="Edit Patient Information" 
-                        Width="150px" />
+                        Width="150px" onclick="Button5_Click" />
                 </td>
                 <td class="style4">
                     &nbsp;</td>
                 <td class="style3">
-                    <asp:Button ID="Button7" runat="server" onclick="Button1_Click" 
+                    <asp:Button ID="Button7" runat="server" onclick="Button7_Click" 
                         Text="Edit Doctor Information" Width="150px" />
                 </td>
                 <td>

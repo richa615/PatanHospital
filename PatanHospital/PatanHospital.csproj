@@ -69,6 +69,7 @@
     <Content Include="PatientHome.aspx" />
     <Content Include="RegisterDoctor.aspx" />
     <Content Include="RegisterDoctor2.aspx" />
+    <Content Include="RegisterPatient.aspx" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
@@ -175,6 +176,13 @@
     </Compile>
     <Compile Include="RegisterDoctor2.aspx.designer.cs">
       <DependentUpon>RegisterDoctor2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterPatient.aspx.cs">
+      <DependentUpon>RegisterPatient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisterPatient.aspx.designer.cs">
+      <DependentUpon>RegisterPatient.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
