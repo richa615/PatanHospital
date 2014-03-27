@@ -43,8 +43,8 @@ namespace PatanHospital
 
         private void SendEmail(string address, string subject, string message)
         {
-            string email = "edupointdotnet@gmail.com";
-            string pwd = "edupoint2013";
+            string email = "patanhospital2014@gmail.com";
+            string pwd = "project2014";
 
             var loginInfo = new NetworkCredential(email, pwd);
             var msg = new MailMessage();
