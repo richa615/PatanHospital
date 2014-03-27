@@ -22,7 +22,7 @@
     <form id="form1" runat="server">
     <div>
     
-        &#39;[=<table class="style1">
+       <table class="style1">
             <tr>
                 <td class="style2">
                     &nbsp;</td>
