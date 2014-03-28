@@ -268,7 +268,7 @@
                         Text="Save" Width="87px" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Button ID="Button2" runat="server" CausesValidation="False" Height="26px" 
-                        Text="Cancel" Width="82px" />
+                        Text="Cancel" Width="82px" onclick="Button2_Click" />
                 </td>
                 <td>
                     &nbsp;</td>

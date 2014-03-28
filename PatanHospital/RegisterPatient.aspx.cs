@@ -98,16 +98,70 @@ namespace PatanHospital
             smtpClient.Send(msg);
         }
 
-       
-            
-       
-            
-       
+        private void CheckSSN()
+        {
+            Configuration rootWebConfig = WebConfigurationManager.OpenWebConfiguration("/HospitalServer");
+            ConnectionStringSettings connectionString = rootWebConfig.ConnectionStrings.ConnectionStrings["HospitalServerConnectionString"];
+            SqlConnection sqlConnection = new SqlConnection(connectionString.ToString());
+            sqlConnection.Open();
+            SqlCommand cmd2 = new SqlCommand("select * from PatientCredientials where SSN =@ssn", sqlConnection);
+            SqlCommand cmd3 = new SqlCommand("select * from PatientCredientials where email =@email", sqlConnection);
+
+            cmd2.Parameters.AddWithValue("@ssn", TextBox3.Text);
+            cmd3.Parameters.AddWithValue("@email", TextBox10.Text);
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd2);
+            DataSet ds = new DataSet();
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            da.Fill(ds, "PatientCrediantials");
+
+            SqlDataAdapter da1 = new SqlDataAdapter(cmd3);
+            DataSet ds1 = new DataSet();
+            DataTable dt1 = new DataTable();
+            da1.Fill(dt1);
+            da1.Fill(ds1, "PatientCrediantials");
+
+            if (dt.Rows.Count > 0)
+            {
+                Label1.Visible = true;
+                Label1.ForeColor = System.Drawing.Color.Red;
+                Label1.Text = "SSN already exist in our database";
+                TextBox3.Text = "";
+                TextBox3.Style.Add("border", "solid 1px red");
+            }
+
+            else if (dt1.Rows.Count > 0)
+            {
+                Label1.Visible = true;
+                Label1.ForeColor = System.Drawing.Color.Red;
+                Label1.Text = "Email already exist in our database";
+                TextBox3.Text = "";
+                TextBox3.Style.Add("border", "solid 1px red");
+            }
+
+
+     
+        }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Insertdata();
+            try
+            {
+                Insertdata();
+            }
 
+            catch (Exception ex)
+            {
+                CheckSSN();
+            }
+
+
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AdminHome.aspx");
         }
     }
 }
