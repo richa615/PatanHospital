@@ -238,6 +238,32 @@
             <td>
                 &nbsp;</td>
         </tr>
+        <tr>
+            <td class="style23">
+                &nbsp;</td>
+            <td class="style14">
+                &nbsp;</td>
+            <td class="style15">
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="style23">
+                &nbsp;</td>
+            <td class="style14">
+                &nbsp;</td>
+            <td class="style15">
+                <asp:HyperLink ID="HyperLink1" runat="server" 
+                    NavigateUrl="~/ForgotPassword.aspx">Forgot Password</asp:HyperLink>
+            </td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
     </table>
     </form>
 </body>
