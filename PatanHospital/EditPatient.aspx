@@ -27,7 +27,6 @@
         }
         .style6
         {
-            width: 138px;
         }
     </style>
 </head>
@@ -52,8 +51,7 @@
             </tr>
             <tr>
                 <td class="style3" colspan="4">
-                    Name:<asp:DropDownList 
-                        ID="DropDownList1" runat="server" AutoPostBack="True" 
+                    Name:<asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" 
                         DataSourceID="SqlDataSource1" DataTextField="Name" DataValueField="SSN" 
                         Height="19px" Width="192px" 
                         onselectedindexchanged="DropDownList1_SelectedIndexChanged">
@@ -67,15 +65,9 @@
                 </td>
             </tr>
             <tr>
-                <td class="style6">
+                <td class="style6" colspan="4">
                     <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
                 </td>
-                <td class="style4">
-                    &nbsp;</td>
-                <td class="style5">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="style6">
@@ -177,7 +169,7 @@
                 </td>
                 <td class="style5">
                     <asp:Button ID="Button2" runat="server" Height="23px" onclick="Button2_Click" 
-                        Text="Cancel" Width="98px" />
+                        Text="Cancel" Width="98px" CausesValidation="False" />
                 </td>
                 <td>
                     &nbsp;</td>

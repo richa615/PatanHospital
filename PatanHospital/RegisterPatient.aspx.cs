@@ -64,6 +64,7 @@ namespace PatanHospital
             Label1.ForeColor = System.Drawing.Color.Green;
             Label1.Text = "Insertion Successful";
             SendEmail(TextBox10.Text, "Patan Hospital Login Password", "Welcome to PatanHospital. Your passowrd to login is:" + password);
+            Clear_Textbox();
         }
 
         private static string CreateRandomPassword(int passwordLength)
@@ -97,6 +98,20 @@ namespace PatanHospital
             smtpClient.Credentials = loginInfo;
             smtpClient.Send(msg);
         }
+
+        public void Clear_Textbox()
+        {
+            TextBox1.Text = "";
+            TextBox2.Text = "";
+            TextBox3.Text = "";
+            TextBox5.Text = "";
+            TextBox6.Text = "";
+            TextBox7.Text = "";
+            TextBox8.Text = "";
+            TextBox9.Text = "";
+            TextBox10.Text = "";
+        }
+
 
         private void CheckSSN()
         {
@@ -136,8 +151,8 @@ namespace PatanHospital
                 Label1.Visible = true;
                 Label1.ForeColor = System.Drawing.Color.Red;
                 Label1.Text = "Email already exist in our database";
-                TextBox3.Text = "";
-                TextBox3.Style.Add("border", "solid 1px red");
+                TextBox10.Text = "";
+                TextBox10.Style.Add("border", "solid 1px red");
             }
 
 

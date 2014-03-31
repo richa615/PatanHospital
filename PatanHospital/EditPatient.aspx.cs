@@ -33,7 +33,36 @@ namespace PatanHospital
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (TextBox1.Text == "")
+                {
+                    Label1.Visible = true;
+                    Label1.ForeColor = System.Drawing.Color.Red;
+                    Label1.Text = "First Name cannot be empty";
+                }
 
+                else if (TextBox3.Text == "")
+                {
+                    Label1.Visible = true;
+                    Label1.ForeColor = System.Drawing.Color.Red;
+                    Label1.Text = "SSN cannot be Empty";
+                }
+
+                else if (TextBox11.Text == "")
+                {
+                    Label1.Visible = true;
+                    Label1.ForeColor = System.Drawing.Color.Red;
+                    Label1.Text = "Email address cannot be Empty";
+                }
+
+
+            }
+
+            catch (Exception ex)
+            {
+               // Check_SSN();
+            }
         }
 
         public void ClearTextBox()
@@ -77,9 +106,44 @@ namespace PatanHospital
             TextBox11.Text = ds.Tables["PatientCredientials"].Rows[0]["email"].ToString();
         }
 
+        public void Check_SSN()
+        {
+            Configuration rootWebConfig = WebConfigurationManager.OpenWebConfiguration("/HospitalServer");
+            ConnectionStringSettings connectionString = rootWebConfig.ConnectionStrings.ConnectionStrings["HospitalServerConnectionString"];
+            SqlConnection sqlConnection = new SqlConnection(connectionString.ToString());
+            sqlConnection.Open();
+            SqlCommand cmd = new SqlCommand("select * from PatientCredientials where SSN = @ssn", sqlConnection);
+            cmd.Parameters.AddWithValue("@ssn", TextBox3.Text);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            da.Fill(ds, "PatientCredientials");
+
+            if (dt.Rows.Count > 0)
+            {
+                Label1.Visible = true;
+                Label1.ForeColor = System.Drawing.Color.Red;
+                Label1.Text = "SSN already exist in our database";
+                TextBox3.Style.Add("border", "solid 1px red");
+            }
+        }
+
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            FillData();
+            try
+            {
+                ClearTextBox();
+                FillData();
+                
+            }
+            catch (Exception ex)
+            {
+                Label1.Visible = true;
+                Label1.ForeColor = System.Drawing.Color.Red;
+                Label1.Text = "Something went wrong. Please try again";
+            }
+
         }
 
        
