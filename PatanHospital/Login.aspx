@@ -207,7 +207,7 @@
             <td class="style14">
                 Password:</td>
             <td class="style15">
-                <asp:TextBox ID="TextBox2" runat="server" Height="22px" Width="218px"></asp:TextBox>
+                <asp:TextBox ID="TextBox2" runat="server" TextMode="Password" Height="22px" Width="218px"></asp:TextBox>
             </td>
             <td>
                 &nbsp;</td>

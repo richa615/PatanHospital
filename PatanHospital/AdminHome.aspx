@@ -57,7 +57,7 @@
                 <td class="style3">
                     <strong>Doctors</strong></td>
                 <td>
-                    Appointments</td>
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="style2">
@@ -81,9 +81,7 @@
                         Text="Register a Doctor" Width="150px" />
                 </td>
                 <td>
-                    <asp:Button ID="Button3" runat="server" onclick="Button1_Click" 
-                        Text="Reserve Appointments" Width="150px" />
-                </td>
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="style2">
@@ -107,9 +105,7 @@
                         Text="Edit Doctor Information" Width="150px" />
                 </td>
                 <td>
-                    <asp:Button ID="Button6" runat="server" onclick="Button1_Click" 
-                        Text="Edit Appointments" Width="150px" />
-                </td>
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="style2">
@@ -127,9 +123,7 @@
                 <td class="style4">
                     &nbsp;</td>
                 <td class="style3">
-                    <asp:Button ID="Button4" runat="server" onclick="Button1_Click" 
-                        Text="Search For Doctor" Width="150px" />
-                </td>
+                    &nbsp;</td>
                 <td>
                     &nbsp;</td>
             </tr>
