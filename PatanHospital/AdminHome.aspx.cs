@@ -32,5 +32,10 @@ namespace PatanHospital
         {
             Response.Redirect("UpdateDoctor.aspx");
         }
+
+        protected void Button12_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("DeletePatient.aspx");
+        }
     }
 }

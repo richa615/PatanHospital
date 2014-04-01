@@ -57,7 +57,7 @@
                 <td class="style3">
                     <strong>Doctors</strong></td>
                 <td>
-                    &nbsp;</td>
+                    <strong>Schedules</strong></td>
             </tr>
             <tr>
                 <td class="style2">
@@ -81,7 +81,8 @@
                         Text="Register a Doctor" Width="150px" />
                 </td>
                 <td>
-                    &nbsp;</td>
+                    <asp:Button ID="Button9" runat="server" Text="Schedule Appointments" />
+                </td>
             </tr>
             <tr>
                 <td class="style2">
@@ -105,7 +106,32 @@
                         Text="Edit Doctor Information" Width="150px" />
                 </td>
                 <td>
+                    <asp:Button ID="Button10" runat="server" Text="Edit Appointments" />
+                </td>
+            </tr>
+            <tr>
+                <td class="style2">
                     &nbsp;</td>
+                <td class="style4">
+                    &nbsp;</td>
+                <td class="style3">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style2">
+                    <asp:Button ID="Button12" runat="server" Text="Delete Patients" 
+                        onclick="Button12_Click" />
+                </td>
+                <td class="style4">
+                    &nbsp;</td>
+                <td class="style3">
+                    <asp:Button ID="Button13" runat="server" Text="Delete Doctor" />
+                </td>
+                <td>
+                    <asp:Button ID="Button11" runat="server" Text="Delete Appointments" />
+                </td>
             </tr>
             <tr>
                 <td class="style2">
@@ -123,27 +149,8 @@
                 <td class="style4">
                     &nbsp;</td>
                 <td class="style3">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td class="style4">
-                    &nbsp;</td>
-                <td class="style3">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td class="style4">
-                    &nbsp;</td>
-                <td class="style3">
-                    &nbsp;</td>
+                    <asp:Button ID="Button8" runat="server" Text="Search Doctor" />
+                </td>
                 <td>
                     &nbsp;</td>
             </tr>
