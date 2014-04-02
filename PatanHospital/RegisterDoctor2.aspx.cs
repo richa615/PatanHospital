@@ -22,7 +22,9 @@ namespace PatanHospital
         {
              
               Label2.Visible = false;
+              Label3.Visible = false;
               Label3.Text = "" + Session["email"];  
+
            
         }
 

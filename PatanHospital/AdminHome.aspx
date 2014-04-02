@@ -127,7 +127,8 @@
                 <td class="style4">
                     &nbsp;</td>
                 <td class="style3">
-                    <asp:Button ID="Button13" runat="server" Text="Delete Doctor" />
+                    <asp:Button ID="Button13" runat="server" Text="Delete Doctor" 
+                        onclick="Button13_Click" />
                 </td>
                 <td>
                     <asp:Button ID="Button11" runat="server" Text="Delete Appointments" />

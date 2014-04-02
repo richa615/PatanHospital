@@ -64,6 +64,7 @@
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="AdminHome.aspx" />
+    <Content Include="DeleteDoctor.aspx" />
     <Content Include="DeletePatient.aspx" />
     <Content Include="DoctorHome.aspx" />
     <Content Include="doctorlogin.aspx" />
@@ -140,6 +141,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteDoctor.aspx.cs">
+      <DependentUpon>DeleteDoctor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteDoctor.aspx.designer.cs">
+      <DependentUpon>DeleteDoctor.aspx</DependentUpon>
     </Compile>
     <Compile Include="DeletePatient.aspx.cs">
       <DependentUpon>DeletePatient.aspx</DependentUpon>
