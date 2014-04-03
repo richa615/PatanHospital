@@ -11,7 +11,17 @@ namespace PatanHospital
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Table2.Visible = false;
+        }
 
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("RegisterPatient.aspx");
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Table2.Visible = true;
         }
     }
 }
