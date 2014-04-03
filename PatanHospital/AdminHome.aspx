@@ -81,7 +81,8 @@
                         Text="Register a Doctor" Width="150px" />
                 </td>
                 <td>
-                    <asp:Button ID="Button9" runat="server" Text="Schedule Appointments" />
+                    <asp:Button ID="Button9" runat="server" Text="Schedule Appointments" 
+                        onclick="Button9_Click" />
                 </td>
             </tr>
             <tr>
