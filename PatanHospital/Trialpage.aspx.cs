@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace PatanHospital
 {
-    public partial class Trialpage : System.Web.UI.Page
+    public partial class TrialPage : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -11,7 +11,7 @@ namespace PatanHospital
 {
 
 
-    public partial class Trialpage
+    public partial class TrialPage
     {
 
         /// <summary>
