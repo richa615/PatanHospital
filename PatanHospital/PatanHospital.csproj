@@ -85,7 +85,7 @@
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
-    <Content Include="Trialpage.aspx" />
+    <Content Include="TrialPage.aspx" />
     <Content Include="UpdateDoctor.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -243,12 +243,12 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Trialpage.aspx.cs">
-      <DependentUpon>Trialpage.aspx</DependentUpon>
+    <Compile Include="TrialPage.aspx.cs">
+      <DependentUpon>TrialPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Trialpage.aspx.designer.cs">
-      <DependentUpon>Trialpage.aspx</DependentUpon>
+    <Compile Include="TrialPage.aspx.designer.cs">
+      <DependentUpon>TrialPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="UpdateDoctor.aspx.cs">
       <DependentUpon>UpdateDoctor.aspx</DependentUpon>
