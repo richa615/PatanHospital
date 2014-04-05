@@ -21,7 +21,16 @@ namespace PatanHospital
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            Table1.Visible = false;
             Table2.Visible = true;
+            
+            
+        }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Table2.Visible = true;
+            Label1.Text = this.DropDownList1.SelectedValue;
         }
     }
 }

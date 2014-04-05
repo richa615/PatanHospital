@@ -10,13 +10,21 @@
         {
             width: 800px;
         }
+        .auto-style1
+        {
+            width: 126px;
+        }
+        .auto-style2
+        {
+            width: 377px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
     
-        <table id="Table1" class="style1">
+        <table id="Table1" runat="server" class="style1">
             <tr>
                 <td colspan="2">
                     Page to Schedule Appointment:</td>
@@ -51,12 +59,35 @@
         </table>
     
     </div>
-    </form>
     <table id="Table2" runat = "server" class="style1">
         <tr>
+            <td class="auto-style1">
+                Patient Name:</td>
+            <td class="auto-style2">
+                <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource1" DataTextField="Name" DataValueField="SSN" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+                </asp:DropDownList>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:HospitalServerConnectionString %>" SelectCommand="SELECT Fname + ' ' + Lname AS Name, SSN FROM PatientCredientials"></asp:SqlDataSource>
+            </td>
             <td>
                 &nbsp;</td>
             <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style1">
+                &nbsp;</td>
+            <td class="auto-style2">
+                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            </td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style1">
+                &nbsp;</td>
+            <td class="auto-style2">
                 &nbsp;</td>
             <td>
                 &nbsp;</td>
@@ -64,19 +95,9 @@
                 &nbsp;</td>
         </tr>
         <tr>
-            <td>
+            <td class="auto-style1">
                 &nbsp;</td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td>
-                &nbsp;</td>
-            <td>
+            <td class="auto-style2">
                 &nbsp;</td>
             <td>
                 &nbsp;</td>
@@ -84,19 +105,9 @@
                 &nbsp;</td>
         </tr>
         <tr>
-            <td>
+            <td class="auto-style1">
                 &nbsp;</td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td>
-                &nbsp;</td>
-            <td>
+            <td class="auto-style2">
                 &nbsp;</td>
             <td>
                 &nbsp;</td>
@@ -104,9 +115,9 @@
                 &nbsp;</td>
         </tr>
         <tr>
-            <td>
+            <td class="auto-style1">
                 &nbsp;</td>
-            <td>
+            <td class="auto-style2">
                 &nbsp;</td>
             <td>
                 &nbsp;</td>
@@ -114,5 +125,6 @@
                 &nbsp;</td>
         </tr>
     </table>
-</body>
+    </form>
+    </body>
 </html>
