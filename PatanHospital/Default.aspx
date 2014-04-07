@@ -4,14 +4,42 @@
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
-    <h2>
-        Welcome to ASP.NET!
-    </h2>
-    <p>
-        To learn more about ASP.NET visit <a href="http://www.asp.net" title="ASP.NET Website">www.asp.net</a>.
-    </p>
-    <p>
-        You can also find <a href="http://go.microsoft.com/fwlink/?LinkID=152368&amp;clcid=0x409"
-            title="MSDN ASP.NET Docs">documentation on ASP.NET at MSDN</a>.
-    </p>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+<title>CasCading Dropdowns Sample</title>
+</head>
+<body>
+<form id="form1" runat="server">
+<div>
+<table align="center">
+<Select Country:
+</td>
+<td>
+<asp:DropDownList ID="ddlCountry" runat="server" AutoPostBack="true"
+onselectedindexchanged="ddlCountry_SelectedIndexChanged"></asp:DropDownList>
+</td>
+</tr>
+<tr>
+<td>
+Select State:
+ct State:
+</td>
+<td>
+<asp:DropDownList ID="ddlState" runat="server" AutoPostBack="true"
+onselectedindexchanged="ddlState_SelectedIndexChanged"></asp:DropDownList>
+</td>
+</tr>
+<tr>
+<td>
+Select Region:
+</td>
+<td>
+<asp:DropDownList ID="ddlRegion" runat="server"></asp:DropDownList>
+</td>
+</tr>
+</table>
+</div>
+</form>
+</body>
+</html>
 </asp:Content>
