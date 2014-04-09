@@ -130,7 +130,7 @@ TagPrefix="ajaxToolkit" %>
             <td class="auto-style1">
                 Speciality:</td>
             <td>
-                <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" Height="20px" Width="157px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+                <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" Height="20px" Width="157px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" DataTextField="Speciality" DataValueField="Speciality">
                 </asp:DropDownList>
             </td>
             <td>

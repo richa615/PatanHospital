@@ -21,6 +21,7 @@ namespace PatanHospital
         {
             Table2.Visible = false;
             Table3.Visible = false;
+           
             if (!IsPostBack)
             {
                 Bind_Speciality_DropDown();
@@ -99,7 +100,7 @@ namespace PatanHospital
            
         }
 
-        public void Insert_Data()
+        public void Insert_Data(int a)
         {
             Configuration rootWebConfig = WebConfigurationManager.OpenWebConfiguration("/HospitalServer");
             ConnectionStringSettings connectionString = rootWebConfig.ConnectionStrings.ConnectionStrings["HospitalServerConnectionString"];
@@ -111,8 +112,42 @@ namespace PatanHospital
             string P_SSN = DropDownList3.SelectedValue;
             string Date = TextBox1.Text;
             string D_SSN = DropDownList2.SelectedValue;
-            string Start_Time = Label7.Text;
-            string End_Time = Label8.Text;
+            string Start_Time ="", End_Time="";
+            if (a == 3)
+            {
+                 Start_Time = Label7.Text;
+                 End_Time = Label8.Text;
+            }
+
+            else if (a == 4)
+            {
+                Start_Time = Label9.Text;
+                End_Time = Label10.Text;
+            }
+
+            else if (a == 5)
+            {
+                Start_Time = Label11.Text;
+                End_Time = Label12.Text;
+            }
+
+            else if (a == 6)
+            {
+                Start_Time = Label13.Text;
+                End_Time = Label14.Text;
+            }
+
+            else if (a == 7)
+            {
+                Start_Time = Label15.Text;
+                End_Time = Label16.Text;
+            }
+
+            else if (a == 8)
+            {
+                Start_Time = Label17.Text;
+                End_Time = Label18.Text;
+            }
 
             cmd1.Parameters.AddWithValue("@p_ssn", P_SSN);
             cmd1.Parameters.AddWithValue("@date", Date);
@@ -131,9 +166,10 @@ namespace PatanHospital
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-            Insert_Data();
+            Insert_Data(3);
 
         }
+
         public void getWhileLoopData()
             {
            
@@ -204,147 +240,27 @@ namespace PatanHospital
 
         protected void Button4_Click(object sender, EventArgs e)
         {
-            Configuration rootWebConfig = WebConfigurationManager.OpenWebConfiguration("/HospitalServer");
-            ConnectionStringSettings connectionString = rootWebConfig.ConnectionStrings.ConnectionStrings["HospitalServerConnectionString"];
-            SqlConnection sqlConnection = new SqlConnection(connectionString.ToString());
-            sqlConnection.Open();
-            SqlCommand cmd1 = new SqlCommand("Insert into DoctorSchedule (P_SSN, D_SSN, Date, Start_Time, End_Time) Values( @p_ssn,@d_ssn,@date, @start_time, @end_time)", sqlConnection);
-            cmd1.CommandType = CommandType.Text;
-
-            string P_SSN = DropDownList3.SelectedValue;
-            string Date = TextBox1.Text;
-            string D_SSN = DropDownList2.SelectedValue;
-            string Start_Time = Label9.Text;
-            string End_Time = Label10.Text;
-
-            cmd1.Parameters.AddWithValue("@p_ssn", P_SSN);
-            cmd1.Parameters.AddWithValue("@date", Date);
-            cmd1.Parameters.AddWithValue("@d_ssn", D_SSN);
-            cmd1.Parameters.AddWithValue("@start_time", Start_Time);
-            cmd1.Parameters.AddWithValue("@end_time", End_Time);
-
-            cmd1.ExecuteNonQuery();
-            sqlConnection.Close();
-
-            Table2.Visible = true;
-            Table3.Visible = true;
-            Response.Redirect("AdminHome.aspx");
+            Insert_Data(4);
         }
 
         protected void Button5_Click(object sender, EventArgs e)
         {
-            Configuration rootWebConfig = WebConfigurationManager.OpenWebConfiguration("/HospitalServer");
-            ConnectionStringSettings connectionString = rootWebConfig.ConnectionStrings.ConnectionStrings["HospitalServerConnectionString"];
-            SqlConnection sqlConnection = new SqlConnection(connectionString.ToString());
-            sqlConnection.Open();
-            SqlCommand cmd1 = new SqlCommand("Insert into DoctorSchedule (P_SSN, D_SSN, Date, Start_Time, End_Time) Values( @p_ssn,@d_ssn,@date, @start_time, @end_time)", sqlConnection);
-            cmd1.CommandType = CommandType.Text;
-
-            string P_SSN = DropDownList3.SelectedValue;
-            string Date = TextBox1.Text;
-            string D_SSN = DropDownList2.SelectedValue;
-            string Start_Time = Label11.Text;
-            string End_Time = Label12.Text;
-
-            cmd1.Parameters.AddWithValue("@p_ssn", P_SSN);
-            cmd1.Parameters.AddWithValue("@date", Date);
-            cmd1.Parameters.AddWithValue("@d_ssn", D_SSN);
-            cmd1.Parameters.AddWithValue("@start_time", Start_Time);
-            cmd1.Parameters.AddWithValue("@end_time", End_Time);
-
-            cmd1.ExecuteNonQuery();
-            sqlConnection.Close();
-
-            Table2.Visible = true;
-            Table3.Visible = true;
-            Response.Redirect("AdminHome.aspx");
+            Insert_Data(5);
         }
 
         protected void Button6_Click(object sender, EventArgs e)
         {
-            Configuration rootWebConfig = WebConfigurationManager.OpenWebConfiguration("/HospitalServer");
-            ConnectionStringSettings connectionString = rootWebConfig.ConnectionStrings.ConnectionStrings["HospitalServerConnectionString"];
-            SqlConnection sqlConnection = new SqlConnection(connectionString.ToString());
-            sqlConnection.Open();
-            SqlCommand cmd1 = new SqlCommand("Insert into DoctorSchedule (P_SSN, D_SSN, Date, Start_Time, End_Time) Values( @p_ssn,@d_ssn,@date, @start_time, @end_time)", sqlConnection);
-            cmd1.CommandType = CommandType.Text;
-
-            string P_SSN = DropDownList3.SelectedValue;
-            string Date = TextBox1.Text;
-            string D_SSN = DropDownList2.SelectedValue;
-            string Start_Time = Label13.Text;
-            string End_Time = Label14.Text;
-
-            cmd1.Parameters.AddWithValue("@p_ssn", P_SSN);
-            cmd1.Parameters.AddWithValue("@date", Date);
-            cmd1.Parameters.AddWithValue("@d_ssn", D_SSN);
-            cmd1.Parameters.AddWithValue("@start_time", Start_Time);
-            cmd1.Parameters.AddWithValue("@end_time", End_Time);
-
-            cmd1.ExecuteNonQuery();
-            sqlConnection.Close();
-
-            Table2.Visible = true;
-            Table3.Visible = true;
-            Response.Redirect("AdminHome.aspx");
+            Insert_Data(6);
         }
 
         protected void Button7_Click(object sender, EventArgs e)
         {
-            Configuration rootWebConfig = WebConfigurationManager.OpenWebConfiguration("/HospitalServer");
-            ConnectionStringSettings connectionString = rootWebConfig.ConnectionStrings.ConnectionStrings["HospitalServerConnectionString"];
-            SqlConnection sqlConnection = new SqlConnection(connectionString.ToString());
-            sqlConnection.Open();
-            SqlCommand cmd1 = new SqlCommand("Insert into DoctorSchedule (P_SSN, D_SSN, Date, Start_Time, End_Time) Values( @p_ssn,@d_ssn,@date, @start_time, @end_time)", sqlConnection);
-            cmd1.CommandType = CommandType.Text;
-
-            string P_SSN = DropDownList3.SelectedValue;
-            string Date = TextBox1.Text;
-            string D_SSN = DropDownList2.SelectedValue;
-            string Start_Time = Label15.Text;
-            string End_Time = Label16.Text;
-
-            cmd1.Parameters.AddWithValue("@p_ssn", P_SSN);
-            cmd1.Parameters.AddWithValue("@date", Date);
-            cmd1.Parameters.AddWithValue("@d_ssn", D_SSN);
-            cmd1.Parameters.AddWithValue("@start_time", Start_Time);
-            cmd1.Parameters.AddWithValue("@end_time", End_Time);
-
-            cmd1.ExecuteNonQuery();
-            sqlConnection.Close();
-
-            Table2.Visible = true;
-            Table3.Visible = true;
-            Response.Redirect("AdminHome.aspx");
+            Insert_Data(7);
         }
 
         protected void Button8_Click(object sender, EventArgs e)
         {
-            Configuration rootWebConfig = WebConfigurationManager.OpenWebConfiguration("/HospitalServer");
-            ConnectionStringSettings connectionString = rootWebConfig.ConnectionStrings.ConnectionStrings["HospitalServerConnectionString"];
-            SqlConnection sqlConnection = new SqlConnection(connectionString.ToString());
-            sqlConnection.Open();
-            SqlCommand cmd1 = new SqlCommand("Insert into DoctorSchedule (P_SSN, D_SSN, Date, Start_Time, End_Time) Values( @p_ssn,@d_ssn,@date, @start_time, @end_time)", sqlConnection);
-            cmd1.CommandType = CommandType.Text;
-
-            string P_SSN = DropDownList3.SelectedValue;
-            string Date = TextBox1.Text;
-            string D_SSN = DropDownList2.SelectedValue;
-            string Start_Time = Label17.Text;
-            string End_Time = Label18.Text;
-
-            cmd1.Parameters.AddWithValue("@p_ssn", P_SSN);
-            cmd1.Parameters.AddWithValue("@date", Date);
-            cmd1.Parameters.AddWithValue("@d_ssn", D_SSN);
-            cmd1.Parameters.AddWithValue("@start_time", Start_Time);
-            cmd1.Parameters.AddWithValue("@end_time", End_Time);
-
-            cmd1.ExecuteNonQuery();
-            sqlConnection.Close();
-
-            Table2.Visible = true;
-            Table3.Visible = true;
-            Response.Redirect("AdminHome.aspx"); Insert_Data();
+            Insert_Data(8);
         }
 
         protected void Button9_Click(object sender, EventArgs e)
