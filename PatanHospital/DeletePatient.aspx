@@ -26,7 +26,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
+    <div align="center">
     
         <table class="style1">
             <tr>
@@ -82,7 +82,7 @@
         </table>
     
     </div>
-    <table id="Table2" class="style1" runat= "server">
+    <table id="Table2" class="style1" runat= "server" align="center">
         <tr>
             <td class="style4">
                 Name:</td>

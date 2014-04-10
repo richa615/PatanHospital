@@ -33,7 +33,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
+    <div align="center">
     
         <table class="style1">
             <tr>
