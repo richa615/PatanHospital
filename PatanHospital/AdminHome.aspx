@@ -107,7 +107,7 @@
                         Text="Edit Doctor Information" Width="150px" />
                 </td>
                 <td>
-                    <asp:Button ID="Button10" runat="server" Text="Edit Appointments" />
+                    <asp:Button ID="Button10" runat="server" Text="Edit Appointments" OnClick="Button10_Click" />
                 </td>
             </tr>
             <tr>
