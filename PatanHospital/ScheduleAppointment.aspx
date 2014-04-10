@@ -104,7 +104,7 @@ TagPrefix="ajaxToolkit" %>
             <td class="auto-style1">
                 Patients Name:</td>
             <td>
-                <asp:DropDownList ID="DropDownList3" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList3_SelectedIndexChanged" DataSourceID="SqlDataSource1" DataTextField="Name" DataValueField="SSN">
+                <asp:DropDownList ID="DropDownList3" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList3_SelectedIndexChanged" DataSourceID="SqlDataSource1" DataTextField="Name" DataValueField="SSN" style="margin-bottom: 0px">
                 </asp:DropDownList>
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:HospitalServerConnectionString %>" SelectCommand="SELECT Fname + ' ' + Lname AS Name, SSN FROM PatientCredientials"></asp:SqlDataSource>
             </td>
@@ -154,7 +154,19 @@ TagPrefix="ajaxToolkit" %>
             <td class="auto-style1">
                 &nbsp;</td>
             <td>
+                <asp:Label ID="Label19" runat="server" Text="Label"></asp:Label>
+            </td>
+            <td>
                 &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style1">
+                &nbsp;</td>
+            <td>
+                <asp:Label ID="Label20" runat="server" Text="Label"></asp:Label>
+            </td>
             <td>
                 &nbsp;</td>
             <td>

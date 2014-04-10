@@ -22,6 +22,25 @@
         {
             width: 24px;
         }
+        .auto-style1
+        {
+            width: 154px;
+            height: 14px;
+        }
+        .auto-style2
+        {
+            width: 24px;
+            height: 14px;
+        }
+        .auto-style3
+        {
+            width: 202px;
+            height: 14px;
+        }
+        .auto-style4
+        {
+            height: 14px;
+        }
     </style>
 </head>
 <body>
@@ -96,17 +115,17 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style1">
                     <asp:Button ID="Button5" runat="server" Text="Edit Patient Information" 
                         Width="150px" onclick="Button5_Click" />
                 </td>
-                <td class="style4">
-                    &nbsp;</td>
-                <td class="style3">
+                <td class="auto-style2">
+                    </td>
+                <td class="auto-style3">
                     <asp:Button ID="Button7" runat="server" onclick="Button7_Click" 
                         Text="Edit Doctor Information" Width="150px" />
                 </td>
-                <td>
+                <td class="auto-style4">
                     <asp:Button ID="Button10" runat="server" Text="Edit Appointments" OnClick="Button10_Click" />
                 </td>
             </tr>
