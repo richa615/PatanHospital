@@ -13,6 +13,7 @@ using System.Configuration;
 using System.Net;
 using System.Net.Mail;
 using System.Collections;
+
 namespace PatanHospital
 {
     public partial class ScheduleAppointment : System.Web.UI.Page
@@ -21,6 +22,8 @@ namespace PatanHospital
         {
             Table2.Visible = false;
             Table3.Visible = false;
+            Label19.Visible = false;
+            Label20.Visible = false;
            
             if (!IsPostBack)
             {

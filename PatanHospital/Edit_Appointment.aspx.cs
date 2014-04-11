@@ -4,6 +4,12 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.Sql;
+using System.Data.SqlClient;
+using System.Xml;
+using System.Data;
+using System.Web.Configuration;
+using System.Configuration;
 
 namespace PatanHospital
 {
@@ -13,5 +19,6 @@ namespace PatanHospital
         {
 
         }
+       
     }
 }
