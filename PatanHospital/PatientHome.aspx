@@ -5,12 +5,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style type="text/css">
+        .auto-style1
+        {
+            width: 800px;
+        }
+        .auto-style2
+        {
+            width: 175px;
+        }
+        .auto-style3
+        {
+            width: 241px;
+        }
+    </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-    <div>
-    
-    </div>
-    </form>
-</body>
+    </body>
 </html>

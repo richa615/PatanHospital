@@ -96,6 +96,7 @@
     <Content Include="Scripts\jquery-1.4.1.min.js" />
     <Content Include="TrialPage.aspx" />
     <Content Include="UpdateDoctor.aspx" />
+    <Content Include="UpdatePassword.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -258,6 +259,13 @@
     </Compile>
     <Compile Include="UpdateDoctor.aspx.designer.cs">
       <DependentUpon>UpdateDoctor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePassword.aspx.cs">
+      <DependentUpon>UpdatePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdatePassword.aspx.designer.cs">
+      <DependentUpon>UpdatePassword.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
