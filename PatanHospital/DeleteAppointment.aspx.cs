@@ -13,12 +13,20 @@ using System.Configuration;
 
 namespace PatanHospital
 {
-    public partial class Edit_Appointment : System.Web.UI.Page
+    public partial class DeleteAppointment : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-       
-    }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+        protected void GridView1_DataBound(object sender, EventArgs e)
+        {
+
+        }
+}
 }

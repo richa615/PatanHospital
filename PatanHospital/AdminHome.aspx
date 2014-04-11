@@ -126,7 +126,7 @@
                         Text="Edit Doctor Information" Width="150px" />
                 </td>
                 <td class="auto-style4">
-                    <asp:Button ID="Button10" runat="server" Text="Edit Appointments" OnClick="Button10_Click" />
+                    <asp:Button ID="Button11" runat="server" Text="Delete Appointments" OnClick="Button11_Click" />
                 </td>
             </tr>
             <tr>
@@ -151,8 +151,7 @@
                         onclick="Button13_Click" />
                 </td>
                 <td>
-                    <asp:Button ID="Button11" runat="server" Text="Delete Appointments" />
-                </td>
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="style2">
