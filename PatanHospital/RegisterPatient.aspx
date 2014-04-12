@@ -22,6 +22,9 @@
         {
             width: 163px;
         }
+        .auto-style1 {
+            font-size: xx-large;
+        }
     </style>
 </head>
 <body>
@@ -30,7 +33,7 @@
     
         <table class="style1">
             <tr>
-                <td class="style2" colspan="4">
+                <td class="auto-style1" colspan="4">
                     <strong>Insert Patient Information</strong></td>
             </tr>
             <tr>

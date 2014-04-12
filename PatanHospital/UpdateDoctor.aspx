@@ -29,6 +29,9 @@
         {
             width: 141px;
         }
+        .auto-style1 {
+            font-size: xx-large;
+        }
     </style>
 </head>
 <body>
@@ -41,7 +44,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style6" colspan="4">
+                <td class="auto-style1" colspan="4">
                     <strong>Edit Doctor Information</strong></td>
             </tr>
             <tr>

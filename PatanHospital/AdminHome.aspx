@@ -22,6 +22,21 @@
         {
             width: 24px;
         }
+        .auto-style1 {
+            width: 154px;
+            height: 23px;
+        }
+        .auto-style2 {
+            width: 24px;
+            height: 23px;
+        }
+        .auto-style3 {
+            width: 202px;
+            height: 23px;
+        }
+        .auto-style4 {
+            height: 23px;
+        }
     </style>
 </head>
 <body>
@@ -30,14 +45,14 @@
     
         <table class="style1">
             <tr>
-                <td class="style2">
+                <td class="auto-style1">
                     <strong>Admin Home Page</strong></td>
-                <td class="style4">
-                    &nbsp;</td>
-                <td class="style3">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
+                <td class="auto-style2">
+                    </td>
+                <td class="auto-style3">
+                    </td>
+                <td class="auto-style4">
+                    </td>
             </tr>
             <tr>
                 <td class="style2">

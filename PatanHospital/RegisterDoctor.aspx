@@ -16,6 +16,9 @@
         {
             width: 179px;
         }
+        .auto-style1 {
+            font-size: xx-large;
+        }
     </style>
 </head>
 <body>
@@ -26,7 +29,7 @@
             <tr>
                 <td class="style2">
                     &nbsp;</td>
-                <td>
+                <td class="auto-style1">
                     <strong>Register a Doctor</strong></td>
                 <td>
                     &nbsp;</td>
