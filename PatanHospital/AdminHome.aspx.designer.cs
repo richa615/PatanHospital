@@ -67,13 +67,13 @@ namespace PatanHospital {
         protected global::System.Web.UI.WebControls.Button Button7;
         
         /// <summary>
-        /// Button10 control.
+        /// Button11 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button10;
+        protected global::System.Web.UI.WebControls.Button Button11;
         
         /// <summary>
         /// Button12 control.
@@ -92,15 +92,6 @@ namespace PatanHospital {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button13;
-        
-        /// <summary>
-        /// Button11 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button11;
         
         /// <summary>
         /// Button8 control.

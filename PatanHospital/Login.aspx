@@ -254,10 +254,11 @@
             <td class="style23">
                 &nbsp;</td>
             <td class="style14">
-                &nbsp;</td>
-            <td class="style15">
                 <asp:HyperLink ID="HyperLink1" runat="server" 
                     NavigateUrl="~/ForgotPassword.aspx">Forgot Password</asp:HyperLink>
+            </td>
+            <td class="style15">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/UpdatePassword.aspx">Update Password</asp:HyperLink>
             </td>
             <td>
                 &nbsp;</td>

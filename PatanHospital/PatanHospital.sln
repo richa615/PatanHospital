@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatanHospital", "PatanHospital\PatanHospital.csproj", "{1E6C4E85-68BA-428D-A3BC-D4E9855CD6C6}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatanHospital", "PatanHospital.csproj", "{1E6C4E85-68BA-428D-A3BC-D4E9855CD6C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

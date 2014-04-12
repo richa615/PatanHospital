@@ -28,6 +28,7 @@ namespace PatanHospital
             Table2.Visible = true;
             Label2.Visible = true;
             Label2.Text = "User Name:";
+            HyperLink2.Visible = false;
         }
 
         protected void RadioButton2_CheckedChanged(object sender, EventArgs e)
@@ -35,6 +36,7 @@ namespace PatanHospital
             Table2.Visible = true;
             Label2.Visible = true;
             Label2.Text = "Email address:";
+            HyperLink2.Visible = true;
         }
 
         protected void RadioButton3_CheckedChanged(object sender, EventArgs e)
@@ -42,6 +44,7 @@ namespace PatanHospital
             Table2.Visible = true;
             Label2.Visible = true;
             Label2.Text = "Email address:";
+            HyperLink2.Visible = true;
         }
 
         protected void Button1_Click1(object sender, EventArgs e)

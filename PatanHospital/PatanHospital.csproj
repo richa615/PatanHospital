@@ -27,6 +27,13 @@
     </FileUpgradeFlags>
     <OldToolsVersion>4.0</OldToolsVersion>
     <UpgradeBackupLocation />
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -76,8 +83,8 @@
     <Content Include="DeleteDoctor.aspx" />
     <Content Include="DeletePatient.aspx" />
     <Content Include="DoctorHome.aspx" />
-    <Content Include="doctorlogin.aspx" />
     <Content Include="EditPatient.aspx" />
+    <Content Include="DeleteAppointment.aspx" />
     <Content Include="ForgotPassword.aspx" />
     <Content Include="PatientHome.aspx" />
     <Content Include="RegisterDoctor.aspx" />
@@ -85,13 +92,13 @@
     <Content Include="RegisterPatient.aspx" />
     <Content Include="ScheduleAppointment.aspx" />
     <Content Include="Styles\Site.css" />
-    <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
-    <Content Include="Trialpage.aspx" />
+    <Content Include="TrialPage.aspx" />
     <Content Include="UpdateDoctor.aspx" />
+    <Content Include="UpdatePassword.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -146,13 +153,6 @@
     <Compile Include="AdminHome.aspx.designer.cs">
       <DependentUpon>AdminHome.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
     <Compile Include="DeleteDoctor.aspx.cs">
       <DependentUpon>DeleteDoctor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -174,19 +174,19 @@
     <Compile Include="DoctorHome.aspx.designer.cs">
       <DependentUpon>DoctorHome.aspx</DependentUpon>
     </Compile>
-    <Compile Include="doctorlogin.aspx.cs">
-      <DependentUpon>doctorlogin.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="doctorlogin.aspx.designer.cs">
-      <DependentUpon>doctorlogin.aspx</DependentUpon>
-    </Compile>
     <Compile Include="EditPatient.aspx.cs">
       <DependentUpon>EditPatient.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="EditPatient.aspx.designer.cs">
       <DependentUpon>EditPatient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteAppointment.aspx.cs">
+      <DependentUpon>DeleteAppointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteAppointment.aspx.designer.cs">
+      <DependentUpon>DeleteAppointment.aspx</DependentUpon>
     </Compile>
     <Compile Include="ForgotPassword.aspx.cs">
       <DependentUpon>ForgotPassword.aspx</DependentUpon>
@@ -248,12 +248,12 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Trialpage.aspx.cs">
-      <DependentUpon>Trialpage.aspx</DependentUpon>
+    <Compile Include="TrialPage.aspx.cs">
+      <DependentUpon>TrialPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Trialpage.aspx.designer.cs">
-      <DependentUpon>Trialpage.aspx</DependentUpon>
+    <Compile Include="TrialPage.aspx.designer.cs">
+      <DependentUpon>TrialPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="UpdateDoctor.aspx.cs">
       <DependentUpon>UpdateDoctor.aspx</DependentUpon>
@@ -261,6 +261,13 @@
     </Compile>
     <Compile Include="UpdateDoctor.aspx.designer.cs">
       <DependentUpon>UpdateDoctor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePassword.aspx.cs">
+      <DependentUpon>UpdatePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdatePassword.aspx.designer.cs">
+      <DependentUpon>UpdatePassword.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -283,7 +290,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>54778</DevelopmentServerPort>
+          <DevelopmentServerPort>64351</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

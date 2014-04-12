@@ -63,7 +63,7 @@ namespace PatanHospital
                SendEmail (TextBox1.Text, "Patan Hospital Password", " Your passowrd to login is:" + Label2.Text);
                Label1.Visible = true;
                Label1.ForeColor = System.Drawing.Color.Green;
-               Label1.Text = "Please check your email for the password rrayamajhi@luc.edu";
+               Label1.Text = "Please check your email for the password";
                TextBox1.Text = "";
             }
 
@@ -82,7 +82,7 @@ namespace PatanHospital
                     SendEmail(TextBox1.Text, "Patan Hospital Password", " Your passowrd to login is:" + Label2.Text);
                     Label1.Visible = true;
                     Label1.ForeColor = System.Drawing.Color.Green;
-                    Label1.Text = "Please Check your email for the password richarayamajhi@gmail.com";
+                    Label1.Text = "Please Check your email for the password";
                     TextBox1.Text = "";
                 }
 

@@ -47,5 +47,10 @@ namespace PatanHospital
         {
             Response.Redirect("ScheduleAppointment.aspx");
         }
+
+        protected void Button11_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("DeleteAppointment.aspx");
+        }
     }
 }
