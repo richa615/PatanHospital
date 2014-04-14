@@ -1,57 +1,3 @@
-C:\Users\Santosh\Documents\Visual Studio 2010\Projects\PatanHospital\PatanHospital\bin\PatanHospital.dll
-C:\Users\Santosh\Documents\Visual Studio 2010\Projects\PatanHospital\PatanHospital\bin\PatanHospital.pdb
-C:\Users\Santosh\Documents\Visual Studio 2010\Projects\PatanHospital\PatanHospital\obj\Debug\PatanHospital.dll
-C:\Users\Santosh\Documents\Visual Studio 2010\Projects\PatanHospital\PatanHospital\obj\Debug\PatanHospital.pdb
-C:\Users\Santosh\Documents\Visual Studio 2010\Projects\PatanHospital\PatanHospital\obj\Debug\PatanHospital.csprojResolveAssemblyReference.cache
-C:\Users\Santosh\Documents\Visual Studio 2010\Projects\PatanHospital\PatanHospital\bin\Microsoft.WindowsAzure.Storage.dll
-C:\Users\Santosh\Documents\Visual Studio 2010\Projects\PatanHospital\PatanHospital\bin\HtmlAgilityPack.dll
-C:\Users\Santosh\Documents\Visual Studio 2010\Projects\PatanHospital\PatanHospital\bin\AjaxMin.dll
-C:\Users\Santosh\Documents\Visual Studio 2010\Projects\PatanHospital\PatanHospital\bin\AjaxControlToolkit.pdb
-C:\Users\Santosh\Documents\Visual Studio 2010\Projects\PatanHospital\PatanHospital\bin\Microsoft.WindowsAzure.Storage.xml
-C:\Users\Santosh\Documents\Visual Studio 2010\Projects\PatanHospital\PatanHospital\bin\ar\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\Documents\Visual Studio 2010\Projects\PatanHospital\PatanHospital\bin\cs\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\Documents\Visual Studio 2010\Projects\PatanHospital\PatanHospital\bin\de\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\Documents\Visual Studio 2010\Projects\PatanHospital\PatanHospital\bin\es\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\Documents\Visual Studio 2010\Projects\PatanHospital\PatanHospital\bin\fr\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\Documents\Visual Studio 2010\Projects\PatanHospital\PatanHospital\bin\he\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\Documents\Visual Studio 2010\Projects\PatanHospital\PatanHospital\bin\hi\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\Documents\Visual Studio 2010\Projects\PatanHospital\PatanHospital\bin\it\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\Documents\Visual Studio 2010\Projects\PatanHospital\PatanHospital\bin\ja\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\Documents\Visual Studio 2010\Projects\PatanHospital\PatanHospital\bin\ko\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\Documents\Visual Studio 2010\Projects\PatanHospital\PatanHospital\bin\nl\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\Documents\Visual Studio 2010\Projects\PatanHospital\PatanHospital\bin\pl\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\Documents\Visual Studio 2010\Projects\PatanHospital\PatanHospital\bin\pt\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\Documents\Visual Studio 2010\Projects\PatanHospital\PatanHospital\bin\ru\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\Documents\Visual Studio 2010\Projects\PatanHospital\PatanHospital\bin\tr-TR\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\Documents\Visual Studio 2010\Projects\PatanHospital\PatanHospital\bin\zh-CHS\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\Documents\Visual Studio 2010\Projects\PatanHospital\PatanHospital\bin\zh-CHT\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\PatanHospital\PatanHospital\bin\PatanHospital.dll
-C:\Users\Santosh\PatanHospital\PatanHospital\bin\PatanHospital.pdb
-C:\Users\Santosh\PatanHospital\PatanHospital\bin\Microsoft.WindowsAzure.Storage.dll
-C:\Users\Santosh\PatanHospital\PatanHospital\bin\HtmlAgilityPack.dll
-C:\Users\Santosh\PatanHospital\PatanHospital\bin\AjaxMin.dll
-C:\Users\Santosh\PatanHospital\PatanHospital\bin\AjaxControlToolkit.pdb
-C:\Users\Santosh\PatanHospital\PatanHospital\bin\Microsoft.WindowsAzure.Storage.xml
-C:\Users\Santosh\PatanHospital\PatanHospital\bin\ar\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\PatanHospital\PatanHospital\bin\cs\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\PatanHospital\PatanHospital\bin\de\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\PatanHospital\PatanHospital\bin\es\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\PatanHospital\PatanHospital\bin\fr\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\PatanHospital\PatanHospital\bin\he\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\PatanHospital\PatanHospital\bin\hi\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\PatanHospital\PatanHospital\bin\it\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\PatanHospital\PatanHospital\bin\ja\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\PatanHospital\PatanHospital\bin\ko\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\PatanHospital\PatanHospital\bin\nl\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\PatanHospital\PatanHospital\bin\pl\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\PatanHospital\PatanHospital\bin\pt\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\PatanHospital\PatanHospital\bin\ru\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\PatanHospital\PatanHospital\bin\tr-TR\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\PatanHospital\PatanHospital\bin\zh-CHS\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\PatanHospital\PatanHospital\bin\zh-CHT\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\PatanHospital\PatanHospital\obj\Debug\PatanHospital.csprojResolveAssemblyReference.cache
-C:\Users\Santosh\PatanHospital\PatanHospital\obj\Debug\PatanHospital.dll
-C:\Users\Santosh\PatanHospital\PatanHospital\obj\Debug\PatanHospital.pdb
 C:\Users\Santosh\Documents\Visual Studio 2012\Projects\PatanHospital\PatanHospital\bin\PatanHospital.dll
 C:\Users\Santosh\Documents\Visual Studio 2012\Projects\PatanHospital\PatanHospital\bin\PatanHospital.pdb
 C:\Users\Santosh\Documents\Visual Studio 2012\Projects\PatanHospital\PatanHospital\bin\Microsoft.WindowsAzure.Storage.dll
@@ -76,7 +22,6 @@ C:\Users\Santosh\Documents\Visual Studio 2012\Projects\PatanHospital\PatanHospit
 C:\Users\Santosh\Documents\Visual Studio 2012\Projects\PatanHospital\PatanHospital\bin\tr-TR\AjaxControlToolkit.resources.dll
 C:\Users\Santosh\Documents\Visual Studio 2012\Projects\PatanHospital\PatanHospital\bin\zh-CHS\AjaxControlToolkit.resources.dll
 C:\Users\Santosh\Documents\Visual Studio 2012\Projects\PatanHospital\PatanHospital\bin\zh-CHT\AjaxControlToolkit.resources.dll
-C:\Users\Santosh\Documents\Visual Studio 2012\Projects\PatanHospital\PatanHospital\obj\Debug\PatanHospital.csprojResolveAssemblyReference.cache
 C:\Users\Santosh\Documents\Visual Studio 2012\Projects\PatanHospital\PatanHospital\obj\Debug\PatanHospital.dll
 C:\Users\Santosh\Documents\Visual Studio 2012\Projects\PatanHospital\PatanHospital\obj\Debug\PatanHospital.pdb
->>>>>>> 571e6ae944646ca82162c880b01baba6db5cf26a
+C:\Users\Santosh\Documents\Visual Studio 2012\Projects\PatanHospital\PatanHospital\obj\Debug\PatanHospital.csprojResolveAssemblyReference.cache

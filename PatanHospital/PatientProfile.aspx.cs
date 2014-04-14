@@ -18,7 +18,7 @@ namespace PatanHospital
         protected void Page_Load(object sender, EventArgs e)
         {
             Label1.Text = Session["Patient_Email"].ToString();
-           // Label1.Visible = false;
+            Label1.Visible = false;
             Load_Data();
 
         }

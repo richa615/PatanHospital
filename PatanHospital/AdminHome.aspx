@@ -51,7 +51,6 @@
             <tr>
                 <td class="auto-style1">
                     <strong>Admin Home Page</strong></td>
-<<<<<<< HEAD
                 <td class="style4">
                     &nbsp;</td>
                 <td class="style3">
@@ -59,14 +58,13 @@
                 <td>
                     <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="Login.aspx">Log Out</asp:HyperLink>
                 </td>
-=======
                 <td class="auto-style2">
                     </td>
                 <td class="auto-style3">
                     </td>
                 <td class="auto-style4">
                     </td>
->>>>>>> 961b8665b0fb72fec38c05e77455e45f129d13df
+
             </tr>
             <tr>
                 <td class="style2">
@@ -179,7 +177,7 @@
                 <td class="style4">
                     &nbsp;</td>
                 <td class="style3">
-                    <asp:Button ID="Button8" runat="server" Text="Search Doctor" />
+                    <asp:Button ID="Button8" runat="server" Text="Search Doctor" OnClick="Button8_Click" />
                 </td>
                 <td>
                     &nbsp;</td>

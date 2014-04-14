@@ -92,6 +92,7 @@
     <Content Include="RegisterDoctor2.aspx" />
     <Content Include="RegisterPatient.aspx" />
     <Content Include="ScheduleAppointment.aspx" />
+    <Content Include="SearchDoctor.aspx" />
     <Content Include="Styles\Site.css" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
@@ -241,6 +242,13 @@
     </Compile>
     <Compile Include="ScheduleAppointment.aspx.designer.cs">
       <DependentUpon>ScheduleAppointment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchDoctor.aspx.cs">
+      <DependentUpon>SearchDoctor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchDoctor.aspx.designer.cs">
+      <DependentUpon>SearchDoctor.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
