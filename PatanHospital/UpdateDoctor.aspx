@@ -29,11 +29,14 @@
         {
             width: 141px;
         }
+        .auto-style1 {
+            font-size: xx-large;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
+    <div align="center">
     
         <table class="style1">
             <tr>
@@ -41,7 +44,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style6" colspan="4">
+                <td class="auto-style1" colspan="4">
                     <strong>Edit Doctor Information</strong></td>
             </tr>
             <tr>

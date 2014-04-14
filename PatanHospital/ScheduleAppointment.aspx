@@ -53,7 +53,7 @@ TagPrefix="ajaxToolkit" %>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
+    <div align="center">
     
         <table id="Table1" class="style1">
             <tr>
@@ -101,7 +101,9 @@ TagPrefix="ajaxToolkit" %>
         </table>
     
     </div>
-    <table id="Table2" runat = "server" class="style1">
+    </form>
+    <table id="Table2" runat = "server" class="style1" align="center">
+
         <tr>
             <td class="auto-style1">
                 Patients Name:</td>

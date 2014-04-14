@@ -16,17 +16,20 @@
         {
             width: 179px;
         }
+        .auto-style1 {
+            font-size: xx-large;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
+    <div align="center">
     
        <table class="style1">
             <tr>
                 <td class="style2">
                     &nbsp;</td>
-                <td>
+                <td class="auto-style1">
                     <strong>Register a Doctor</strong></td>
                 <td>
                     &nbsp;</td>

@@ -79,3 +79,4 @@ C:\Users\Santosh\Documents\Visual Studio 2012\Projects\PatanHospital\PatanHospit
 C:\Users\Santosh\Documents\Visual Studio 2012\Projects\PatanHospital\PatanHospital\obj\Debug\PatanHospital.csprojResolveAssemblyReference.cache
 C:\Users\Santosh\Documents\Visual Studio 2012\Projects\PatanHospital\PatanHospital\obj\Debug\PatanHospital.dll
 C:\Users\Santosh\Documents\Visual Studio 2012\Projects\PatanHospital\PatanHospital\obj\Debug\PatanHospital.pdb
+>>>>>>> 571e6ae944646ca82162c880b01baba6db5cf26a

@@ -45,12 +45,13 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
+    <div align="center">
     
         <table class="style1">
             <tr>
-                <td class="style2">
+                <td class="auto-style1">
                     <strong>Admin Home Page</strong></td>
+<<<<<<< HEAD
                 <td class="style4">
                     &nbsp;</td>
                 <td class="style3">
@@ -58,6 +59,14 @@
                 <td>
                     <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="Login.aspx">Log Out</asp:HyperLink>
                 </td>
+=======
+                <td class="auto-style2">
+                    </td>
+                <td class="auto-style3">
+                    </td>
+                <td class="auto-style4">
+                    </td>
+>>>>>>> 961b8665b0fb72fec38c05e77455e45f129d13df
             </tr>
             <tr>
                 <td class="style2">
