@@ -49,6 +49,24 @@
         <th style="width:125px">&nbsp;</th>
         </tr>
         <tr class="AltRowStyle">
+        <td class="auto-style5">
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Home" />
+            </td>
+        <td class="auto-style3">&nbsp;</td>
+        <td class="auto-style4">
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
+            </td>
+        <td class="auto-style4">&nbsp;</td>
+        <td class="auto-style4">&nbsp;</td>
+        </tr>
+        <tr class="AltRowStyle">
+        <td class="auto-style5">&nbsp;</td>
+        <td class="auto-style3">&nbsp;</td>
+        <td class="auto-style4">&nbsp;</td>
+        <td class="auto-style4">&nbsp;</td>
+        <td class="auto-style4">&nbsp;</td>
+        </tr>
+        <tr class="AltRowStyle">
         <td class="auto-style5">Patient Name</td>
         <td class="auto-style3"><asp:DropDownList ID="PatientName" runat="server" AppendDataBoundItems="True" 
             AutoPostBack="True" DataSourceID="sqlDataSourcePatientName" DataTextField="PName" 

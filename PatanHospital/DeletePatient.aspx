@@ -41,6 +41,28 @@
             </tr>
             <tr>
                 <td class="style2">
+                    <asp:Button ID="Button4" runat="server" OnClick="Button4_Click" style="font-weight: 700" Text="Home" />
+                </td>
+                <td class="style3">
+                    &nbsp;</td>
+                <td>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
+                </td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style2">
+                    &nbsp;</td>
+                <td class="style3">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style2">
                     Patient Name:</td>
                 <td class="style3">
                     <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" 

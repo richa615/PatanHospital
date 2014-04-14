@@ -95,5 +95,10 @@ namespace PatanHospital
 
         }
 
+        protected void Button5_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AdminHome.aspx");
+        }
+
     }
 }

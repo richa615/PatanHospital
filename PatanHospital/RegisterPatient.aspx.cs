@@ -178,5 +178,10 @@ namespace PatanHospital
         {
             Response.Redirect("AdminHome.aspx");
         }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AdminHome.aspx");
+        }
     }
 }

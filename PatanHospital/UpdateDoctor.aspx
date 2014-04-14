@@ -56,6 +56,18 @@
             </tr>
             <tr>
                 <td class="style7">
+                    <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" style="font-weight: 700" Text="Home" />
+                </td>
+                <td class="style3">
+                    &nbsp;</td>
+                <td class="style4">
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
+                </td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style7">
                     &nbsp;</td>
                 <td class="style3">
                     &nbsp;</td>

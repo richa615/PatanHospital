@@ -35,11 +35,13 @@
             </tr>
             <tr>
                 <td class="style3">
-                    &nbsp;</td>
+                    <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" style="font-weight: 700" Text="Home" />
+                </td>
                 <td class="style4">
                     &nbsp;</td>
                 <td>
-                    &nbsp;</td>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
+                </td>
                 <td>
                     &nbsp;</td>
             </tr>

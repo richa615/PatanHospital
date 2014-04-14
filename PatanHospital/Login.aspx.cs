@@ -88,6 +88,9 @@ namespace PatanHospital
                 SqlCommand cmd = new SqlCommand("select * from DoctorCrediantials where email=@email and password=@password", sqlConnection);
                 cmd.Parameters.AddWithValue("@email", TextBox1.Text);
                 cmd.Parameters.AddWithValue("@password", TextBox2.Text);
+
+                Session["Doctor_email"] = TextBox1.Text;
+
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
 
@@ -118,6 +121,8 @@ namespace PatanHospital
                 SqlCommand cmd = new SqlCommand("select * from PatientCredientials where email =@email and password=@password", sqlConnection);
                 cmd.Parameters.AddWithValue("@email", TextBox1.Text);
                 cmd.Parameters.AddWithValue("@password", TextBox2.Text);
+
+                Session["Patient_email"] = TextBox1.Text;
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
 
