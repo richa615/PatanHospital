@@ -88,6 +88,7 @@
     <Content Include="ForgotPassword.aspx" />
     <Content Include="PatientHome.aspx" />
     <Content Include="PatientProfile.aspx" />
+    <Content Include="PatientScheduleAppointment.aspx" />
     <Content Include="RegisterDoctor.aspx" />
     <Content Include="RegisterDoctor2.aspx" />
     <Content Include="RegisterPatient.aspx" />
@@ -213,6 +214,13 @@
     </Compile>
     <Compile Include="PatientProfile.aspx.designer.cs">
       <DependentUpon>PatientProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PatientScheduleAppointment.aspx.cs">
+      <DependentUpon>PatientScheduleAppointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PatientScheduleAppointment.aspx.designer.cs">
+      <DependentUpon>PatientScheduleAppointment.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegisterDoctor.aspx.cs">

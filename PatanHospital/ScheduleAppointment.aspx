@@ -101,7 +101,7 @@ TagPrefix="ajaxToolkit" %>
         </table>
     
     </div>
-    </form>
+    
     <table id="Table2" runat = "server" class="style1" align="center">
 
         <tr>

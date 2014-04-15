@@ -71,7 +71,7 @@
                     <asp:Button ID="Button1" runat="server" style="font-weight: 700" Text="View Profile" OnClick="Button1_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
                 <td class="auto-style5">
-                    <asp:Button ID="Button3" runat="server" style="font-weight: 700" Text="Reserve Appointments" />
+                    <asp:Button ID="Button3" runat="server" style="font-weight: 700" Text="Reserve Appointments" OnClick="Button3_Click" />
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
