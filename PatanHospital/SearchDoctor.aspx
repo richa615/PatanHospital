@@ -27,7 +27,7 @@
         }
     </style>
 </head>
-<body>
+<body bgcolor=#BDBDBD>
     <form id="form1" runat="server">
     <div>
         <table style="width:650px" border="0" cellspacing="0" class="GridViewStyle">
