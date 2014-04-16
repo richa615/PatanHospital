@@ -47,25 +47,13 @@
     <form id="form1" runat="server">
     <div align="center">
     
+        <div align="center" style="border:groove;">
+            <strong style="font-size:xx-large;">Admin Home Page</strong>
+        </div>
+        <div align="center">
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="Login.aspx">Log Out</asp:HyperLink>
+        </div>
         <table class="style1">
-            <tr>
-                <td class="auto-style1">
-                    <strong>Admin Home Page</strong></td>
-                <td class="style4">
-                    &nbsp;</td>
-                <td class="style3">
-                    &nbsp;</td>
-                <td>
-                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="Login.aspx">Log Out</asp:HyperLink>
-                </td>
-                <td class="auto-style2">
-                    </td>
-                <td class="auto-style3">
-                    </td>
-                <td class="auto-style4">
-                    </td>
-
-            </tr>
             <tr>
                 <td class="style2">
                     &nbsp;</td>
