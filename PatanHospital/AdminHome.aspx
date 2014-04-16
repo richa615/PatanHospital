@@ -43,7 +43,7 @@
         }
     </style>
 </head>
-<body>
+<body bgcolor=#BDBDBD>
     <form id="form1" runat="server">
     <div align="center">
     
