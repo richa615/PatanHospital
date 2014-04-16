@@ -13,5 +13,11 @@ namespace PatanHospital
         {
 
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("DoctorProfile.aspx");
+        }
+
     }
 }

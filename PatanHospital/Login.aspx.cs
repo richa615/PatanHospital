@@ -102,6 +102,8 @@ namespace PatanHospital
                 da.Fill(dt);
                 da.Fill(ds, "DoctorCrediantials");
 
+                Session["Doctor_SSN"] = ds.Tables["DoctorCrediantials"].Rows[0]["SSN"].ToString();
+
                 if (dt.Rows.Count > 0)
                 {
                     Response.Redirect("DoctorHome.aspx");
