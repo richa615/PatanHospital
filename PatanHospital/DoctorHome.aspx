@@ -18,6 +18,7 @@
 </head>
 <body bgcolor=#BDBDBD>
     <form id="form1" runat="server">
+<<<<<<< HEAD
     <div>
     
         <table class="auto-style1">
@@ -61,6 +62,24 @@
             </tr>
         </table>
     
+=======
+    <div align="center">
+    <div style="font-size:xx-large; font-weight:bold;"> 
+        Doctor Home
+    </div>
+        <div style="padding:10px;">
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
+        </div>
+        <div style="width:201px; height: 93px; background-color:white;">
+            <div style="padding:10px;">
+                <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" style="font-weight: 700;" Text="View Profile" />
+            </div>
+            <div>
+                <asp:Button ID="Button3" runat="server" style="font-weight: 700" Text="View Schedule" />
+            </div>   
+        </div>
+         
+>>>>>>> 18ea411a8e0185d8f2551f6ac1c44235be3ba355
     </div>
     </form>
 </body>
