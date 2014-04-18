@@ -71,7 +71,7 @@
         <tr class="AltRowStyle">
         <td class="auto-style5">Date</td>
         <td class="auto-style3">
-            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TextBox1" runat="server" AutoPostBack="True" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
             <asp:CalendarExtender ID="TextBox1_CalendarExtender" runat="server" Enabled="True" TargetControlID="TextBox1">
             </asp:CalendarExtender>
             </td>
@@ -93,25 +93,10 @@
         </tr>
         <tr>
         <td colspan="5">
-        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" 
-            DataSourceID="sqlDataSourceGridView" AutoGenerateColumns="False"
-            CssClass="GridViewStyle" Width="650px" OnDataBound="GridView1_DataBound" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" >
-            <Columns>
-                <asp:BoundField DataField="Date" HeaderText="Date" SortExpression="Date" />
-                <asp:BoundField DataField="Start_Time" HeaderText="Start_Time" ItemStyle-Width="100px" SortExpression="Start_Time">
-                </asp:BoundField>
-                <asp:BoundField DataField="End_Time" HeaderText="End_Time" ItemStyle-Width="100px" SortExpression="End_Time" >
-                </asp:BoundField>
-                <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Fname" />
-                
-                <asp:BoundField DataField="D_SSN" HeaderText="D_SSN" SortExpression="D_SSN" />
-            </Columns>
-            <RowStyle CssClass="RowStyle" />
-            <PagerStyle CssClass="PagerStyle" />
-            <SelectedRowStyle CssClass="SelectedRowStyle" />
-            <HeaderStyle CssClass="HeaderStyle" />
-            <AlternatingRowStyle CssClass="AltRowStyle" />
-        </asp:GridView>
+        
+            <asp:GridView ID="GridView1" runat="server">
+            </asp:GridView>
+        
         </td>
         </tr>
         <tr>
@@ -143,16 +128,6 @@
         
         <br />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:SqlDataSource ID="sqlDataSourceGridView" runat="server" 
-            ConnectionString="<%$ ConnectionStrings:HospitalServerConnectionString %>" 
-            SelectCommand="SELECT DoctorSchedule.Date, DoctorSchedule.Start_Time, DoctorSchedule.End_Time, PatientCredientials.Fname+' '+ PatientCredientials.Lname as Name, DoctorSchedule.D_SSN FROM PatientCredientials INNER JOIN DoctorSchedule ON PatientCredientials.SSN = DoctorSchedule.P_SSN" 
-            FilterExpression="[Date] like '{0}%'">
-            <FilterParameters>
-            <asp:ControlParameter ControlID="TextBox1" Name="Date" 
-                    PropertyName="Text" Type="String" />
-           
-            </FilterParameters>
-         </asp:SqlDataSource>
         <br />
     </div>
     
