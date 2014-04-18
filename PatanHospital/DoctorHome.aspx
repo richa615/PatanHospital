@@ -47,7 +47,7 @@
             </tr>
             <tr>
                 <td class="auto-style2">
-                    <asp:Button ID="Button3" runat="server" style="font-weight: 700" Text="View Schedule" />
+                    <asp:Button ID="Button3" runat="server" style="font-weight: 700" Text="View Schedule" OnClick="Button3_Click" />
                 </td>
                 <td>&nbsp;</td>
             </tr>

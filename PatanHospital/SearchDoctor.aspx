@@ -67,7 +67,7 @@
         <td class="auto-style4">&nbsp;</td>
         </tr>
         <tr class="AltRowStyle">
-        <td class="auto-style5"><strong>ZipCode</strong></td>
+        <td class="auto-style5">Zip Code:</td>
         <td class="auto-style3"><asp:DropDownList ID="DoctorZipCode" runat="server" AppendDataBoundItems="True" 
             AutoPostBack="True" DataSourceID="sqlDataSourceDoctorZipCode" DataTextField="ZipCode" 
             DataValueField="ZipCode" Width="125px" Height="20px">

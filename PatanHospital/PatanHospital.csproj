@@ -84,6 +84,7 @@
     <Content Include="DeletePatient.aspx" />
     <Content Include="DoctorHome.aspx" />
     <Content Include="DoctorProfile.aspx" />
+    <Content Include="DoctorSchedule.aspx" />
     <Content Include="EditPatient.aspx" />
     <Content Include="DeleteAppointment.aspx" />
     <Content Include="ForgotPassword.aspx" />
@@ -184,6 +185,13 @@
     </Compile>
     <Compile Include="DoctorProfile.aspx.designer.cs">
       <DependentUpon>DoctorProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorSchedule.aspx.cs">
+      <DependentUpon>DoctorSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DoctorSchedule.aspx.designer.cs">
+      <DependentUpon>DoctorSchedule.aspx</DependentUpon>
     </Compile>
     <Compile Include="EditPatient.aspx.cs">
       <DependentUpon>EditPatient.aspx</DependentUpon>
