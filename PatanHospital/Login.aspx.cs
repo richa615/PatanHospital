@@ -102,10 +102,10 @@ namespace PatanHospital
                 da.Fill(dt);
                 da.Fill(ds, "DoctorCrediantials");
 
-                Session["Doctor_SSN"] = ds.Tables["DoctorCrediantials"].Rows[0]["SSN"].ToString();
 
                 if (dt.Rows.Count > 0)
                 {
+                    Session["Doctor_SSN"] = ds.Tables["DoctorCrediantials"].Rows[0]["SSN"].ToString();
                     Response.Redirect("DoctorHome.aspx");
                 }
                 else
@@ -128,7 +128,7 @@ namespace PatanHospital
                 cmd.Parameters.AddWithValue("@email", TextBox1.Text);
                 cmd.Parameters.AddWithValue("@password", TextBox2.Text);
 
-                Session["Patient_email"] = TextBox1.Text;
+                
                 
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
@@ -137,12 +137,12 @@ namespace PatanHospital
                 da.Fill(dt);
                 da.Fill(ds, "PatientCredientials");
 
-                Session["Patient_FName"] = ds.Tables["PatientCredientials"].Rows[0]["Fname"].ToString();
-                Session["Patient_Lname"] = ds.Tables["PatientCredientials"].Rows[0]["Lname"].ToString();
-                Session["Patient_SSN"] = ds.Tables["PatientCredientials"].Rows[0]["SSN"].ToString();
-
                 if (dt.Rows.Count > 0)
                 {
+                    Session["Patient_email"] = TextBox1.Text;
+                    Session["Patient_FName"] = ds.Tables["PatientCredientials"].Rows[0]["Fname"].ToString();
+                    Session["Patient_Lname"] = ds.Tables["PatientCredientials"].Rows[0]["Lname"].ToString();
+                    Session["Patient_SSN"] = ds.Tables["PatientCredientials"].Rows[0]["SSN"].ToString();
                     Response.Redirect("PatientHome.aspx");
                 }
                 else
