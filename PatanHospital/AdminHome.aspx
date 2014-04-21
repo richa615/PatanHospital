@@ -47,8 +47,8 @@
     <form id="form1" runat="server">
     <div align="center">
     
-        <div align="center" style="border:groove;">
-            <strong style="font-size:xx-large;">Admin Home Page</strong>
+        <div align="center"  style="font-size:xx-large; font-weight:bold; background-color:#25272A;">
+            <h1 style="color:white;">Administrator</h1>
         </div>
         <div align="center">
             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="Login.aspx">Log Out</asp:HyperLink>

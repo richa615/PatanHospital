@@ -16,18 +16,17 @@
         }
     </style>
 </head>
-<body bgcolor=#BDBDBD>
+<body bgcolor=#666>
     <form id="form1" runat="server">
-    <div>
     
     <div align="center">
-    <div style="font-size:xx-large; font-weight:bold;"> 
-        Doctor Home
+    <div style="font-size:xx-large; font-weight:bold; background-color:#25272A;"> 
+        <h1 style="color:white;">Doctor</h1>
     </div>
         <div style="padding:10px;">
             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
         </div>
-        <div style="width:201px; height: 93px; background-color:white;">
+        <div style="width:201px; height: 93px; background-color:#25272A;">
             <div style="padding:10px;">
                 <asp:Button ID="Button4" runat="server" OnClick="Button2_Click" style="font-weight: 700;" Text="View Profile" />
             </div>

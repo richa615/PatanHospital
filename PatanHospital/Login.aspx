@@ -100,37 +100,21 @@
         {
             width: 218px;
         }
+        .user 
+        {
+            color: lightblue;
+        }
     </style>
 </head>
 <body bgcolor=#BDBDBD>
     <form id="form1" runat="server">
     <div align="center">
-    
-        <table class="style1" id="Table 1">
-            <tr>
-                <td class="style2">
-                    Login Portal</td>
-                <td class="style3">
-                    &nbsp;</td>
-                <td class="style4">
-                    &nbsp;</td>
-                <td class="style5">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style6">
-                    </td>
-                <td class="style7">
-                    </td>
-                <td class="style8">
-                    </td>
-                <td class="style9">
-                    </td>
-                <td class="style10">
-                    </td>
-            </tr>
+        <div style="font-size:xx-large; font-weight:bold; background-color:#25272A;"> 
+            <h1 style="color:white;">Patan Hospital</h1>
+        </div>
+        <div>
+            <table class="style1" id="Table 1">
+
             <tr>
                 <td class="style2">
                     <asp:RadioButton ID="RadioButton1" runat="server" 
@@ -266,6 +250,8 @@
                 &nbsp;</td>
         </tr>
     </table>
+        </div>
+    </div>
     </form>
 </body>
 </html>
