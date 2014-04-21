@@ -31,7 +31,7 @@
                 <asp:Button ID="Button4" runat="server" OnClick="Button2_Click" style="font-weight: 700;" Text="View Profile" />
             </div>
             <div>
-                <asp:Button ID="Button6" runat="server" style="font-weight: 700" Text="View Schedule" />
+                <asp:Button ID="Button6" runat="server" style="font-weight: 700" Text="View Schedule" OnClick="Button6_Click" />
             </div>   
         </div>
          

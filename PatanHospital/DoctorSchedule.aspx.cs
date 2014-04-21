@@ -65,7 +65,7 @@ namespace PatanHospital
             ConnectionStringSettings connectionString = rootWebConfig.ConnectionStrings.ConnectionStrings["HospitalServerConnectionString"];
             SqlConnection sqlConnection = new SqlConnection(connectionString.ToString());
             sqlConnection.Open();
-            string Query = "SELECT DoctorSchedule.Date, DoctorSchedule.Start_Time, DoctorSchedule.End_Time, PatientCredientials.Fname+' '+ PatientCredientials.Lname as Name FROM PatientCredientials INNER JOIN DoctorSchedule ON PatientCredientials.SSN = DoctorSchedule.P_SSN where D_SSN ='" + this.Label1.Text + "' and Date ='" + this.TextBox1.Text + "'; ";
+            string Query = "SELECT DoctorSchedule.Date, DoctorSchedule.Start_Time, DoctorSchedule.End_Time, PatientCredientials.Fname+' '+ PatientCredientials.Lname as Patient_Name FROM PatientCredientials INNER JOIN DoctorSchedule ON PatientCredientials.SSN = DoctorSchedule.P_SSN where D_SSN ='" + this.Label1.Text + "' and Date ='" + this.TextBox1.Text + "'; ";
             SqlCommand cmd = new SqlCommand(Query, sqlConnection);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataSet ds = new DataSet();

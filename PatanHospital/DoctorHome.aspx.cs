@@ -24,5 +24,10 @@ namespace PatanHospital
             Response.Redirect("DoctorSchedule.aspx");
         }
 
+        protected void Button6_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("DoctorSchedule.aspx");
+        }
+
     }
 }

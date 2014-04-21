@@ -80,6 +80,14 @@
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="AdminHome.aspx" />
+    <Content Include="Content\css\bootstrap-theme.css" />
+    <Content Include="Content\css\bootstrap-theme.min.css" />
+    <Content Include="Content\css\bootstrap.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Css\StyleSheet.css" />
+    <Content Include="Images\home_mar_14.png" />
+    <Content Include="Images\Static-Background.jpg" />
+    <Content Include="JavaScript\jquery-1.3.2.min.js" />
     <Content Include="DeleteDoctor.aspx" />
     <Content Include="DeletePatient.aspx" />
     <Content Include="DoctorHome.aspx" />
@@ -88,6 +96,18 @@
     <Content Include="EditPatient.aspx" />
     <Content Include="DeleteAppointment.aspx" />
     <Content Include="ForgotPassword.aspx" />
+    <Content Include="HomePage.aspx" />
+    <Content Include="Images\banner.jpg" />
+    <Content Include="Images\bar_background.png" />
+    <Content Include="Images\coffee1.png" />
+    <Content Include="Images\coffee2.png" />
+    <Content Include="Images\coffee3.png" />
+    <Content Include="Images\Coffee\Cafe-Au-Lait.jpg" />
+    <Content Include="Images\Coffee\caffe_americano.jpg" />
+    <Content Include="Images\Coffee\irish coffee.jpg" />
+    <Content Include="Images\Coffee\white-chocolate-peppermint-mocha.jpg" />
+    <Content Include="Images\glyphicons-halflings-white.png" />
+    <Content Include="Images\glyphicons-halflings.png" />
     <Content Include="PatientHome.aspx" />
     <Content Include="PatientProfile.aspx" />
     <Content Include="PatientScheduleAppointment.aspx" />
@@ -96,11 +116,7 @@
     <Content Include="RegisterPatient.aspx" />
     <Content Include="ScheduleAppointment.aspx" />
     <Content Include="SearchDoctor.aspx" />
-    <Content Include="Styles\Site.css" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
-    <Content Include="Scripts\jquery-1.4.1.js" />
-    <Content Include="Scripts\jquery-1.4.1.min.js" />
     <Content Include="TrialPage.aspx" />
     <Content Include="UpdateDoctor.aspx" />
     <Content Include="UpdatePassword.aspx" />
@@ -217,6 +233,20 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
     <Compile Include="PatientHome.aspx.cs">
       <DependentUpon>PatientHome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -274,13 +304,6 @@
     <Compile Include="SearchDoctor.aspx.designer.cs">
       <DependentUpon>SearchDoctor.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Site.Master.cs">
-      <DependentUpon>Site.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Site.Master.designer.cs">
-      <DependentUpon>Site.Master</DependentUpon>
-    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -315,7 +338,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Account\Web.config" />
-    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\css\bootstrap-theme.css.map" />
+    <Content Include="Content\css\bootstrap.css.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Master.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Coffee\Thumbs.db" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
