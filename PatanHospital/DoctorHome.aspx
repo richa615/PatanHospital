@@ -20,46 +20,6 @@
     <form id="form1" runat="server">
     <div>
     
-        <table class="auto-style1">
-            <tr>
-                <td class="auto-style2"><strong>Doctor Home</strong></td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style2">&nbsp;</td>
-                <td>
-                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style2">
-                    <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" style="font-weight: 700" Text="View Profile" />
-                </td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style2">
-                    <asp:Button ID="Button3" runat="server" style="font-weight: 700" Text="View Schedule" OnClick="Button3_Click" />
-                </td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-        </table>
     <div align="center">
     <div style="font-size:xx-large; font-weight:bold;"> 
         Doctor Home
