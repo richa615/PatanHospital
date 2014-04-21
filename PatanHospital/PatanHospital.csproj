@@ -117,6 +117,7 @@
     <Content Include="ScheduleAppointment.aspx" />
     <Content Include="SearchDoctor.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="SignUp.aspx" />
     <Content Include="TrialPage.aspx" />
     <Content Include="UpdateDoctor.aspx" />
     <Content Include="UpdatePassword.aspx" />
@@ -310,6 +311,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
     </Compile>
     <Compile Include="TrialPage.aspx.cs">
       <DependentUpon>TrialPage.aspx</DependentUpon>
