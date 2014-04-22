@@ -22,6 +22,16 @@
         {
             width: 163px;
         }
+        .auto-style2
+        {
+            width: 119px;
+            font-weight: bold;
+            text-align: left;
+        }
+        .auto-style3
+        {
+            width: 119px;
+        }
         </style>
 </head>
 <body bgcolor="#BDBDBD">
@@ -36,7 +46,7 @@
             <tr>
                 <td class="style3">
                     &nbsp;</td>
-                <td class="style4">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -46,7 +56,7 @@
             <tr>
                 <td class="style3">
                     &nbsp;</td>
-                <td class="style4">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td>
                     <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
@@ -57,7 +67,7 @@
             <tr>
                 <td class="style3">
                     &nbsp;</td>
-                <td class="style4">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -67,10 +77,10 @@
             <tr>
                 <td class="style3">
                     &nbsp;</td>
-                <td class="style4">
+                <td class="auto-style2">
                     First Name:</td>
-                <td>
-                    <asp:TextBox ID="TextBox1" runat="server" Height="20px" Width="165px"></asp:TextBox>
+                <td style="text-align: left">
+                    <asp:TextBox ID="TextBox1" runat="server" Height="20px" Width="150px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
                         ControlToValidate="TextBox1" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
@@ -80,10 +90,10 @@
             <tr>
                 <td class="style3">
                     &nbsp;</td>
-                <td class="style4">
+                <td class="auto-style2">
                     Last Name:</td>
-                <td>
-                    <asp:TextBox ID="TextBox2" runat="server" Height="20px" Width="165px"></asp:TextBox>
+                <td style="text-align: left">
+                    <asp:TextBox ID="TextBox2" runat="server" Height="20px" Width="150px"></asp:TextBox>
                 </td>
                 <td>
                     &nbsp;</td>
@@ -91,10 +101,10 @@
             <tr>
                 <td class="style3">
                     &nbsp;</td>
-                <td class="style4">
+                <td class="auto-style2">
                     SSN:</td>
-                <td>
-                    <asp:TextBox ID="TextBox3" runat="server" Height="20px" Width="165px"></asp:TextBox>
+                <td style="text-align: left">
+                    <asp:TextBox ID="TextBox3" runat="server" Height="20px" Width="150px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
                         ControlToValidate="TextBox3" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
@@ -104,11 +114,11 @@
             <tr>
                 <td class="style3">
                     &nbsp;</td>
-                <td class="style4">
+                <td class="auto-style2">
                     Gender:</td>
-                <td>
+                <td style="text-align: left">
                     <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" 
-                        Height="16px" Width="128px">
+                        Height="30px" Width="160px">
                         <asp:ListItem Value="Male">Male</asp:ListItem>
 	                <asp:ListItem Value="Female">Female</asp:ListItem>
                     </asp:DropDownList>
@@ -119,10 +129,10 @@
             <tr>
                 <td class="style3">
                     &nbsp;</td>
-                <td class="style4">
+                <td class="auto-style2">
                     Address1:</td>
-                <td>
-                    <asp:TextBox ID="TextBox5" runat="server" Height="20px" Width="165px"></asp:TextBox>
+                <td style="text-align: left">
+                    <asp:TextBox ID="TextBox5" runat="server" Height="20px" Width="150px"></asp:TextBox>
                 </td>
                 <td>
                     &nbsp;</td>
@@ -130,10 +140,10 @@
             <tr>
                 <td class="style3">
                     &nbsp;</td>
-                <td class="style4">
+                <td class="auto-style2">
                     Address2:</td>
-                <td>
-                    <asp:TextBox ID="TextBox6" runat="server" Height="20px" Width="165px"></asp:TextBox>
+                <td style="text-align: left">
+                    <asp:TextBox ID="TextBox6" runat="server" Height="20px" Width="150px"></asp:TextBox>
                 </td>
                 <td>
                     &nbsp;</td>
@@ -141,10 +151,10 @@
             <tr>
                 <td class="style3">
                     &nbsp;</td>
-                <td class="style4">
+                <td class="auto-style2">
                     City:</td>
-                <td>
-                    <asp:TextBox ID="TextBox7" runat="server" Height="20px" Width="165px"></asp:TextBox>
+                <td style="text-align: left">
+                    <asp:TextBox ID="TextBox7" runat="server" Height="20px" Width="150px"></asp:TextBox>
                 </td>
                 <td>
                     &nbsp;</td>
@@ -152,11 +162,11 @@
             <tr>
                 <td class="style3">
                     &nbsp;</td>
-                <td class="style4">
+                <td class="auto-style2">
                     State:</td>
-                <td>
+                <td style="text-align: left">
                     <asp:DropDownList ID="DropDownList2" runat="server" AutoPostBack="True" 
-                        Height="16px" Width="159px">
+                        Height="30px" Width="160px">
                         <asp:ListItem Value="AL">Alabama</asp:ListItem>
 	                    <asp:ListItem Value="AK">Alaska</asp:ListItem>
 	                    <asp:ListItem Value="AZ">Arizona</asp:ListItem>
@@ -216,10 +226,10 @@
             <tr>
                 <td class="style3">
                     &nbsp;</td>
-                <td class="style4">
+                <td class="auto-style2">
                     ZipCode:</td>
-                <td>
-                    <asp:TextBox ID="TextBox8" runat="server" Height="20px" Width="165px"></asp:TextBox>
+                <td style="text-align: left">
+                    <asp:TextBox ID="TextBox8" runat="server" Height="20px" Width="150px"></asp:TextBox>
                 </td>
                 <td>
                     &nbsp;</td>
@@ -227,10 +237,10 @@
             <tr>
                 <td class="style3">
                     &nbsp;</td>
-                <td class="style4">
+                <td class="auto-style2">
                     Phone Number:</td>
-                <td>
-                    <asp:TextBox ID="TextBox9" runat="server" Height="20px" Width="165px"></asp:TextBox>
+                <td style="text-align: left">
+                    <asp:TextBox ID="TextBox9" runat="server" Height="20px" Width="150px"></asp:TextBox>
                 </td>
                 <td>
                     &nbsp;</td>
@@ -238,10 +248,10 @@
             <tr>
                 <td class="style3">
                     &nbsp;</td>
-                <td class="style4">
+                <td class="auto-style2">
                     Email:</td>
-                <td>
-                    <asp:TextBox ID="TextBox10" runat="server" Height="20px" Width="165px"></asp:TextBox>
+                <td style="text-align: left">
+                    <asp:TextBox ID="TextBox10" runat="server" Height="20px" Width="150px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
                         ControlToValidate="TextBox10" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
@@ -251,7 +261,7 @@
             <tr>
                 <td class="style3">
                     &nbsp;</td>
-                <td class="style4">
+                <td class="auto-style2">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -261,14 +271,14 @@
             <tr>
                 <td class="style3">
                     &nbsp;</td>
-                <td class="style4">
+                <td class="auto-style3">
                     &nbsp;</td>
-                <td>
-                    <asp:Button ID="Button1" runat="server" Height="24px" onclick="Button1_Click" 
-                        Text="Save" Width="87px" />
+                <td style="text-align: left">
+                    <asp:Button ID="Button1" runat="server" Height="30px" onclick="Button1_Click" 
+                        Text="Save" Width="160px" style="font-weight: 700" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="Button2" runat="server" CausesValidation="False" Height="26px" 
-                        Text="Cancel" Width="82px" onclick="Button2_Click" />
+                    <asp:Button ID="Button2" runat="server" CausesValidation="False" Height="30px" 
+                        Text="Cancel" Width="160px" onclick="Button2_Click" style="font-weight: 700" />
                 </td>
                 <td>
                     &nbsp;</td>

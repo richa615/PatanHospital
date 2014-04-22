@@ -50,14 +50,15 @@
         </tr>
         <tr class="AltRowStyle">
         <td class="auto-style5">
-            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Home" />
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Home" Height="30px" style="font-weight: 700" Width="160px" />
             </td>
         <td class="auto-style3">&nbsp;</td>
         <td class="auto-style4">
+            &nbsp;</td>
+        <td class="auto-style4">&nbsp;</td>
+        <td class="auto-style4">
             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
             </td>
-        <td class="auto-style4">&nbsp;</td>
-        <td class="auto-style4">&nbsp;</td>
         </tr>
         <tr class="AltRowStyle">
         <td class="auto-style5">&nbsp;</td>
@@ -67,16 +68,16 @@
         <td class="auto-style4">&nbsp;</td>
         </tr>
         <tr class="AltRowStyle">
-        <td class="auto-style5">Patient Name</td>
+        <td class="auto-style5"><strong>Patient Name</strong></td>
         <td class="auto-style3"><asp:DropDownList ID="PatientName" runat="server" AppendDataBoundItems="True" 
             AutoPostBack="True" DataSourceID="sqlDataSourcePatientName" DataTextField="PName" 
-            DataValueField="PName" Width="125px" Height="20px">
+            DataValueField="PName" Width="150px" Height="30px">
             <asp:ListItem Value="%">All</asp:ListItem>
         </asp:DropDownList></td>
-        <td class="auto-style4">Doctor Name</td>
+        <td class="auto-style4"><strong>Doctor Name</strong></td>
         <td class="auto-style4"><asp:DropDownList ID="DoctorName" runat="server" AppendDataBoundItems="True" 
             AutoPostBack="True" DataSourceID="sqlDataSourceDoctorName" 
-            DataTextField="DName" DataValueField="DName" Width="125px" Height="20px">
+            DataTextField="DName" DataValueField="DName" Width="150px" Height="30px">
             <asp:ListItem Value="%">All</asp:ListItem>
         </asp:DropDownList></td>
         <td class="auto-style4"></td>

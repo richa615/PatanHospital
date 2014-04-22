@@ -20,9 +20,13 @@
             width: 125px;
             height: 21px;
         }
-        .auto-style5
+        .auto-style6
         {
-            width: 136px;
+            width: 72px;
+        }
+        .auto-style7
+        {
+            width: 72px;
             height: 21px;
         }
     </style>
@@ -32,7 +36,7 @@
     <div>
         <table style="width:650px" border="0" cellspacing="0" class="GridViewStyle">
         <tr class="HeaderStyle">
-        <th class="auto-style1">&nbsp;</th>
+        <th class="auto-style6">&nbsp;</th>
         <th style="width:200px">&nbsp;</th>
         <th style="width:125px">&nbsp;</th>
         <th style="width:125px">&nbsp;</th>
@@ -42,47 +46,55 @@
         <th class="auto-style1" colspan="5">Search For Doctor</th>
         </tr>
         <tr class="HeaderStyle">
-        <th class="auto-style1">&nbsp;</th>
+        <th class="auto-style6">&nbsp;</th>
         <th style="width:200px">&nbsp;</th>
         <th style="width:125px">&nbsp;</th>
         <th style="width:125px">&nbsp;</th>
         <th style="width:125px">&nbsp;</th>
         </tr>
         <tr class="AltRowStyle">
-        <td class="auto-style5">
-            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Home" />
+        <td class="auto-style7">
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Home" Height="30px" style="font-weight: 700" Width="160px" />
             </td>
         <td class="auto-style3">&nbsp;</td>
         <td class="auto-style4">
+            &nbsp;</td>
+        <td class="auto-style4">&nbsp;</td>
+        <td class="auto-style4">
             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
             </td>
-        <td class="auto-style4">&nbsp;</td>
-        <td class="auto-style4">&nbsp;</td>
         </tr>
         <tr class="AltRowStyle">
-        <td class="auto-style5">&nbsp;</td>
+        <td class="auto-style7">&nbsp;</td>
         <td class="auto-style3">&nbsp;</td>
         <td class="auto-style4">&nbsp;</td>
         <td class="auto-style4">&nbsp;</td>
         <td class="auto-style4">&nbsp;</td>
         </tr>
         <tr class="AltRowStyle">
-        <td class="auto-style5">Zip Code:</td>
+        <td class="auto-style7">&nbsp;</td>
+        <td class="auto-style3">&nbsp;</td>
+        <td class="auto-style4">&nbsp;</td>
+        <td class="auto-style4">&nbsp;</td>
+        <td class="auto-style4">&nbsp;</td>
+        </tr>
+        <tr class="AltRowStyle">
+        <td class="auto-style7"><strong style="text-align: right">Zip Code:</strong></td>
         <td class="auto-style3"><asp:DropDownList ID="DoctorZipCode" runat="server" AppendDataBoundItems="True" 
             AutoPostBack="True" DataSourceID="sqlDataSourceDoctorZipCode" DataTextField="ZipCode" 
-            DataValueField="ZipCode" Width="125px" Height="20px">
+            DataValueField="ZipCode" Width="160px" Height="30px">
             <asp:ListItem Value="%">All</asp:ListItem>
         </asp:DropDownList></td>
-        <td class="auto-style4"><strong>Speciality</strong></td>
+        <td class="auto-style4"><strong>Speciality:</strong></td>
         <td class="auto-style4"><asp:DropDownList ID="DoctorSpeciality" runat="server" AppendDataBoundItems="True" 
             AutoPostBack="True" DataSourceID="sqlDataSourceDoctorSpeciality" 
-            DataTextField="Speciality" DataValueField="Speciality" Width="125px" Height="20px">
+            DataTextField="Speciality" DataValueField="Speciality" Width="160px" Height="30px">
             <asp:ListItem Value="%">All</asp:ListItem>
         </asp:DropDownList></td>
         <td class="auto-style4"></td>
         </tr>
         <tr class="AltRowStyle">
-        <td class="auto-style1">&nbsp;</td>
+        <td class="auto-style6">&nbsp;</td>
         <td style="width:200px">&nbsp;</td>
         <td style="width:125px">&nbsp;</td>
         <td style="width:125px">&nbsp;</td>
@@ -129,7 +141,7 @@
         </tr>
         <tr>
         <td colspan="5">
-            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" style="font-weight: 700" Text="Done" />
+            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" style="font-weight: 700" Text="Done" Height="30px" Width="160px" />
         </td>
         </tr>
         <tr>

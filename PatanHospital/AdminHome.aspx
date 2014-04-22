@@ -41,6 +41,25 @@
         {
             height: 14px;
         }
+        .auto-style5
+        {
+            width: 154px;
+            height: 34px;
+        }
+        .auto-style6
+        {
+            width: 24px;
+            height: 34px;
+        }
+        .auto-style7
+        {
+            width: 202px;
+            height: 34px;
+        }
+        .auto-style8
+        {
+            height: 34px;
+        }
     </style>
 </head>
 <body bgcolor=#BDBDBD>
@@ -50,7 +69,7 @@
         <div align="center"  style="font-size:xx-large; font-weight:bold; background-color:#25272A;">
             <h1 style="color:white;">Administrator</h1>
         </div>
-        <div align="center">
+        <div align="center" style="text-align: right">
             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="Login.aspx">Log Out</asp:HyperLink>
         </div>
         <table class="style1">
@@ -85,19 +104,19 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style5">
                     <asp:Button ID="Button1" runat="server" onclick="Button1_Click" 
-                        Text="Register a Patient" Width="150px" />
+                        Text="Register a Patient" Width="175px" Height="30px" style="font-weight: 700" />
                 </td>
-                <td class="style4">
-                    &nbsp;</td>
-                <td class="style3">
+                <td class="auto-style6">
+                    </td>
+                <td class="auto-style7">
                     <asp:Button ID="Button2" runat="server" onclick="Button2_Click" 
-                        Text="Register a Doctor" Width="150px" />
+                        Text="Register a Doctor" Width="175px" Height="30px" style="font-weight: 700" />
                 </td>
-                <td>
+                <td class="auto-style8">
                     <asp:Button ID="Button9" runat="server" Text="Schedule Appointments" 
-                        onclick="Button9_Click" />
+                        onclick="Button9_Click" Height="30px" style="font-weight: 700" Width="175px" />
                 </td>
             </tr>
             <tr>
@@ -113,16 +132,16 @@
             <tr>
                 <td class="auto-style1">
                     <asp:Button ID="Button5" runat="server" Text="Edit Patient Information" 
-                        Width="150px" onclick="Button5_Click" />
+                        Width="175px" onclick="Button5_Click" Height="30px" style="font-weight: 700" />
                 </td>
                 <td class="auto-style2">
                     </td>
                 <td class="auto-style3">
                     <asp:Button ID="Button7" runat="server" onclick="Button7_Click" 
-                        Text="Edit Doctor Information" Width="150px" />
+                        Text="Edit Doctor Information" Width="175px" Height="30px" style="font-weight: 700" />
                 </td>
                 <td class="auto-style4">
-                    <asp:Button ID="Button11" runat="server" Text="Delete Appointments" OnClick="Button11_Click" />
+                    <asp:Button ID="Button11" runat="server" Text="Delete Appointments" OnClick="Button11_Click" Height="30px" style="font-weight: 700" Width="175px" />
                 </td>
             </tr>
             <tr>
@@ -138,13 +157,13 @@
             <tr>
                 <td class="style2">
                     <asp:Button ID="Button12" runat="server" Text="Delete Patients" 
-                        onclick="Button12_Click" />
+                        onclick="Button12_Click" Height="30px" style="font-weight: 700" Width="175px" />
                 </td>
                 <td class="style4">
                     &nbsp;</td>
                 <td class="style3">
                     <asp:Button ID="Button13" runat="server" Text="Delete Doctor" 
-                        onclick="Button13_Click" />
+                        onclick="Button13_Click" Height="30px" style="font-weight: 700" Width="175px" />
                 </td>
                 <td>
                     &nbsp;</td>
@@ -165,7 +184,7 @@
                 <td class="style4">
                     &nbsp;</td>
                 <td class="style3">
-                    <asp:Button ID="Button8" runat="server" Text="Search Doctor" OnClick="Button8_Click" />
+                    <asp:Button ID="Button8" runat="server" Text="Search Doctor" OnClick="Button8_Click" Height="30px" style="font-weight: 700" Width="175px" />
                 </td>
                 <td>
                     &nbsp;</td>

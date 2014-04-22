@@ -119,21 +119,21 @@
                 <td class="style2">
                     <asp:RadioButton ID="RadioButton1" runat="server" 
                         oncheckedchanged="RadioButton1_CheckedChanged" Text="Administrator" 
-                        AutoPostBack="True" GroupName="login" />
+                        AutoPostBack="True" GroupName="login" style="font-weight: 700" />
                 </td>
                 <td class="style3">
                     &nbsp;</td>
                 <td class="style4">
                     <asp:RadioButton ID="RadioButton2" runat="server" Text="Doctor" 
                         AutoPostBack="True" GroupName="login" 
-                        oncheckedchanged="RadioButton2_CheckedChanged" />
+                        oncheckedchanged="RadioButton2_CheckedChanged" style="font-weight: 700" />
                 </td>
                 <td class="style5">
                     &nbsp;</td>
                 <td>
                     <asp:RadioButton ID="RadioButton3" runat="server" Text="Patient" 
                         AutoPostBack="True" GroupName="login" 
-                        oncheckedchanged="RadioButton3_CheckedChanged" />
+                        oncheckedchanged="RadioButton3_CheckedChanged" style="font-weight: 700" />
                 </td>
             </tr>
             <tr>
@@ -177,10 +177,10 @@
             <td class="style22">
             </td>
             <td class="style13">
-                <asp:Label ID="Label2" runat="server" Text="Label" Visible="False"></asp:Label>
+                <asp:Label ID="Label2" runat="server" Text="Label" Visible="False" style="font-weight: 700"></asp:Label>
             </td>
             <td class="style16">
-                <asp:TextBox ID="TextBox1" runat="server" Width="221px"></asp:TextBox>
+                <asp:TextBox ID="TextBox1" runat="server" Width="160px" Height="20px"></asp:TextBox>
             </td>
             <td class="style20">
             </td>
@@ -189,9 +189,9 @@
             <td class="style23">
                 &nbsp;</td>
             <td class="style14">
-                Password:</td>
+                <strong>Password:</strong></td>
             <td class="style15">
-                <asp:TextBox ID="TextBox2" runat="server" TextMode="Password" Height="22px" Width="218px"></asp:TextBox>
+                <asp:TextBox ID="TextBox2" runat="server" TextMode="Password" Height="20px" Width="160px"></asp:TextBox>
             </td>
             <td>
                 &nbsp;</td>
@@ -210,15 +210,15 @@
             <td class="style23">
                 &nbsp;</td>
             <td class="style14">
-                &nbsp;</td>
-            <td class="style15">
                 <asp:Button ID="Button1" runat="server" Text="Sign In" 
-                    onclick="Button1_Click1" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="Button2" runat="server" Text="Cancel" onclick="Button2_Click" />
+                    onclick="Button1_Click1" Height="30px" style="font-weight: 700" Width="150px" />
+            </td>
+            <td class="style15">
+&nbsp;&nbsp;<asp:Button ID="Button2" runat="server" Text="Cancel" onclick="Button2_Click" Height="30px" style="font-weight: 700" Width="160px" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </td>
             <td>
-            </td>
+                &nbsp;</td>
             <td>
                 &nbsp;</td>
         </tr>

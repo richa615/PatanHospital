@@ -16,6 +16,7 @@
         .style3
         {
             width: 196px;
+            text-align: left;
         }
         .style4
         {
@@ -31,6 +32,23 @@
         }
         .auto-style1 {
             font-size: xx-large;
+        }
+        .auto-style2
+        {
+            width: 141px;
+            text-align: right;
+        }
+        .auto-style3
+        {
+            width: 141px;
+            text-align: right;
+            font-weight: bold;
+        }
+        .auto-style4
+        {
+            width: 126px;
+            font-weight: bold;
+            text-align: right;
         }
     </style>
 </head>
@@ -59,40 +77,40 @@
             </tr>
             <tr>
                 <td class="style7">
-                    <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" style="font-weight: 700" Text="Home" />
+                    <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" style="font-weight: 700" Text="Home" Height="30px" Width="160px" />
                 </td>
                 <td class="style3">
                     &nbsp;</td>
                 <td class="style4">
+                    &nbsp;</td>
+                <td style="text-align: right">
                     <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
                 </td>
-                <td>
-                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="style7">
                     &nbsp;</td>
                 <td class="style3">
-                    &nbsp;</td>
-                <td class="style4">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style7">
-                    Name:</td>
-                <td class="style3">
-                    <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" 
-                        DataSourceID="SqlDataSource1" DataTextField="Name" DataValueField="SSN" 
-                        onselectedindexchanged="DropDownList1_SelectedIndexChanged">
-                    </asp:DropDownList>
                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
                         ConnectionString="<%$ ConnectionStrings:HospitalServerConnectionString %>" 
                         
                         SelectCommand="SELECT Fname + ' ' + Lname AS Name, SSN FROM DoctorCrediantials" 
                         onselecting="SqlDataSource1_Selecting">
                     </asp:SqlDataSource>
+                </td>
+                <td class="style4">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    <strong>Name:</strong></td>
+                <td class="style3">
+                    <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" 
+                        DataSourceID="SqlDataSource1" DataTextField="Name" DataValueField="SSN" 
+                        onselectedindexchanged="DropDownList1_SelectedIndexChanged" Height="30px" Width="160px">
+                    </asp:DropDownList>
                 </td>
                 <td class="style4">
                     &nbsp;</td>
@@ -131,106 +149,106 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style7">
+                <td class="auto-style3">
                     First Name:</td>
                 <td class="style3">
-                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" Height="20px" Width="150px"></asp:TextBox>
                 </td>
-                <td class="style4">
+                <td class="auto-style4">
                     Last Name:</td>
-                <td>
-                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                <td style="text-align: left">
+                    <asp:TextBox ID="TextBox2" runat="server" Height="20px" Width="150px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="style7">
+                <td class="auto-style3">
                     SSN:</td>
                 <td class="style3">
-                    <asp:TextBox ID="TextBox3" runat="server" ontextchanged="TextBox3_TextChanged"></asp:TextBox>
+                    <asp:TextBox ID="TextBox3" runat="server" ontextchanged="TextBox3_TextChanged" Height="20px" Width="150px"></asp:TextBox>
                 </td>
-                <td class="style4">
+                <td class="auto-style4">
                     Phone Number:</td>
-                <td>
-                    <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                <td style="text-align: left">
+                    <asp:TextBox ID="TextBox4" runat="server" Height="20px" Width="150px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="style7">
+                <td class="auto-style3">
                     Gender:</td>
                 <td class="style3">
-                    <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBox5" runat="server" Height="20px" Width="150px"></asp:TextBox>
                 </td>
-                <td class="style4">
+                <td class="auto-style4">
                     Email:</td>
-                <td>
-                    <asp:TextBox ID="TextBox6" runat="server" ontextchanged="TextBox6_TextChanged"></asp:TextBox>
+                <td style="text-align: left">
+                    <asp:TextBox ID="TextBox6" runat="server" ontextchanged="TextBox6_TextChanged" Height="20px" Width="150px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="style7">
+                <td class="auto-style3">
                     Address1:</td>
                 <td class="style3">
-                    <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBox7" runat="server" Height="20px" Width="150px"></asp:TextBox>
                 </td>
-                <td class="style4">
+                <td class="auto-style4">
                     Address2:</td>
-                <td>
-                    <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
+                <td style="text-align: left">
+                    <asp:TextBox ID="TextBox8" runat="server" Height="20px" Width="150px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="style7">
+                <td class="auto-style3">
                     City:</td>
                 <td class="style3">
-                    <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBox9" runat="server" Height="20px" Width="150px"></asp:TextBox>
                 </td>
-                <td class="style4">
+                <td class="auto-style4">
                     State:</td>
-                <td>
-                    <asp:TextBox ID="TextBox10" runat="server"></asp:TextBox>
+                <td style="text-align: left">
+                    <asp:TextBox ID="TextBox10" runat="server" Height="20px" Width="150px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="style7">
+                <td class="auto-style3">
                     ZipCode:</td>
                 <td class="style3">
-                    <asp:TextBox ID="TextBox11" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBox11" runat="server" Height="20px" Width="150px"></asp:TextBox>
                 </td>
-                <td class="style4">
+                <td class="auto-style4">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style7">
+                <td class="auto-style3">
                     Education:</td>
                 <td class="style3">
-                    <asp:TextBox ID="TextBox12" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBox12" runat="server" Height="20px" Width="150px"></asp:TextBox>
                 </td>
-                <td class="style4">
+                <td class="auto-style4">
                     Residency:</td>
-                <td>
-                    <asp:TextBox ID="TextBox13" runat="server"></asp:TextBox>
+                <td style="text-align: left">
+                    <asp:TextBox ID="TextBox13" runat="server" Height="20px" Width="150px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="style7">
+                <td class="auto-style3">
                     Date of Graduation:</td>
                 <td class="style3">
-                    <asp:TextBox ID="TextBox14" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBox14" runat="server" Height="20px" Width="150px"></asp:TextBox>
                 </td>
-                <td class="style4">
+                <td class="auto-style4">
                     Speciality:</td>
-                <td>
-                    <asp:TextBox ID="TextBox15" runat="server"></asp:TextBox>
+                <td style="text-align: left">
+                    <asp:TextBox ID="TextBox15" runat="server" Height="20px" Width="150px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="style7">
+                <td class="auto-style3">
                     NPI:</td>
                 <td class="style3">
                     <asp:TextBox ID="TextBox16" runat="server" 
-                        ontextchanged="TextBox16_TextChanged" ></asp:TextBox>
+                        ontextchanged="TextBox16_TextChanged" Height="20px" Width="150px" ></asp:TextBox>
                 </td>
                 <td class="style4">
                     &nbsp;</td>
@@ -251,15 +269,15 @@
                 <td class="style7">
                     &nbsp;</td>
                 <td class="style3">
-                    <asp:Button ID="Button1" runat="server" Height="24px" onclick="Button1_Click" 
-                        Text="Update" Width="83px" />
+                    <asp:Button ID="Button1" runat="server" Height="30px" onclick="Button1_Click" 
+                        Text="Update" Width="160px" style="font-weight: 700" />
                 </td>
                 <td class="style4">
-                    <asp:Button ID="Button2" runat="server" Height="24px" onclick="Button2_Click" 
-                        Text="Cancel" Width="83px" />
-                </td>
-                <td>
                     &nbsp;</td>
+                <td>
+                    <asp:Button ID="Button2" runat="server" Height="30px" onclick="Button2_Click" 
+                        Text="Cancel" Width="160px" style="font-weight: 700" />
+                </td>
             </tr>
         </table>
     

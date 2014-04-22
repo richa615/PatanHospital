@@ -55,15 +55,42 @@ namespace PatanHospital
                     Label1.ForeColor = System.Drawing.Color.Red;
                     Label1.Text = "Email address cannot be Empty";
                 }
+                else
+                {
+                    update_patient_information();
+                    DropDownList1.Items.Clear();
+                    
+                        DropDownList1.AppendDataBoundItems = true;
+                        DropDownList1.Items.Insert(0, new ListItem(String.Empty, String.Empty));
+                        DropDownList1.SelectedIndex = 0;
+                    
+                    DropDownList1.DataSourceID = "SqldataSource1";
+                    ClearTextBox();
+                }
+
 
 
             }
 
             catch (Exception ex)
             {
-               // Check_SSN();
+                Check_SSN();
             }
         }
+
+        public void update_patient_information()
+        {
+            Configuration rootWebConfig = WebConfigurationManager.OpenWebConfiguration("/HospitalServer");
+            ConnectionStringSettings connectionString = rootWebConfig.ConnectionStrings.ConnectionStrings["HospitalServerConnectionString"];
+            SqlConnection sqlConnection = new SqlConnection(connectionString.ToString());
+            sqlConnection.Open();
+
+            string Query2 = "Update PatientCredientials SET Fname = '" + TextBox1.Text + "', Lname ='" + TextBox2.Text + "', SSN ='" + TextBox3.Text + "',  Gender = '" + TextBox4.Text + "', Address1 = '" + TextBox5.Text + "', Address2 = '" + TextBox6.Text + "', City = '" + TextBox7.Text + "', State = '" + TextBox8.Text + "', ZipCode = '" + TextBox9.Text + "' , Phone = '" + TextBox10.Text + "', email = '" + TextBox11.Text + "' where SSN ='" + this.DropDownList1.SelectedValue + "'; ";
+            SqlCommand cmd2 = new SqlCommand(Query2, sqlConnection);
+            cmd2.ExecuteNonQuery();
+
+        }
+
 
         public void ClearTextBox()
         {
@@ -135,6 +162,7 @@ namespace PatanHospital
             {
                 ClearTextBox();
                 FillData();
+               
                 
             }
             catch (Exception ex)

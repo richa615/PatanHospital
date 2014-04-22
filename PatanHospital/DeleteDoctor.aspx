@@ -37,7 +37,7 @@
             </tr>
             <tr>
                 <td class="style2">
-                    <asp:Button ID="Button5" runat="server" OnClick="Button5_Click" style="font-weight: 700" Text="Home" />
+                    <asp:Button ID="Button5" runat="server" OnClick="Button5_Click" Text="Home" Height="30px" Width="160px" />
                 </td>
                 <td>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
@@ -70,10 +70,10 @@
             </tr>
             <tr>
                 <td class="style2">
-                    Name:</td>
+                    <strong>Name:</strong></td>
                 <td>
                     <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" 
-                        DataSourceID="SqlDataSource1" DataTextField="Name" DataValueField="SSN">
+                        DataSourceID="SqlDataSource1" DataTextField="Name" DataValueField="SSN" Height="30px" Width="160px">
                     </asp:DropDownList>
                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
                         ConnectionString="<%$ ConnectionStrings:HospitalServerConnectionString %>" 
@@ -89,9 +89,9 @@
                 <td class="style2">
                     &nbsp;</td>
                 <td>
-                    <asp:Button ID="Button1" runat="server" Text="Delete" onclick="Button1_Click" />
+                    <asp:Button ID="Button1" runat="server" Text="Delete" onclick="Button1_Click" Height="30px" style="font-weight: 700" Width="150px" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="Button2" runat="server" Text="Cancel" onclick="Button2_Click" />
+                    <asp:Button ID="Button2" runat="server" Text="Cancel" onclick="Button2_Click" Height="30px" style="font-weight: 700" Width="150px" />
                 </td>
                 <td>
                     &nbsp;</td>
@@ -114,9 +114,9 @@
     <table id="Table2" class="style1" runat ="server" align="center">
         <tr>
             <td class="style3">
-                Name:</td>
+                <strong>Name:</strong></td>
             <td>
-                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox1" runat="server" Height="20px" Width="150px"></asp:TextBox>
             </td>
             <td>
                 &nbsp;</td>
@@ -125,9 +125,9 @@
         </tr>
         <tr>
             <td class="style3">
-                SSN</td>
+                <strong>SSN:</strong></td>
             <td>
-                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox2" runat="server" Height="20px" Width="150px"></asp:TextBox>
             </td>
             <td>
                 &nbsp;</td>
@@ -136,9 +136,9 @@
         </tr>
         <tr>
             <td class="style3">
-                Phone:</td>
+                <strong>Phone:</strong></td>
             <td>
-                <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox3" runat="server" Height="20px" Width="150px"></asp:TextBox>
             </td>
             <td>
                 &nbsp;</td>
@@ -147,9 +147,9 @@
         </tr>
         <tr>
             <td class="style3">
-                Email:</td>
+                <strong>Email:</strong></td>
             <td>
-                <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox4" runat="server" Height="20px" Width="150px"></asp:TextBox>
             </td>
             <td>
                 &nbsp;</td>
@@ -171,9 +171,9 @@
                 &nbsp;</td>
             <td>
                 <asp:Button ID="Button3" runat="server" Text="Confirm Deletion" 
-                    onclick="Button3_Click" />
+                    onclick="Button3_Click" Height="30px" style="font-weight: 700" Width="150px" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="Button4" runat="server" onclick="Button4_Click" Text="Cancel" />
+                <asp:Button ID="Button4" runat="server" onclick="Button4_Click" Text="Cancel" Height="30px" style="font-weight: 700" Width="150px" />
             </td>
             <td>
                 &nbsp;</td>

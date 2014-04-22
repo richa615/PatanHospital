@@ -13,6 +13,13 @@
         .style2
         {
             width: 148px;
+            text-align: left;
+        }
+        .auto-style2
+        {
+            width: 148px;
+            text-align: left;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -33,7 +40,7 @@
             </tr>
             <tr>
                 <td class="style2">
-                    <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" style="font-weight: 700" Text="Home" CausesValidation="False" />
+                    <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" style="font-weight: 700" Text="Home" CausesValidation="False" Height="30px" Width="160px" />
                 </td>
                 <td>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
@@ -65,10 +72,10 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style2">
                     Education:</td>
-                <td>
-                    <asp:TextBox ID="TextBox1" runat="server" Width="150px"></asp:TextBox>
+                <td style="text-align: left">
+                    <asp:TextBox ID="TextBox1" runat="server" Width="150px" Height="20px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
                         ControlToValidate="TextBox1" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
@@ -78,10 +85,10 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style2">
                     Residency:</td>
-                <td>
-                    <asp:TextBox ID="TextBox2" runat="server" Width="150px"></asp:TextBox>
+                <td style="text-align: left">
+                    <asp:TextBox ID="TextBox2" runat="server" Width="150px" Height="20px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
                         ControlToValidate="TextBox2" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
@@ -91,10 +98,10 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style2">
                     Date of Graduation:</td>
-                <td>
-                    <asp:TextBox ID="TextBox3" runat="server" Width="150px"></asp:TextBox>
+                <td style="text-align: left">
+                    <asp:TextBox ID="TextBox3" runat="server" Width="150px" Height="20px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
                         ControlToValidate="TextBox3" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
@@ -104,10 +111,10 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style2">
                     Speciality:</td>
-                <td>
-                    <asp:DropDownList ID="DropDownList1" runat="server" Width="150px">
+                <td style="text-align: left">
+                    <asp:DropDownList ID="DropDownList1" runat="server" Width="160px" Height="30px">
                             <asp:ListItem Value="Acupuncture">Acupuncture</asp:ListItem>
 	                        <asp:ListItem Value="Addiction Psychiatry">Addiction Psychiatry</asp:ListItem>
 	                        <asp:ListItem Value="Adolescent Medicine">Adolescent Medicine</asp:ListItem>
@@ -150,10 +157,10 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style2">
                     NPI:</td>
-                <td>
-                    <asp:TextBox ID="TextBox4" runat="server" Width="150px"></asp:TextBox>
+                <td style="text-align: left">
+                    <asp:TextBox ID="TextBox4" runat="server" Width="150px" Height="20px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" 
                         ControlToValidate="TextBox4" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
@@ -175,12 +182,12 @@
             <tr>
                 <td class="style2">
                     &nbsp;</td>
-                <td>
-                    <asp:Button ID="Button1" runat="server" Height="25px" onclick="Button1_Click" 
-                        Text="Save" Width="108px" />
+                <td style="text-align: left">
+                    <asp:Button ID="Button1" runat="server" Height="30px" onclick="Button1_Click" 
+                        Text="Save" Width="160px" style="font-weight: 700" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Button ID="Button2" runat="server" Text="Cancel" onclick="Button2_Click" 
-                        CausesValidation="False" />
+                        CausesValidation="False" Height="30px" style="font-weight: 700" Width="160px" />
                 </td>
                 <td>
                     &nbsp;</td>

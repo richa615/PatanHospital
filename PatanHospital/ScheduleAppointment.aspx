@@ -34,20 +34,47 @@ TagPrefix="ajaxToolkit" %>
         {
             width: 101px;
             height: 23px;
+            font-weight: bold;
         }
         .auto-style6
         {
             width: 102px;
             height: 23px;
+            font-weight: bold;
         }
         .auto-style7
         {
             width: 113px;
             height: 23px;
+            font-weight: bold;
         }
         .auto-style8
         {
             height: 23px;
+        }
+        .auto-style9
+        {
+            width: 145px;
+            font-weight: bold;
+        }
+        .auto-style10
+        {
+            font-weight: bold;
+        }
+        .auto-style11
+        {
+            width: 113px;
+            font-weight: bold;
+        }
+        .auto-style12
+        {
+            width: 102px;
+            font-weight: bold;
+        }
+        .auto-style13
+        {
+            width: 101px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -61,13 +88,13 @@ TagPrefix="ajaxToolkit" %>
                     Page to Schedule Appointment:</td>
             </tr>
             <tr>
-                <td>
-                    <asp:Button ID="Button9" runat="server" OnClick="Button9_Click" style="font-weight: 700" Text="Home" />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
+                <td style="text-align: left">
+                    <asp:Button ID="Button9" runat="server" OnClick="Button9_Click" style="font-weight: 700" Text="Home" Height="30px" Width="160px" />
+
                 </td>
                 <td>
-                    &nbsp;</td>
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
+                </td>
             </tr>
             <tr>
                 <td>
@@ -91,9 +118,9 @@ TagPrefix="ajaxToolkit" %>
             </tr>
             <tr>
                 <td>
-                    <asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="Yes" />
+                    <asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="Yes" Height="30px" style="font-weight: 700" Width="160px" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="Button2" runat="server" onclick="Button2_Click" Text="No" />
+                    <asp:Button ID="Button2" runat="server" onclick="Button2_Click" Text="No" Height="30px" style="font-weight: 700" Width="160px" />
                 </td>
                 <td>
                     &nbsp;</td>
@@ -105,12 +132,11 @@ TagPrefix="ajaxToolkit" %>
     <table id="Table2" runat = "server" class="style1" align="center">
 
         <tr>
-            <td class="auto-style1">
+            <td class="auto-style9">
                 Patients Name:</td>
             <td>
-                <asp:DropDownList ID="DropDownList3" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList3_SelectedIndexChanged" DataSourceID="SqlDataSource1" DataTextField="Name" DataValueField="SSN" style="margin-bottom: 0px">
+                <asp:DropDownList ID="DropDownList3" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList3_SelectedIndexChanged" DataSourceID="SqlDataSource1" DataTextField="Name" DataValueField="SSN" style="margin-bottom: 0px" Height="30px" Width="160px">
                 </asp:DropDownList>
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:HospitalServerConnectionString %>" SelectCommand="SELECT Fname + ' ' + Lname AS Name, SSN FROM PatientCredientials"></asp:SqlDataSource>
             </td>
             <td>
                 &nbsp;</td>
@@ -118,10 +144,10 @@ TagPrefix="ajaxToolkit" %>
                 &nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style1">
+            <td class="auto-style9">
                 Date:</td>
             <td>
-                <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+                <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged" Height="20px" Width="150px"></asp:TextBox>
                 <ajaxToolkit:CalendarExtender ID="TextBox1_CalendarExtender" runat="server" Enabled="True" TargetControlID="TextBox1">
                 </ajaxToolkit:CalendarExtender>
             </td>
@@ -131,10 +157,10 @@ TagPrefix="ajaxToolkit" %>
                 &nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style1">
+            <td class="auto-style9">
                 Speciality:</td>
             <td>
-                <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" Height="20px" Width="157px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" DataTextField="Speciality" DataValueField="Speciality">
+                <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" Height="30px" Width="160px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" DataTextField="Speciality" DataValueField="Speciality">
                 </asp:DropDownList>
             </td>
             <td>
@@ -143,10 +169,10 @@ TagPrefix="ajaxToolkit" %>
                 &nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style1">
+            <td class="auto-style9">
                 Doctors Name:</td>
             <td>
-                <asp:DropDownList ID="DropDownList2" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged">
+                <asp:DropDownList ID="DropDownList2" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged" Height="30px" Width="160px">
                 </asp:DropDownList>
             </td>
             <td>
@@ -167,7 +193,8 @@ TagPrefix="ajaxToolkit" %>
         </tr>
         <tr>
             <td class="auto-style1">
-                &nbsp;</td>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:HospitalServerConnectionString %>" SelectCommand="SELECT Fname + ' ' + Lname AS Name, SSN FROM PatientCredientials"></asp:SqlDataSource>
+            </td>
             <td>
                 <asp:Label ID="Label20" runat="server" Text="Label"></asp:Label>
             </td>
@@ -186,71 +213,71 @@ TagPrefix="ajaxToolkit" %>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style2">Start Time</td>
-            <td class="auto-style3">End Time</td>
-            <td class="auto-style4">
+            <td class="auto-style13">Start Time</td>
+            <td class="auto-style12">End Time</td>
+            <td class="auto-style11">
                 <asp:HyperLink ID="HyperLink1" runat="server">Availability</asp:HyperLink>
             </td>
-            <td>&nbsp;</td>
+            <td><b></b></td>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style2">
+            <td class="auto-style13">
                 <asp:Label ID="Label7" runat="server" Text="09:00 am"></asp:Label>
             </td>
-            <td class="auto-style3">
+            <td class="auto-style12">
                 <asp:Label ID="Label8" runat="server" Text="10:00 am"></asp:Label>
             </td>
-            <td class="auto-style4">
+            <td class="auto-style11">
                 <asp:Label ID="Label1" runat="server" ForeColor="Green" Text="Available"></asp:Label>
             </td>
             <td>
-                <asp:Button ID="Button3" runat="server" Font-Bold="True" Font-Overline="False" OnClick="Button3_Click" Text="Reserve" />
+                <asp:Button ID="Button3" runat="server" Font-Bold="True" Font-Overline="False" OnClick="Button3_Click" Text="Reserve" CssClass="auto-style10" Height="30px" Width="160px" />
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style2">
+            <td class="auto-style13">
                 <asp:Label ID="Label9" runat="server" Text="10:30 am"></asp:Label>
             </td>
-            <td class="auto-style3">
+            <td class="auto-style12">
                 <asp:Label ID="Label10" runat="server" Text="11:30 am"></asp:Label>
             </td>
-            <td class="auto-style4">
+            <td class="auto-style11">
                 <asp:Label ID="Label2" runat="server" ForeColor="Green" Text="Available"></asp:Label>
             </td>
             <td>
-                <asp:Button ID="Button4" runat="server" Text="Reserve" OnClick="Button4_Click" style="font-weight: 700" />
+                <asp:Button ID="Button4" runat="server" Text="Reserve" OnClick="Button4_Click" CssClass="auto-style10" Height="30px" Width="160px" />
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style2">
+            <td class="auto-style13">
                 <asp:Label ID="Label11" runat="server" Text="12:00 pm"></asp:Label>
             </td>
-            <td class="auto-style3">
+            <td class="auto-style12">
                 <asp:Label ID="Label12" runat="server" Text="01:00 pm"></asp:Label>
             </td>
-            <td class="auto-style4">
+            <td class="auto-style11">
                 <asp:Label ID="Label3" runat="server" ForeColor="Green" Text="Available"></asp:Label>
             </td>
             <td>
-                <asp:Button ID="Button5" runat="server" Text="Reserve" OnClick="Button5_Click" style="font-weight: 700" />
+                <asp:Button ID="Button5" runat="server" Text="Reserve" OnClick="Button5_Click" CssClass="auto-style10" Height="30px" Width="160px" />
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style2">
+            <td class="auto-style13">
                 <asp:Label ID="Label13" runat="server" Text="02:00 pm"></asp:Label>
             </td>
-            <td class="auto-style3">
+            <td class="auto-style12">
                 <asp:Label ID="Label14" runat="server" Text="03:00 pm"></asp:Label>
             </td>
-            <td class="auto-style4">
+            <td class="auto-style11">
                 <asp:Label ID="Label4" runat="server" ForeColor="Green" Text="Available"></asp:Label>
             </td>
             <td>
-                <asp:Button ID="Button6" runat="server" Text="Reserve" OnClick="Button6_Click" style="font-weight: 700" />
+                <asp:Button ID="Button6" runat="server" Text="Reserve" OnClick="Button6_Click" CssClass="auto-style10" Height="30px" Width="160px" />
             </td>
             <td>&nbsp;</td>
         </tr>
@@ -265,22 +292,22 @@ TagPrefix="ajaxToolkit" %>
                 <asp:Label ID="Label5" runat="server" ForeColor="Green" Text="Available"></asp:Label>
             </td>
             <td class="auto-style8">
-                <asp:Button ID="Button7" runat="server" Text="Reserve" OnClick="Button7_Click" style="font-weight: 700" />
+                <asp:Button ID="Button7" runat="server" Text="Reserve" OnClick="Button7_Click" CssClass="auto-style10" Height="30px" Width="160px" />
             </td>
             <td class="auto-style8"></td>
         </tr>
         <tr>
-            <td class="auto-style2">
+            <td class="auto-style13">
                 <asp:Label ID="Label17" runat="server" Text="05:00 pm"></asp:Label>
             </td>
-            <td class="auto-style3">
+            <td class="auto-style12">
                 <asp:Label ID="Label18" runat="server" Text="06:00 pm"></asp:Label>
             </td>
-            <td class="auto-style4">
+            <td class="auto-style11">
                 <asp:Label ID="Label6" runat="server" ForeColor="Green" Text="Available"></asp:Label>
             </td>
             <td>
-                <asp:Button ID="Button8" runat="server" Text="Reserve" OnClick="Button8_Click" style="font-weight: 700" />
+                <asp:Button ID="Button8" runat="server" Text="Reserve" OnClick="Button8_Click" CssClass="auto-style10" Height="30px" Width="160px" />
             </td>
             <td>&nbsp;</td>
         </tr>
