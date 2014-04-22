@@ -82,29 +82,20 @@ namespace PatanHospital
 
         public void Insert_data()
         {
+            
             Configuration rootWebConfig = WebConfigurationManager.OpenWebConfiguration("/HospitalServer");
             ConnectionStringSettings connectionString = rootWebConfig.ConnectionStrings.ConnectionStrings["HospitalServerConnectionString"];
             SqlConnection sqlConnection = new SqlConnection(connectionString.ToString());
-            SqlCommand cmd = new SqlCommand("update DoctorCrediantials set Education=@education, Residency = @residency, DateOfGraduation = @dateofgraduation, Speciality = @speciality, NPI = @npi where SSN=" + Session["ssn"], sqlConnection);
-            cmd.CommandType = CommandType.Text;
-
-            string education = TextBox1.Text;
-            string residency = TextBox2.Text;
-            string dateofgraduation = TextBox3.Text;
-            string speciality = DropDownList1.SelectedValue;
-            string npi = TextBox4.Text;
-
-            
-            cmd.Parameters.AddWithValue("@education", education);
-            cmd.Parameters.AddWithValue("@residency", residency);
-            cmd.Parameters.AddWithValue("@dateofgraduation", dateofgraduation);
-            cmd.Parameters.AddWithValue("@speciality", speciality);
-            cmd.Parameters.AddWithValue("@npi", npi);
-            
-
             sqlConnection.Open();
-            cmd.ExecuteNonQuery();
-            sqlConnection.Close();
+
+           
+            string Query2 = "Update DoctorCrediantials SET Education = '" + TextBox1.Text + "', Residency ='" + TextBox2.Text + "', DateOfGraduation ='" + TextBox3.Text + "',  Speciality = '" + DropDownList1.SelectedValue + "', NPI = '" + TextBox4.Text + "' where SSN=" + Session["ssn"]+ ";";
+            SqlCommand cmd2 = new SqlCommand(Query2, sqlConnection);
+            cmd2.ExecuteNonQuery();
+
+
+
+
         }
 
         private void Check_NPI()
@@ -138,7 +129,6 @@ namespace PatanHospital
         {
             try
             {
-                
                 Insert_data();
                 Send_Email();
                 Response.Redirect("RegisterDoctor.aspx");
