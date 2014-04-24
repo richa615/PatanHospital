@@ -18,16 +18,12 @@ namespace PatanHospital
         Configuration rootWebConfig = WebConfigurationManager.OpenWebConfiguration("/HospitalServer");
         protected void Page_Load(object sender, EventArgs e)
         {
-            Table2.Visible = false;
             Label1.Visible = false;
             
         }
 
         protected void RadioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            Table2.Visible = true;
-            Label2.Visible = true;
-            Label2.Text = "User Name:";
             HyperLink2.Visible = false;
             Session["Status"] = RadioButton1.Text;
             
@@ -35,18 +31,12 @@ namespace PatanHospital
 
         protected void RadioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            Table2.Visible = true;
-            Label2.Visible = true;
-            Label2.Text = "Email address:";
             HyperLink2.Visible = true;
             
         }
 
         protected void RadioButton3_CheckedChanged(object sender, EventArgs e)
         {
-            Table2.Visible = true;
-            Label2.Visible = true;
-            Label2.Text = "Email address:";
             HyperLink2.Visible = true;
             Session["Status"] = RadioButton3.Text;
         }
@@ -76,7 +66,6 @@ namespace PatanHospital
                 else
                 {
                     Label1.Visible = true;
-                    Table2.Visible = true;
                     Label1.ForeColor = System.Drawing.Color.Red;
                     Label1.Text = "Invalid Login Crediantials";
                     TextBox1.Text = "";
@@ -111,7 +100,6 @@ namespace PatanHospital
                 else
                 {
                     Label1.Visible = true;
-                    Table2.Visible = true;
                     Label1.ForeColor = System.Drawing.Color.Red;
                     Label1.Text = "Invalid Login Crediantials";
                     TextBox1.Text = "";
@@ -148,7 +136,6 @@ namespace PatanHospital
                 else
                 {
                     Label1.Visible = true;
-                    Table2.Visible = true;
                     Label1.ForeColor = System.Drawing.Color.Red;
                     Label1.Text = "Invalid Login Crediantials";
                     TextBox1.Text = "";

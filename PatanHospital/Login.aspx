@@ -106,150 +106,57 @@
         }
     </style>
 </head>
-<body bgcolor=#BDBDBD>
+<body bgcolor=#25272A>
     <form id="form1" runat="server">
     <div align="center">
-        <div style="font-size:large; font-weight:bold; background-color:#0489B1;"> 
-            <h1 style="color:white;">Login</h1>
+        <div style="height:120px;">
+            <img src="Images/Patan%20Hospital%20Logo%20PH.png" style="height: 174px; width: 499px" />
         </div>
-        <div>
-            <table class="style1" id="Table 1">
-
-            <tr>
-                <td class="style2">
-                    <asp:RadioButton ID="RadioButton1" runat="server" 
+        <div style="width:500px;">
+            <table style="margin-bottom:30px; margin-top:30px;">
+                <tr>
+                    <td>
+                        <asp:RadioButton ID="RadioButton1" runat="server" 
                         oncheckedchanged="RadioButton1_CheckedChanged" Text="Administrator" 
-                        AutoPostBack="True" GroupName="login" style="font-weight: 700" />
-                </td>
-                <td class="style3">
-                    &nbsp;</td>
-                <td class="style4">
-                    <asp:RadioButton ID="RadioButton2" runat="server" Text="Doctor" 
+                        AutoPostBack="True" GroupName="login" ForeColor="White" />
+                    </td>
+                    <td>
+                         <asp:RadioButton ID="RadioButton2" runat="server" Text="Doctor" 
                         AutoPostBack="True" GroupName="login" 
-                        oncheckedchanged="RadioButton2_CheckedChanged" style="font-weight: 700" />
-                </td>
-                <td class="style5">
-                    &nbsp;</td>
-                <td>
-                    <asp:RadioButton ID="RadioButton3" runat="server" Text="Patient" 
+                        oncheckedchanged="RadioButton2_CheckedChanged" ForeColor="White" />
+                    </td>
+                    <td>
+                        <asp:RadioButton ID="RadioButton3" runat="server" Text="Patient" 
                         AutoPostBack="True" GroupName="login" 
-                        oncheckedchanged="RadioButton3_CheckedChanged" style="font-weight: 700" />
-                </td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td class="style3">
-                    &nbsp;</td>
-                <td class="style4">
-                    &nbsp;</td>
-                <td class="style5">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
+                        oncheckedchanged="RadioButton3_CheckedChanged" ForeColor="White" />
+                    </td>
+                </tr>
             </table>
-    
-    </div>
-    <table class="style1" id="Table2" runat="server" align="center">
-        <tr>
-            <td class="style21">
-                &nbsp;</td>
-            <td class="style18">
-                </td>
-            <td class="style19">
-                <asp:Label ID="Label1" runat="server" style="font-weight: 700" Visible="False"></asp:Label>
-                </td>
-            <td class="style17">
-                </td>
-        </tr>
-        <tr>
-            <td class="style21">
-                &nbsp;</td>
-            <td class="style18">
-                &nbsp;</td>
-            <td class="style19">
-                &nbsp;</td>
-            <td class="style17">
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td class="style22">
-            </td>
-            <td class="style13">
-                <asp:Label ID="Label2" runat="server" Text="Label" Visible="False" style="font-weight: 700"></asp:Label>
-            </td>
-            <td class="style16">
-                <asp:TextBox ID="TextBox1" runat="server" Width="160px" Height="20px"></asp:TextBox>
-            </td>
-            <td class="style20">
-            </td>
-        </tr>
-        <tr>
-            <td class="style23">
-                &nbsp;</td>
-            <td class="style14">
-                <strong>Password:</strong></td>
-            <td class="style15">
-                <asp:TextBox ID="TextBox2" runat="server" TextMode="Password" Height="20px" Width="160px"></asp:TextBox>
-            </td>
-            <td>
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td class="style23">
-                &nbsp;</td>
-            <td class="style14">
-                &nbsp;</td>
-            <td class="style15">
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td class="style23">
-                &nbsp;</td>
-            <td class="style14">
-                <asp:Button ID="Button1" runat="server" Text="Sign In" 
-                    onclick="Button1_Click1" Height="30px" style="font-weight: 700" Width="150px" />
-            </td>
-            <td class="style15">
-&nbsp;&nbsp;<asp:Button ID="Button2" runat="server" Text="Cancel" onclick="Button2_Click" Height="30px" style="font-weight: 700" Width="160px" />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td class="style23">
-                &nbsp;</td>
-            <td class="style14">
-                &nbsp;</td>
-            <td class="style15">
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td class="style23">
-                &nbsp;</td>
-            <td class="style14">
-                <asp:HyperLink ID="HyperLink1" runat="server" 
+            <div>
+                <asp:Label ID="Label1" runat="server" style="font-weight: 700" Visible="False" ForeColor="White"></asp:Label>
+            </div>
+            <div>
+                 <asp:TextBox ID="TextBox1" runat="server" Width="221px" placeholder="User Name or Email"></asp:TextBox>
+            </div>
+            <div>
+                <asp:TextBox ID="TextBox2" runat="server" TextMode="Password" Height="22px" Width="221px" placeholder="Password"></asp:TextBox>
+            </div>
+            <div style="margin-bottom:10px; margin-top:5px;">
+                 <asp:Button ID="Button1" runat="server" Text="Sign In" 
+                    onclick="Button1_Click1" /> 
+            </div>
+            <div>
+                <div align="center" style="width:50%; display:inline;">
+                    <asp:HyperLink ID="HyperLink1" runat="server" 
                     NavigateUrl="~/ForgotPassword.aspx">Forgot Password</asp:HyperLink>
-            </td>
-            <td class="style15">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/UpdatePassword.aspx">Update Password</asp:HyperLink>
-            </td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-    </table>
+                </div>
+                <div align="center" style="width:50%; display:inline; padding-left:15px;">
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/UpdatePassword.aspx">Update Password</asp:HyperLink>
+                </div>
+                
+                
+            </div>
+
         </div>
     </div>
     </form>
