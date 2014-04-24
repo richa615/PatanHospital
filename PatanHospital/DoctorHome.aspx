@@ -28,10 +28,10 @@
         </div>
         <div style="width:201px; height: 93px; background-color:#25272A;">
             <div style="padding:10px;">
-                <asp:Button ID="Button4" runat="server" OnClick="Button2_Click" style="font-weight: 700;" Text="View Profile" />
+                <asp:Button ID="Button4" runat="server" OnClick="Button2_Click" style="font-weight: 700;" Text="View Profile" Height="30px" Width="160px" />
             </div>
             <div>
-                <asp:Button ID="Button6" runat="server" style="font-weight: 700" Text="View Schedule" OnClick="Button6_Click" />
+                <asp:Button ID="Button6" runat="server" style="font-weight: 700" Text="View Schedule" OnClick="Button6_Click" Height="30px" Width="160px" />
             </div>   
         </div>
          

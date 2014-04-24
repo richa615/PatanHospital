@@ -19,6 +19,15 @@
         .auto-style1 {
             font-size: xx-large;
         }
+        .auto-style2
+        {
+            width: 128px;
+            text-align: left;
+        }
+        .auto-style3
+        {
+            width: 128px;
+        }
     </style>
 </head>
 <body bgcolor=#BDBDBD>
@@ -27,7 +36,7 @@
     
        <table class="style1">
             <tr>
-                <td class="style2">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td class="auto-style1">
                     <strong>Register a Doctor</strong></td>
@@ -37,7 +46,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -47,20 +56,20 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
-                    <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" style="font-weight: 700" Text="Home" CausesValidation="False" />
+                <td class="auto-style3">
+                    <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" style="font-weight: 700" Text="Home" CausesValidation="False" Height="30px" Width="160px" />
                 </td>
                 <td>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
                     <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
+                </td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td>
                     <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
@@ -71,7 +80,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td>
                     <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
@@ -82,10 +91,10 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
-                    First Name</td>
-                <td>
-                    <asp:TextBox ID="TextBox1" runat="server" Height="19px" Width="181px"></asp:TextBox>
+                <td class="auto-style2">
+                    <strong>First Name:</strong></td>
+                <td style="text-align: left">
+                    <asp:TextBox ID="TextBox1" runat="server" Height="20px" Width="160px" style="text-align: left"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
                         ControlToValidate="TextBox1" ErrorMessage="First Name is Required" 
                         ForeColor="Red"></asp:RequiredFieldValidator>
@@ -96,10 +105,10 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
-                    Last Name:</td>
-                <td>
-                    <asp:TextBox ID="TextBox2" runat="server" Height="19px" Width="181px"></asp:TextBox>
+                <td class="auto-style2">
+                    <strong>Last Name:</strong></td>
+                <td style="text-align: left">
+                    <asp:TextBox ID="TextBox2" runat="server" Height="20px" Width="160px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
                         ControlToValidate="TextBox2" ErrorMessage="Last Name is Required" 
                         ForeColor="Red"></asp:RequiredFieldValidator>
@@ -110,10 +119,10 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
-                    SSN:</td>
-                <td>
-                    <asp:TextBox ID="TextBox3" runat="server" Height="19px" Width="181px"></asp:TextBox>
+                <td class="auto-style2">
+                    <strong>SSN:</strong></td>
+                <td style="text-align: left">
+                    <asp:TextBox ID="TextBox3" runat="server" Height="20px" Width="160px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
                         ControlToValidate="TextBox3" ErrorMessage="SSN is Required" ForeColor="Red"></asp:RequiredFieldValidator>               
                 </td>
@@ -123,10 +132,10 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
-                    Phone</td>
-                <td>
-                    <asp:TextBox ID="TextBox4" runat="server" Height="19px" Width="181px"></asp:TextBox>
+                <td class="auto-style2">
+                    <strong>Phone:</strong></td>
+                <td style="text-align: left">
+                    <asp:TextBox ID="TextBox4" runat="server" Height="20px" Width="160px"></asp:TextBox>
                 </td>
                 <td>
                     &nbsp;</td>
@@ -134,10 +143,10 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
-                    Gender:</td>
-                <td>
-                    <asp:DropDownList ID="DropDownList1" runat="server" Height="20px" Width="154px">
+                <td class="auto-style2">
+                    <strong>Gender:</strong></td>
+                <td style="text-align: left">
+                    <asp:DropDownList ID="DropDownList1" runat="server" Height="30px" Width="160px">
                     <asp:ListItem Value="Male">Male</asp:ListItem>
 	                <asp:ListItem Value="Female">Female</asp:ListItem></asp:DropDownList>
                 </td>
@@ -147,10 +156,10 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
-                    Email:</td>
-                <td>
-                    <asp:TextBox ID="TextBox5" runat="server" Height="19px" Width="181px"></asp:TextBox>
+                <td class="auto-style2">
+                    <strong>Email:</strong></td>
+                <td style="text-align: left">
+                    <asp:TextBox ID="TextBox5" runat="server" Height="20px" Width="160px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" 
                         ControlToValidate="TextBox5" ErrorMessage="Email address is Required" 
                         ForeColor="Red"></asp:RequiredFieldValidator>
@@ -164,10 +173,10 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
-                    Address1:</td>
-                <td>
-                    <asp:TextBox ID="TextBox6" runat="server" Width="181px"></asp:TextBox>
+                <td class="auto-style2">
+                    <strong>Address1:</strong></td>
+                <td style="text-align: left">
+                    <asp:TextBox ID="TextBox6" runat="server" Width="160px" Height="20px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" 
                         ControlToValidate="TextBox6" ErrorMessage="Address is Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
@@ -177,10 +186,10 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
-                    Address2:</td>
-                <td>
-                    <asp:TextBox ID="TextBox7" runat="server" Width="181px"></asp:TextBox>
+                <td class="auto-style2">
+                    <strong>Address2:</strong></td>
+                <td style="text-align: left">
+                    <asp:TextBox ID="TextBox7" runat="server" Width="160px" Height="20px"></asp:TextBox>
                 </td>
                 <td>
                     &nbsp;</td>
@@ -188,10 +197,10 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
-                    City:</td>
-                <td>
-                    <asp:TextBox ID="TextBox8" runat="server" Width="181px"></asp:TextBox>
+                <td class="auto-style2">
+                    <strong>City:</strong></td>
+                <td style="text-align: left">
+                    <asp:TextBox ID="TextBox8" runat="server" Width="160px" Height="20px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" 
                         ControlToValidate="TextBox8" ErrorMessage="City name is required" 
                         ForeColor="Red"></asp:RequiredFieldValidator>
@@ -202,11 +211,11 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
-                    State:</td>
-                <td>
+                <td class="auto-style2">
+                    <strong>State:</strong></td>
+                <td style="text-align: left">
                     <asp:DropDownList ID="DropDownList2" runat="server" AutoPostBack="True" 
-                        Height="20px" Width="217px">
+                        Height="30px" Width="160px">
                         <asp:ListItem Value="AL">Alabama</asp:ListItem>
 	<asp:ListItem Value="AK">Alaska</asp:ListItem>
 	<asp:ListItem Value="AZ">Arizona</asp:ListItem>
@@ -266,10 +275,10 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
-                    ZipCode:</td>
-                <td>
-                    <asp:TextBox ID="TextBox9" runat="server" Width="181px"></asp:TextBox>
+                <td class="auto-style2">
+                    <strong>ZipCode:</strong></td>
+                <td style="text-align: left">
+                    <asp:TextBox ID="TextBox9" runat="server" Width="160px" Height="20px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" 
                         ControlToValidate="TextBox9" ErrorMessage="ZipCode is Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
@@ -279,7 +288,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style2">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -289,14 +298,14 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style2">
                     &nbsp;</td>
                 <td>
-                    <asp:Button ID="Button1" runat="server" Height="27px" onclick="Button1_Click" 
-                        Text="Next" Width="78px"  />
+                    <asp:Button ID="Button1" runat="server" Height="30px" onclick="Button1_Click" 
+                        Text="Next" Width="160px" style="font-weight: 700"  />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="Button2" runat="server" Height="25px" onclick="Button2_Click" 
-                        Text="Cancel" Width="133px" CausesValidation="False" />
+                    <asp:Button ID="Button2" runat="server" Height="30px" onclick="Button2_Click" 
+                        Text="Cancel" Width="160px" CausesValidation="False" style="font-weight: 700" />
                 </td>
                 <td>
                     &nbsp;</td>
@@ -304,7 +313,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -314,7 +323,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -324,7 +333,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -334,7 +343,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -344,7 +353,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -354,7 +363,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -364,7 +373,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -374,7 +383,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -384,7 +393,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -394,7 +403,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -405,7 +414,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -415,7 +424,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -425,7 +434,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -435,7 +444,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -445,7 +454,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -455,7 +464,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -465,7 +474,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -475,7 +484,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -485,7 +494,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -495,7 +504,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -505,7 +514,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -515,7 +524,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -525,7 +534,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td>
                     &nbsp;</td>
@@ -535,7 +544,7 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="auto-style3">
                     &nbsp;</td>
                 <td>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

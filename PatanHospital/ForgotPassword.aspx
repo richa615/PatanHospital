@@ -65,9 +65,9 @@
                 <td class="style2">
                     &nbsp;</td>
                 <td class="style3">
-                    Email:</td>
+                    <strong>Email:</strong></td>
                 <td>
-                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" Height="20px" Width="150px"></asp:TextBox>
                 </td>
                 <td>
                     &nbsp;</td>
@@ -88,9 +88,9 @@
                 <td class="style3">
                     &nbsp;</td>
                 <td>
-                    <asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="Submit" />
+                    <asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="Submit" Height="30px" style="font-weight: 700" Width="160px" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="Button2" runat="server" onclick="Button2_Click" Text="Cancel" />
+                    <asp:Button ID="Button2" runat="server" onclick="Button2_Click" Text="Cancel" Height="30px" style="font-weight: 700" Width="160px" />
                 </td>
                 <td>
                     &nbsp;</td>

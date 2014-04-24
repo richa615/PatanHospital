@@ -37,85 +37,85 @@
             <tr>
                 <td class="auto-style3">Name:</td>
                 <td>
-                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label1" runat="server" Text="Label" style="font-weight: 700"></asp:Label>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style3">SSN:</td>
                 <td>
-                    <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label2" runat="server" Text="Label" style="font-weight: 700"></asp:Label>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style3">Phone:</td>
                 <td>
-                    <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label3" runat="server" Text="Label" style="font-weight: 700"></asp:Label>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style3">Email:</td>
                 <td>
-                    <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label4" runat="server" Text="Label" style="font-weight: 700"></asp:Label>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style3">Education:</td>
                 <td>
-                    <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label5" runat="server" Text="Label" style="font-weight: 700"></asp:Label>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style3">Residency:</td>
                 <td>
-                    <asp:Label ID="Label6" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label6" runat="server" Text="Label" style="font-weight: 700"></asp:Label>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style3">Gender</td>
                 <td>
-                    <asp:Label ID="Label7" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label7" runat="server" Text="Label" style="font-weight: 700"></asp:Label>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style3">NPI</td>
                 <td>
-                    <asp:Label ID="Label8" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label8" runat="server" Text="Label" style="font-weight: 700"></asp:Label>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style3">Date of Graduation:</td>
                 <td>
-                    <asp:Label ID="Label9" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label9" runat="server" Text="Label" style="font-weight: 700"></asp:Label>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style3">Speciality:</td>
                 <td>
-                    <asp:Label ID="Label10" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label10" runat="server" Text="Label" style="font-weight: 700"></asp:Label>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style3">Address1:</td>
                 <td>
-                    <asp:Label ID="Label11" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label11" runat="server" Text="Label" style="font-weight: 700"></asp:Label>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style3">City:</td>
                 <td>
-                    <asp:Label ID="Label13" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label13" runat="server" Text="Label" style="font-weight: 700"></asp:Label>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style3">State:</td>
                 <td>
-                    <asp:Label ID="Label14" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label14" runat="server" Text="Label" style="font-weight: 700"></asp:Label>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style3">Zip Code:</td>
                 <td>
-                    <asp:Label ID="Label15" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label15" runat="server" Text="Label" style="font-weight: 700"></asp:Label>
                 </td>
             </tr>
             <tr>
@@ -125,7 +125,7 @@
             <tr>
                 <td class="auto-style2">&nbsp;</td>
                 <td>
-                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" style="font-weight: 700" Text="Done" />
+                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" style="font-weight: 700" Text="Done" Height="30px" Width="150px" />
                 </td>
             </tr>
             <tr>

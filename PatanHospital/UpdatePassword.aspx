@@ -21,6 +21,7 @@
         .auto-style4
         {
             width: 183px;
+            text-align: right;
         }
         .auto-style5
         {
@@ -31,6 +32,7 @@
         {
             width: 183px;
             height: 23px;
+            text-align: right;
         }
         .auto-style7
         {
@@ -90,10 +92,10 @@
             <tr>
                 <td class="auto-style3">&nbsp;</td>
                 <td class="auto-style4">
-                    <asp:Label ID="Label2" runat="server" style="font-weight: 700" Text="Email:"></asp:Label>
+                    <asp:Label ID="Label2" runat="server" style="font-weight: 700; text-align: right;" Text="Email:"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" Height="20px" Width="160px"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -103,7 +105,7 @@
                     <asp:Label ID="Label3" runat="server" style="font-weight: 700" Text="Old Password:"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBox2" runat="server" Height="20px" Width="160px"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -113,7 +115,7 @@
                     <asp:Label ID="Label4" runat="server" style="font-weight: 700" Text="New Password:"></asp:Label>
                 </td>
                 <td class="auto-style7">
-                    <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBox3" runat="server" Height="20px" Width="160px"></asp:TextBox>
                 </td>
                 <td class="auto-style7"></td>
             </tr>
@@ -123,7 +125,7 @@
                     <asp:Label ID="Label5" runat="server" style="font-weight: 700" Text="Re type New Password:"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBox4" runat="server" Height="20px" Width="160px"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -136,10 +138,17 @@
             <tr>
                 <td class="auto-style3">&nbsp;</td>
                 <td class="auto-style4">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style4">
+                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" style="font-weight: 700" Text="Update" Height="30px" Width="160px" />
+                </td>
                 <td>
-                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" style="font-weight: 700" Text="Update" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" style="font-weight: 700; height: 26px" Text="Cancel" />
+                    <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" style="font-weight: 700; height: 26px" Text="Cancel" Height="30px" Width="160px" />
                 </td>
                 <td>&nbsp;</td>
             </tr>

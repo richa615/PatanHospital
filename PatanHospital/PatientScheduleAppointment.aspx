@@ -60,7 +60,7 @@
         <table class="auto-style1">
             <tr>
                 <td class="auto-style3">
-                    <asp:Button ID="Button1" runat="server" style="font-weight: 700" Text="Home" OnClick="Button1_Click" />
+                    <asp:Button ID="Button1" runat="server" style="font-weight: 700" Text="Home" OnClick="Button1_Click" Height="30px" Width="160px" />
                  </td>
                 <td class="auto-style4">
                     &nbsp;</td>
@@ -74,15 +74,15 @@
             </tr>
             <tr>
                 <td class="auto-style3">
-                    Name:</td>
+                    <strong>Name:</strong></td>
                 <td colspan="2">
-                    <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label2" runat="server" Text="Label" style="font-weight: 700"></asp:Label>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style3">Date:</td>
+                <td class="auto-style3"><strong>Date:</strong></td>
                 <td colspan="2">
-                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" Height="20px" Width="160px"></asp:TextBox>
                     <ajaxToolkit:CalendarExtender ID="TextBox1_CalendarExtender" runat="server" Enabled="True" TargetControlID="TextBox1">
                     </ajaxToolkit:CalendarExtender>
                     <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
@@ -91,18 +91,18 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style3">Speciality:</td>
+                <td class="auto-style3"><strong>Speciality:</strong></td>
                 <td colspan="2">
-                    <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource1" DataTextField="Speciality" DataValueField="Speciality" AppendDataBoundItems="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+                    <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource1" DataTextField="Speciality" DataValueField="Speciality" AppendDataBoundItems="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" Height="30px" Width="160px">
                     <asp:ListItem Value="0">--Select--</asp:ListItem>
                     </asp:DropDownList>
                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:HospitalServerConnectionString %>" SelectCommand="SELECT DISTINCT Speciality FROM DoctorCrediantials"></asp:SqlDataSource>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style3">Doctor&#39;s Name:</td>
+                <td class="auto-style3"><strong>Doctor&#39;s Name:</strong></td>
                 <td colspan="2">
-                    <asp:DropDownList ID="DropDownList2" runat="server" AutoPostBack="True"  DataTextField="Name" DataValueField="SSN" AppendDataBoundItems="True" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged">
+                    <asp:DropDownList ID="DropDownList2" runat="server" AutoPostBack="True"  DataTextField="Name" DataValueField="SSN" AppendDataBoundItems="True" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged" Height="30px" Width="160px">
                     
                     </asp:DropDownList>
                 </td>
@@ -115,9 +115,9 @@
     <p>
         <table id="Table2" class="auto-style1" runat="server">
             <tr>
-                <td class="auto-style5">Start Time:</td>
-                <td class="auto-style6">End Time:</td>
-                <td class="auto-style7">Availability:</td>
+                <td class="auto-style5"><strong>Start Time:</strong></td>
+                <td class="auto-style6"><strong>End Time:</strong></td>
+                <td class="auto-style7"><strong>Availability:</strong></td>
                 <td>
                     <asp:Label ID="Label24" runat="server" Text="Label"></asp:Label>
                 </td>
@@ -134,91 +134,91 @@
             </tr>
             <tr>
                 <td class="auto-style5">
-                    <asp:Label ID="Label6" runat="server" Text="09:00 am"></asp:Label>
+                    <asp:Label ID="Label6" runat="server" Text="09:00 am" style="font-weight: 700"></asp:Label>
                 </td>
                 <td class="auto-style6">
-                    <asp:Label ID="Label7" runat="server" Text="10:00 am"></asp:Label>
+                    <asp:Label ID="Label7" runat="server" Text="10:00 am" style="font-weight: 700"></asp:Label>
                 </td>
                 <td class="auto-style7">
-                    <asp:Label ID="Label8" runat="server" ForeColor="Green" Text="Available"></asp:Label>
+                    <asp:Label ID="Label8" runat="server" ForeColor="Green" Text="Available" style="font-weight: 700"></asp:Label>
                 </td>
                 <td>
-                    <asp:Button ID="Button2" runat="server" Text="Reserve" OnClick="Button2_Click" style="font-weight: 700" />
+                    <asp:Button ID="Button2" runat="server" Text="Reserve" OnClick="Button2_Click" style="font-weight: 700" Height="30px" Width="160px" />
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style5">
-                    <asp:Label ID="Label9" runat="server" Text="10:30 am"></asp:Label>
+                    <asp:Label ID="Label9" runat="server" Text="10:30 am" style="font-weight: 700"></asp:Label>
                 </td>
                 <td class="auto-style6">
-                    <asp:Label ID="Label10" runat="server" Text="11:30 am"></asp:Label>
+                    <asp:Label ID="Label10" runat="server" Text="11:30 am" style="font-weight: 700"></asp:Label>
                 </td>
                 <td class="auto-style7">
-                    <asp:Label ID="Label11" runat="server" ForeColor="Green" Text="Available"></asp:Label>
+                    <asp:Label ID="Label11" runat="server" ForeColor="Green" Text="Available" style="font-weight: 700"></asp:Label>
                 </td>
                 <td>
-                    <asp:Button ID="Button3" runat="server" Text="Reserve" OnClick="Button3_Click" style="font-weight: 700" />
+                    <asp:Button ID="Button3" runat="server" Text="Reserve" OnClick="Button3_Click" style="font-weight: 700" Height="30px" Width="160px" />
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style5">
-                    <asp:Label ID="Label12" runat="server" Text="12:00 am"></asp:Label>
+                    <asp:Label ID="Label12" runat="server" Text="12:00 am" style="font-weight: 700"></asp:Label>
                 </td>
                 <td class="auto-style6">
-                    <asp:Label ID="Label13" runat="server" Text="01:00 pm"></asp:Label>
+                    <asp:Label ID="Label13" runat="server" Text="01:00 pm" style="font-weight: 700"></asp:Label>
                 </td>
                 <td class="auto-style7">
-                    <asp:Label ID="Label14" runat="server" ForeColor="Green" Text="Available"></asp:Label>
+                    <asp:Label ID="Label14" runat="server" ForeColor="Green" Text="Available" style="font-weight: 700"></asp:Label>
                 </td>
                 <td>
-                    <asp:Button ID="Button4" runat="server" Text="Reserve" OnClick="Button4_Click" style="font-weight: 700" />
+                    <asp:Button ID="Button4" runat="server" Text="Reserve" OnClick="Button4_Click" style="font-weight: 700" Height="30px" Width="160px" />
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style5">
-                    <asp:Label ID="Label15" runat="server" Text="02:00 pm"></asp:Label>
+                    <asp:Label ID="Label15" runat="server" Text="02:00 pm" style="font-weight: 700"></asp:Label>
                 </td>
                 <td class="auto-style6">
-                    <asp:Label ID="Label16" runat="server" Text="03:00 pm"></asp:Label>
+                    <asp:Label ID="Label16" runat="server" Text="03:00 pm" style="font-weight: 700"></asp:Label>
                 </td>
                 <td class="auto-style7">
-                    <asp:Label ID="Label17" runat="server" ForeColor="Green" Text="Available"></asp:Label>
+                    <asp:Label ID="Label17" runat="server" ForeColor="Green" Text="Available" style="font-weight: 700"></asp:Label>
                 </td>
                 <td>
-                    <asp:Button ID="Button5" runat="server" Text="Reserve" OnClick="Button5_Click" style="font-weight: 700" />
+                    <asp:Button ID="Button5" runat="server" Text="Reserve" OnClick="Button5_Click" style="font-weight: 700" Height="30px" Width="160px" />
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style5">
-                    <asp:Label ID="Label18" runat="server" Text="03:30 pm"></asp:Label>
+                    <asp:Label ID="Label18" runat="server" Text="03:30 pm" style="font-weight: 700"></asp:Label>
                 </td>
                 <td class="auto-style6">
-                    <asp:Label ID="Label19" runat="server" Text="04:30 pm"></asp:Label>
+                    <asp:Label ID="Label19" runat="server" Text="04:30 pm" style="font-weight: 700"></asp:Label>
                 </td>
                 <td class="auto-style7">
-                    <asp:Label ID="Label20" runat="server" ForeColor="Green" Text="Available"></asp:Label>
+                    <asp:Label ID="Label20" runat="server" ForeColor="Green" Text="Available" style="font-weight: 700"></asp:Label>
                 </td>
                 <td>
-                    <asp:Button ID="Button6" runat="server" Text="Reserve" OnClick="Button6_Click" style="font-weight: 700" />
+                    <asp:Button ID="Button6" runat="server" Text="Reserve" OnClick="Button6_Click" style="font-weight: 700" Height="30px" Width="160px" />
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style5">
-                    <asp:Label ID="Label21" runat="server" Text="05:00 pm"></asp:Label>
+                    <asp:Label ID="Label21" runat="server" Text="05:00 pm" style="font-weight: 700"></asp:Label>
                 </td>
                 <td class="auto-style6">
-                    <asp:Label ID="Label22" runat="server" Text="06:00 pm"></asp:Label>
+                    <asp:Label ID="Label22" runat="server" Text="06:00 pm" style="font-weight: 700"></asp:Label>
                 </td>
                 <td class="auto-style7">
-                    <asp:Label ID="Label23" runat="server" ForeColor="Green" Text="Available"></asp:Label>
+                    <asp:Label ID="Label23" runat="server" ForeColor="Green" Text="Available" style="font-weight: 700"></asp:Label>
                 </td>
                 <td>
-                    <asp:Button ID="Button7" runat="server" Text="Reserve" OnClick="Button7_Click" style="font-weight: 700" />
+                    <asp:Button ID="Button7" runat="server" Text="Reserve" OnClick="Button7_Click" style="font-weight: 700" Height="30px" Width="160px" />
                 </td>
                 <td>&nbsp;</td>
             </tr>
