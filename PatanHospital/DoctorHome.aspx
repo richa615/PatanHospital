@@ -20,7 +20,7 @@
     <form id="form1" runat="server">
     
     <div align="center">
-    <div style="font-size:xx-large; font-weight:bold; background-color:#25272A;"> 
+    <div style="font-size:large; font-weight:bold; background-color:#0489B1;"> 
         <h1 style="color:white;">Doctor</h1>
     </div>
         <div style="padding:10px;">

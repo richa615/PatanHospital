@@ -86,6 +86,7 @@
     <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Css\StyleSheet.css" />
     <Content Include="Images\home_mar_14.png" />
+    <Content Include="Images\Patan Hospital Logo PH.png" />
     <Content Include="Images\Static-Background.jpg" />
     <Content Include="JavaScript\jquery-1.3.2.min.js" />
     <Content Include="DeleteDoctor.aspx" />

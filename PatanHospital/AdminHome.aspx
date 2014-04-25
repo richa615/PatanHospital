@@ -66,7 +66,7 @@
     <form id="form1" runat="server">
     <div align="center">
     
-        <div align="center"  style="font-size:xx-large; font-weight:bold; background-color:#25272A;">
+        <div align="center"  style="font-size:large; font-weight:bold; background-color:#0489B1;">
             <h1 style="color:white;">Administrator</h1>
         </div>
         <div align="center" style="text-align: right">
