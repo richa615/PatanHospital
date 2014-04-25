@@ -18,7 +18,7 @@ namespace PatanHospital
         Configuration rootWebConfig = WebConfigurationManager.OpenWebConfiguration("/HospitalServer");
         protected void Page_Load(object sender, EventArgs e)
         {
-            Label1.Visible = false;
+           // Label1.Visible = false;
             
         }
 
