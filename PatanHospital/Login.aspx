@@ -136,7 +136,7 @@
                 <asp:Label ID="Label1" runat="server" style="font-weight: 700" Visible="False" ForeColor="White"></asp:Label>
             </div>
             <div>
-                 <asp:TextBox ID="TextBox1" runat="server" Width="221px" placeholder="User Name or Email"></asp:TextBox>
+                 <asp:TextBox ID="TextBox1" runat="server" Width="221px" placeholder="User Name or Email" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
             </div>
             <div>
                 <asp:TextBox ID="TextBox2" runat="server" TextMode="Password" Height="22px" Width="221px" placeholder="Password"></asp:TextBox>
