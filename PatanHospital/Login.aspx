@@ -110,7 +110,7 @@
     <form id="form1" runat="server">
     <div align="center">
         <div style="height:130px;">
-            <img src="Images/Patan%20Hospital%20Logo%20PH.png" style="height: 174px; width: 499px; margin-top:50px;" />
+            <img src="Images/PatanHospitalLogoPH.png" style="height: 174px; width: 499px; margin-top:50px;" />
         </div>
         <div style="width:500px;">
             <table style="margin-bottom:50px; margin-top:70px;">
