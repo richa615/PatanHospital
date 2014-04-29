@@ -22,16 +22,6 @@ namespace PatanHospital
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("DoctorHome.aspx");
-        }
-
-        protected void Button2_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("DoctorHome.aspx");
-        }
-
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -82,9 +72,10 @@ namespace PatanHospital
             Bind_Grid_View_with_TextBox_Date();
         }
 
-
+        protected void Logo_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("DoctorHome.aspx");
+        }
        
-
-        
     }
 }

@@ -89,17 +89,10 @@ namespace PatanHospital
             DropDownList1.Items.Remove(DropDownList1.SelectedItem);
         }
 
-        protected void Button2_Click(object sender, EventArgs e)
+        protected void Logo_Click(object sender, EventArgs e)
         {
             Response.Redirect("AdminHome.aspx");
         }
-
-        protected void Button4_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("AdminHome.aspx");
-        }
-
-
 
     }
 }

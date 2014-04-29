@@ -36,41 +36,23 @@
             width: 81px;
             height: 21px;
         }
+        .auto-style8 {
+            height: 21px;
+        }
     </style>
 </head>
-<body bgcolor=#BDBDBD>
+<body bgcolor=#25272A>
     <form id="form1" runat="server">
-    <div>
+    <div align="center">
+        <div style="height:130px;">
+            <asp:ImageButton ID="ImageButton1" OnClick="Logo_Click" OnClientClick="Logo_Click" ImageUrl="Images/PatanHospitalLogoPH.png" runat="server" style="height: 174px; width: 499px; margin-top:20px;" />
+        </div>
+        <div align="center"  style="font-size:large; font-weight:bold;margin-top:40px;">
+            <h1 style="color:white;">Search For Doctor</h1>
+        </div>
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
         <table style="width:650px" border="0" cellspacing="0" class="GridViewStyle">
-        <tr class="HeaderStyle">
-        <th class="auto-style1">&nbsp;</th>
-        <th style="width:200px">&nbsp;</th>
-        <th style="width:125px">&nbsp;</th>
-        <th class="auto-style6">&nbsp;</th>
-        <th style="width:125px">&nbsp;</th>
-        </tr>
-        <tr class="HeaderStyle">
-        <th class="auto-style1" colspan="5">Search For Doctor</th>
-        </tr>
-        <tr class="HeaderStyle">
-        <th class="auto-style1">&nbsp;</th>
-        <th style="width:200px">&nbsp;</th>
-        <th style="width:125px">&nbsp;</th>
-        <th class="auto-style6">&nbsp;</th>
-        <th style="width:125px">&nbsp;</th>
-        </tr>
-        <tr class="AltRowStyle">
-        <td class="auto-style5">
-            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Home" Height="30px" style="font-weight: 700" Width="160px" />
-            </td>
-        <td class="auto-style3">&nbsp;</td>
-        <td class="auto-style4">
-            &nbsp;</td>
-        <td class="auto-style7">&nbsp;</td>
-        <td class="auto-style4">
-            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
-            </td>
-        </tr>
+     
         <tr class="AltRowStyle">
         <td class="auto-style5">&nbsp;</td>
         <td class="auto-style3">&nbsp;</td>
@@ -79,7 +61,7 @@
         <td class="auto-style4">&nbsp;</td>
         </tr>
         <tr class="AltRowStyle">
-        <td class="auto-style5"><strong>Date:</strong></td>
+        <td style="color:#23d6d0;"><strong>Date:</strong></td>
         <td class="auto-style3">
             <asp:TextBox ID="TextBox1" runat="server" AutoPostBack="True" OnTextChanged="TextBox1_TextChanged" Height="20px" Width="160px"></asp:TextBox>
             <asp:CalendarExtender ID="TextBox1_CalendarExtender" runat="server" Enabled="True" TargetControlID="TextBox1">
@@ -96,7 +78,7 @@
             <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
             </asp:ToolkitScriptManager>
             </td>
-        <td style="width:125px">
+        <td style="width:125px; color:#23d6d0;">
             <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
             </td>
         <td class="auto-style6">&nbsp;</td>
@@ -105,41 +87,16 @@
         <tr>
         <td colspan="5">
         
-            <asp:GridView ID="GridView1" runat="server">
+            <asp:GridView ID="GridView1" runat="server" ForeColor="White">
             </asp:GridView>
         
         </td>
         </tr>
-        <tr>
-        <td colspan="5">
-            &nbsp;</td>
-        </tr>
-        <tr>
-        <td colspan="5">
-            &nbsp;</td>
-        </tr>
-        <tr>
-        <td colspan="5">
-            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" style="font-weight: 700" Text="Done" Height="30px" Width="160px" />
-        </td>
-        </tr>
-        <tr>
-        <td colspan="5">
-            &nbsp;</td>
-        </tr>
-        <tr>
-        <td colspan="5">
-            &nbsp;</td>
-        </tr>
-        <tr>
-        <td colspan="5">
-            &nbsp;</td>
-        </tr>
-        </table>
         
-        <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <br />
+        </table>
+        <div>
+            <asp:Button ID="Button2" runat="server" OnClick="Logo_Click" style="font-weight: 700" Text="Done" Height="30px" Width="160px" />
+        </div>
     </div>
     
     </form>

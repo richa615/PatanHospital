@@ -13,6 +13,7 @@
         .style2
         {
             width: 93px;
+            color:#23d6d0;
         }
         .style3
         {
@@ -20,10 +21,16 @@
         }
     </style>
 </head>
-<body>
+<body bgcolor=#25272A>
     <form id="form1" runat="server">
     <div align="center">
-    
+        <div style="height:130px;">
+            <asp:ImageButton OnClick="Logo_Click" OnClientClick="Logo_Click" ImageUrl="Images/PatanHospitalLogoPH.png" runat="server" style="height: 174px; width: 499px; margin-top:20px;" />
+        </div>
+        <div align="center"  style="font-size:large; font-weight:bold;margin-top:40px;">
+            <h1 style="color:white;">Delete Doctor</h1>
+        </div>
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
         <table id="Table1" class="style1">
             <tr>
                 <td class="style2">
@@ -36,11 +43,11 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
-                    <asp:Button ID="Button5" runat="server" OnClick="Button5_Click" Text="Home" Height="30px" Width="160px" />
+                <td>
+                    
                 </td>
                 <td>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
                 </td>
                 <td>
                     &nbsp;</td>
@@ -51,7 +58,7 @@
                 <td class="style2">
                     &nbsp;</td>
                 <td>
-                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label1" runat="server" Text="Label" ForeColor="White"></asp:Label>
                 </td>
                 <td>
                     &nbsp;</td>
@@ -113,7 +120,7 @@
     </div>
     <table id="Table2" class="style1" runat ="server" align="center">
         <tr>
-            <td class="style3">
+            <td class="style2">
                 <strong>Name:</strong></td>
             <td>
                 <asp:TextBox ID="TextBox1" runat="server" Height="20px" Width="150px"></asp:TextBox>
@@ -124,7 +131,7 @@
                 &nbsp;</td>
         </tr>
         <tr>
-            <td class="style3">
+            <td class="style2">
                 <strong>SSN:</strong></td>
             <td>
                 <asp:TextBox ID="TextBox2" runat="server" Height="20px" Width="150px"></asp:TextBox>
@@ -135,7 +142,7 @@
                 &nbsp;</td>
         </tr>
         <tr>
-            <td class="style3">
+            <td class="style2">
                 <strong>Phone:</strong></td>
             <td>
                 <asp:TextBox ID="TextBox3" runat="server" Height="20px" Width="150px"></asp:TextBox>
@@ -146,7 +153,7 @@
                 &nbsp;</td>
         </tr>
         <tr>
-            <td class="style3">
+            <td class="style2">
                 <strong>Email:</strong></td>
             <td>
                 <asp:TextBox ID="TextBox4" runat="server" Height="20px" Width="150px"></asp:TextBox>
