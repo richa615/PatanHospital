@@ -17,7 +17,6 @@ namespace PatanHospital
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Table2.Visible = false;
             Label1.Visible = false;
             if (!IsPostBack)
             {
@@ -44,7 +43,6 @@ namespace PatanHospital
         {
             try
             {
-                Table2.Visible = true;
                 Fill_Data();
             }
             catch (Exception ex)

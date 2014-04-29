@@ -6,3 +6,6 @@
 PatanHospital/bin/PatanHospital.dll
 PatanHospital/bin/PatanHospital.dll
 PatanHospital/bin/PatanHospital.dll
+*.pdb
+*.dll
+*.suo

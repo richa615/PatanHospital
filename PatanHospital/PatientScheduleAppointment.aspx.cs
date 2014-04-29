@@ -58,7 +58,7 @@ namespace PatanHospital
             sqlConnection.Close();
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void Logo_Click(object sender, EventArgs e)
         {
             Response.Redirect("PatientHome.aspx");
         }

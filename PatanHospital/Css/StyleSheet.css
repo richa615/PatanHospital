@@ -24,8 +24,10 @@ body p
     background-image: url('../Images/home_mar_14.png');
     background-repeat: no-repeat;
     background-size: cover;
+    text-align:center;
     height: 200px;
-    border: 3px solid #E3E3E3;
+    width: 1018px;
+    position:relative;
 }
 
 #content_area

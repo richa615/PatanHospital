@@ -49,12 +49,7 @@ namespace PatanHospital
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("PatientHome.aspx");
-        }
-
-        protected void Button2_Click(object sender, EventArgs e)
+        protected void Logo_Click(object sender, EventArgs e)
         {
             Response.Redirect("PatientHome.aspx");
         }

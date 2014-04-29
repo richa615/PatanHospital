@@ -8,69 +8,40 @@
     <style type="text/css">
         .style1
         {
-            width: 800px;
+            width: 500px;
         }
         .style2
         {
             width: 148px;
             text-align: left;
+            
         }
         .auto-style2
         {
             width: 148px;
             text-align: left;
             font-weight: bold;
+            color:#23d6d0;
+        }
+        .auto-style3 {
+            width: 8px;
         }
     </style>
 </head>
-<body bgcolor=#BDBDBD>
+<body bgcolor=#25272A>
     <form id="form1" runat="server">
     <div align="center">
-    
+         <div style="height:130px;">
+                <asp:ImageButton ID="ImageButton1" OnClick="Logo_Click" OnClientClick="Logo_Click" ImageUrl="Images/PatanHospitalLogoPH.png" runat="server" style="height: 174px; width: 499px; margin-top:20px;" />
+        </div>
+        <div align="center"  style="font-size:large; font-weight:bold;margin-top:40px;">
+            <h1 style="color:white;">Doctor Registration</h1>
+        </div>
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
+        <div>
+            <asp:Label ID="Label2" runat="server" Text="Label" ForeColor="White"></asp:Label>
+        </div>
         <table class="style1">
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" style="font-weight: 700" Text="Home" CausesValidation="False" Height="30px" Width="160px" />
-                </td>
-                <td>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
-                </td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td>
-                    <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
-                </td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
             <tr>
                 <td class="auto-style2">
                     Education:</td>
@@ -79,10 +50,6 @@
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
                         ControlToValidate="TextBox1" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">
@@ -92,10 +59,6 @@
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
                         ControlToValidate="TextBox2" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">
@@ -105,10 +68,6 @@
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
                         ControlToValidate="TextBox3" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">
@@ -151,10 +110,6 @@
                     </asp:DropDownList>
 
                 </td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">
@@ -164,59 +119,21 @@
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" 
                         ControlToValidate="TextBox4" ErrorMessage="Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
             </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td style="text-align: left">
-                    <asp:Button ID="Button1" runat="server" Height="30px" onclick="Button1_Click" 
-                        Text="Save" Width="160px" style="font-weight: 700" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="Button2" runat="server" Text="Cancel" onclick="Button2_Click" 
-                        CausesValidation="False" Height="30px" style="font-weight: 700" Width="160px" />
-                </td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
+            
         </table>
-    
-        <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+        <div style="display:inline;">
+            <asp:Button ID="Button1" runat="server" Height="30px" onclick="Button1_Click" 
+                        Text="Save" Width="160px" style="font-weight: 700" />
+        </div>
+        <div  style="display:inline; margin-left:10px;">
+            <asp:Button ID="Button2" runat="server" Text="Cancel" onclick="Button2_Click" 
+                        CausesValidation="False" Height="30px" style="font-weight: 700" Width="160px" />
+        </div>
+        <div>
+            <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+        </div>
+        
     
         <br />
         <br />
