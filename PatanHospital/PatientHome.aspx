@@ -48,101 +48,34 @@
         }
     </style>
 </head>
-<body bgcolor=#BDBDBD>
+<body bgcolor=#25272A>
     <form id="form1" runat="server">
-        <table class="auto-style1">
-            <tr>
-                <td colspan="4"><strong>Patient Home Page</strong></td>
-            </tr>
-            <tr>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style5">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>
-                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="Login.aspx">Log Out</asp:HyperLink>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style5">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style5">
-                    <asp:Button ID="Button1" runat="server" style="font-weight: 700" Text="View Profile" OnClick="Button1_Click" Height="30px" Width="160px" />
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style4"></td>
-                <td class="auto-style6"></td>
-                <td class="auto-style2"></td>
-                <td class="auto-style2"></td>
-            </tr>
-            <tr>
-                <td class="auto-style7">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
-                <td class="auto-style8">
-                    <asp:Button ID="Button2" runat="server" style="font-weight: 700" Text="Search For Doctor" OnClick="Button2_Click" Height="30px" Width="160px" />
-                </td>
-                <td class="auto-style9"></td>
-                <td class="auto-style9"></td>
-            </tr>
-            <tr>
-                <td class="auto-style4"></td>
-                <td class="auto-style6"></td>
-                <td class="auto-style2"></td>
-                <td class="auto-style2"></td>
-            </tr>
-            <tr>
-                <td class="auto-style3">
-                    &nbsp;</td>
-                <td class="auto-style5">
-                    <asp:Button ID="Button3" runat="server" style="font-weight: 700" Text="Reserve Appointments" OnClick="Button3_Click" Height="30px" Width="160px" />
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style5">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style5">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style5">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style5">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style5">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style5">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-        </table>
+        <div align="center">
+            <div style="height:130px;">
+                <asp:ImageButton ID="ImageButton1" OnClick="Logo_Click" OnClientClick="Logo_Click" ImageUrl="Images/PatanHospitalLogoPH.png" runat="server" style="height: 174px; width: 499px; margin-top:20px;" />
+            </div>
+            <div align="center"  style="font-size:large; font-weight:bold;margin-top:40px;">
+                <h1 style="color:white;">Patient</h1>
+            </div>
+             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="Login.aspx">Log Out</asp:HyperLink>
+            <table>
+                <tr>
+                    <td>
+                        <asp:Button ID="Button1" runat="server" style="font-weight: 700" Text="View Profile" OnClick="Button1_Click" Height="30px" Width="160px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Button ID="Button2" runat="server" style="font-weight: 700" Text="Search For Doctor" OnClick="Button2_Click" Height="30px" Width="160px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Button ID="Button3" runat="server" style="font-weight: 700" Text="Reserve Appointments" OnClick="Button3_Click" Height="30px" Width="160px" />
+                    </td>
+                </tr>
+            </table>
+        </div>
     </form>
     </body>
 </html>

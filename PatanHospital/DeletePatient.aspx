@@ -67,28 +67,28 @@
                 <td class="auto-style1">
                     <strong>Name:</strong></td>
                 <td class="auto-style2">
-                    <asp:TextBox ID="TextBox5" runat="server" Height="20px" Width="160px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" Height="20px" Width="160px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="style4">
                     <strong>SSN:</strong></td>
                 <td>
-                    <asp:TextBox ID="TextBox6" runat="server" Height="20px" Width="160px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox2" runat="server" Height="20px" Width="160px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="style4">
                     <strong>Phone:</strong></td>
                 <td>
-                    <asp:TextBox ID="TextBox7" runat="server" Height="20px" Width="160px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox3" runat="server" Height="20px" Width="160px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style1">
                     <strong>Email:</strong></td>
                 <td class="auto-style2">
-                    <asp:TextBox ID="TextBox8" runat="server" Height="20px" Width="160px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox4" runat="server" Height="20px" Width="160px"></asp:TextBox>
                 </td>
             </tr>
         </table>
