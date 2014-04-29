@@ -127,11 +127,11 @@
                         Text="Save" Width="160px" style="font-weight: 700" />
         </div>
         <div  style="display:inline; margin-left:10px;">
-            <asp:Button ID="Button2" runat="server" Text="Cancel" onclick="Button2_Click" 
+            <asp:Button ID="Button2" runat="server" Text="Cancel" onclick="Logo_Click" 
                         CausesValidation="False" Height="30px" style="font-weight: 700" Width="160px" />
         </div>
         <div>
-            <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="Label3" runat="server" Text="Label" ForeColor="White"></asp:Label>
         </div>
         
     

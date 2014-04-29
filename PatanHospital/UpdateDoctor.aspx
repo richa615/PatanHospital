@@ -8,7 +8,7 @@
     <style type="text/css">
         .style1
         {
-            width: 800px;
+            width: 500px;
         }
         .style2
         {
@@ -37,56 +37,35 @@
         {
             width: 141px;
             text-align: right;
+            color:#23d6d0;
         }
         .auto-style3
         {
             width: 141px;
             text-align: right;
             font-weight: bold;
+            color:#23d6d0;
         }
         .auto-style4
         {
             width: 126px;
             font-weight: bold;
             text-align: right;
+            color:#23d6d0;
         }
     </style>
 </head>
-<body bgcolor=#BDBDBD>
+<body bgcolor=#25272A>
     <form id="form1" runat="server">
     <div align="center">
-    
+        <div style="height:130px;">
+                <asp:ImageButton ID="ImageButton1" OnClick="Logo_Click" OnClientClick="Logo_Click" ImageUrl="Images/PatanHospitalLogoPH.png" runat="server" style="height: 174px; width: 499px; margin-top:20px;" />
+        </div>
+        <div align="center"  style="font-size:large; font-weight:bold;margin-top:40px;">
+            <h1 style="color:white;">Edit Doctor Information</h1>
+        </div>
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
         <table class="style1">
-            <tr>
-                <td class="style2" colspan="4">
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style1" colspan="4">
-                    <strong>Edit Doctor Information</strong></td>
-            </tr>
-            <tr>
-                <td class="style7">
-                    &nbsp;</td>
-                <td class="style3">
-                    &nbsp;</td>
-                <td class="style4">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style7">
-                    <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" style="font-weight: 700" Text="Home" Height="30px" Width="160px" />
-                </td>
-                <td class="style3">
-                    &nbsp;</td>
-                <td class="style4">
-                    &nbsp;</td>
-                <td style="text-align: right">
-                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
-                </td>
-            </tr>
             <tr>
                 <td class="style7">
                     &nbsp;</td>
@@ -131,7 +110,7 @@
                 <td class="style7">
                     &nbsp;</td>
                 <td class="style3">
-                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label1" runat="server" Text="Label" ForeColor="White"></asp:Label>
                 </td>
                 <td class="style4">
                     &nbsp;</td>
@@ -275,7 +254,7 @@
                 <td class="style4">
                     &nbsp;</td>
                 <td>
-                    <asp:Button ID="Button2" runat="server" Height="30px" onclick="Button2_Click" 
+                    <asp:Button ID="Button2" runat="server" Height="30px" onclick="Logo_Click" 
                         Text="Cancel" Width="160px" style="font-weight: 700" />
                 </td>
             </tr>

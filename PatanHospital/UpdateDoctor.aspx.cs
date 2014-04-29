@@ -229,12 +229,6 @@ namespace PatanHospital
                   
                 }
         }
-
-        protected void Button2_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("AdminHome.aspx");
-        }
-
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
@@ -274,7 +268,7 @@ namespace PatanHospital
             CheckNPI();
         }
 
-        protected void Button3_Click(object sender, EventArgs e)
+        protected void Logo_Click(object sender, EventArgs e)
         {
             Response.Redirect("AdminHome.aspx");
         }

@@ -80,7 +80,7 @@
             
         </div>
         <div style="width:33%; display:inline-block;">
-            <h2 style="color:#23d6d0">Doctors</h2>
+            <h2 style="color:#23d6d0;">Doctors</h2>
            
         </div>
         <div style="width:33%; display:inline-block;">

@@ -26,58 +26,23 @@
         }
         .auto-style7
         {
+            color:#23d6d0;
             width: 72px;
             height: 21px;
         }
     </style>
 </head>
-<body bgcolor=#BDBDBD>
+<body bgcolor=#25272A>
     <form id="form1" runat="server">
-    <div>
+    <div align="center">
+        <div style="height:130px;">
+                <asp:ImageButton ID="ImageButton1" OnClick="Logo_Click" OnClientClick="Logo_Click" ImageUrl="Images/PatanHospitalLogoPH.png" runat="server" style="height: 174px; width: 499px; margin-top:20px;" />
+        </div>
+        <div align="center"  style="font-size:large; font-weight:bold;margin-top:40px;">
+            <h1 style="color:white;">Doctor Search</h1>
+        </div>
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
         <table style="width:650px" border="0" cellspacing="0" class="GridViewStyle">
-        <tr class="HeaderStyle">
-        <th class="auto-style6">&nbsp;</th>
-        <th style="width:200px">&nbsp;</th>
-        <th style="width:125px">&nbsp;</th>
-        <th style="width:125px">&nbsp;</th>
-        <th style="width:125px">&nbsp;</th>
-        </tr>
-        <tr class="HeaderStyle">
-        <th class="auto-style1" colspan="5">Search For Doctor</th>
-        </tr>
-        <tr class="HeaderStyle">
-        <th class="auto-style6">&nbsp;</th>
-        <th style="width:200px">&nbsp;</th>
-        <th style="width:125px">&nbsp;</th>
-        <th style="width:125px">&nbsp;</th>
-        <th style="width:125px">&nbsp;</th>
-        </tr>
-        <tr class="AltRowStyle">
-        <td class="auto-style7">
-            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Home" Height="30px" style="font-weight: 700" Width="160px" />
-            </td>
-        <td class="auto-style3">&nbsp;</td>
-        <td class="auto-style4">
-            &nbsp;</td>
-        <td class="auto-style4">&nbsp;</td>
-        <td class="auto-style4">
-            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
-            </td>
-        </tr>
-        <tr class="AltRowStyle">
-        <td class="auto-style7">&nbsp;</td>
-        <td class="auto-style3">&nbsp;</td>
-        <td class="auto-style4">&nbsp;</td>
-        <td class="auto-style4">&nbsp;</td>
-        <td class="auto-style4">&nbsp;</td>
-        </tr>
-        <tr class="AltRowStyle">
-        <td class="auto-style7">&nbsp;</td>
-        <td class="auto-style3">&nbsp;</td>
-        <td class="auto-style4">&nbsp;</td>
-        <td class="auto-style4">&nbsp;</td>
-        <td class="auto-style4">&nbsp;</td>
-        </tr>
         <tr class="AltRowStyle">
         <td class="auto-style7"><strong style="text-align: right">Zip Code:</strong></td>
         <td class="auto-style3"><asp:DropDownList ID="DoctorZipCode" runat="server" AppendDataBoundItems="True" 
@@ -85,26 +50,24 @@
             DataValueField="ZipCode" Width="160px" Height="30px">
             <asp:ListItem Value="%">All</asp:ListItem>
         </asp:DropDownList></td>
-        <td class="auto-style4"><strong>Speciality:</strong></td>
+        <td class="auto-style7"><strong>Speciality:</strong></td>
         <td class="auto-style4"><asp:DropDownList ID="DoctorSpeciality" runat="server" AppendDataBoundItems="True" 
             AutoPostBack="True" DataSourceID="sqlDataSourceDoctorSpeciality" 
             DataTextField="Speciality" DataValueField="Speciality" Width="160px" Height="30px">
             <asp:ListItem Value="%">All</asp:ListItem>
         </asp:DropDownList></td>
-        <td class="auto-style4"></td>
         </tr>
         <tr class="AltRowStyle">
         <td class="auto-style6">&nbsp;</td>
         <td style="width:200px">&nbsp;</td>
         <td style="width:125px">&nbsp;</td>
         <td style="width:125px">&nbsp;</td>
-        <td style="width:125px">&nbsp;</td>
         </tr>
         <tr>
-        <td colspan="5">
+        <td colspan="4">
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" 
             DataSourceID="sqlDataSourceGridView" AutoGenerateColumns="False"
-            CssClass="GridViewStyle" Width="650px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" OnDataBound="GridView1_DataBound">
+            CssClass="GridViewStyle" Width="650px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" OnDataBound="GridView1_DataBound" ForeColor="White">
             <Columns>
                 <asp:BoundField DataField="DName" HeaderText="Name" ReadOnly="True" SortExpression="DName" />
                 <asp:BoundField DataField="Phone" HeaderText="Phone" ItemStyle-Width="100px" SortExpression="Phone">
@@ -132,29 +95,9 @@
         </td>
         </tr>
         <tr>
-        <td colspan="5">
-            &nbsp;</td>
-        </tr>
-        <tr>
-        <td colspan="5">
-            &nbsp;</td>
-        </tr>
-        <tr>
-        <td colspan="5">
+        <td colspan="4">
             <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" style="font-weight: 700" Text="Done" Height="30px" Width="160px" />
         </td>
-        </tr>
-        <tr>
-        <td colspan="5">
-            &nbsp;</td>
-        </tr>
-        <tr>
-        <td colspan="5">
-            &nbsp;</td>
-        </tr>
-        <tr>
-        <td colspan="5">
-            &nbsp;</td>
         </tr>
         </table>
         

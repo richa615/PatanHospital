@@ -8,16 +8,19 @@
     <style type="text/css">
         .style1
         {
-            width: 800px;
+            width: 500px;
         }
         .style2
         {
-            width: 93px;
+            width: 200px;
             color:#23d6d0;
         }
         .style3
         {
             width: 79px;
+        }
+        .auto-style4 {
+            width: 12px;
         }
     </style>
 </head>
@@ -31,50 +34,10 @@
             <h1 style="color:white;">Delete Doctor</h1>
         </div>
         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
+        <div>
+            <asp:Label ID="Label1" runat="server" Text="Label" ForeColor="White"></asp:Label>
+        </div>
         <table id="Table1" class="style1">
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td>
-                    
-                </td>
-                <td>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
-                </td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td>
-                    <asp:Label ID="Label1" runat="server" Text="Label" ForeColor="White"></asp:Label>
-                </td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
             <tr>
                 <td class="style2">
                     <strong>Name:</strong></td>
@@ -87,48 +50,21 @@
                         SelectCommand="SELECT Fname + ' ' + Lname AS Name, SSN FROM DoctorCrediantials">
                     </asp:SqlDataSource>
                 </td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
             </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td>
-                    <asp:Button ID="Button1" runat="server" Text="Delete" onclick="Button1_Click" Height="30px" style="font-weight: 700" Width="150px" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="Button2" runat="server" Text="Cancel" onclick="Button2_Click" Height="30px" style="font-weight: 700" Width="150px" />
-                </td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-        </table>
-    
-    </div>
-    <table id="Table2" class="style1" runat ="server" align="center">
+            </table>
+        <div style="display:inline;">
+            <asp:Button ID="Button1" runat="server" Text="Delete" onclick="Button1_Click" Height="30px" style="font-weight: 700" Width="150px" />
+        </div>
+        <div style="display:inline; margin-left:10px;">
+            <asp:Button ID="Button2" runat="server" Text="Cancel" onclick="Logo_Click" Height="30px" style="font-weight: 700" Width="150px" />
+        </div>
+        <table id="Table2" class="style1" runat ="server" align="center">
         <tr>
             <td class="style2">
                 <strong>Name:</strong></td>
             <td>
                 <asp:TextBox ID="TextBox1" runat="server" Height="20px" Width="150px"></asp:TextBox>
             </td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
         </tr>
         <tr>
             <td class="style2">
@@ -136,10 +72,6 @@
             <td>
                 <asp:TextBox ID="TextBox2" runat="server" Height="20px" Width="150px"></asp:TextBox>
             </td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
         </tr>
         <tr>
             <td class="style2">
@@ -147,10 +79,6 @@
             <td>
                 <asp:TextBox ID="TextBox3" runat="server" Height="20px" Width="150px"></asp:TextBox>
             </td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
         </tr>
         <tr>
             <td class="style2">
@@ -158,36 +86,17 @@
             <td>
                 <asp:TextBox ID="TextBox4" runat="server" Height="20px" Width="150px"></asp:TextBox>
             </td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
         </tr>
-        <tr>
-            <td class="style3">
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td class="style3">
-                &nbsp;</td>
-            <td>
-                <asp:Button ID="Button3" runat="server" Text="Confirm Deletion" 
+        </table>
+        <div style="display:inline;">
+            <asp:Button ID="Button3" runat="server" Text="Confirm Deletion" 
                     onclick="Button3_Click" Height="30px" style="font-weight: 700" Width="150px" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="Button4" runat="server" onclick="Button4_Click" Text="Cancel" Height="30px" style="font-weight: 700" Width="150px" />
-            </td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-    </table>
+        </div>
+        <div style="display:inline; margin-left:10px;">
+            <asp:Button ID="Button4" runat="server" onclick="Logo_Click" Text="Cancel" Height="30px" style="font-weight: 700" Width="150px" />
+        </div>
+    </div>
+    
     </form>
     </body>
 </html>

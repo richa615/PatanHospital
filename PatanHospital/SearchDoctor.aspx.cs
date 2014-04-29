@@ -14,7 +14,7 @@ namespace PatanHospital
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void Logo_Click(object sender, EventArgs e)
         {
            if (Session["Status"].ToString()=="Patient")
            {
