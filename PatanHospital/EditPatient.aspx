@@ -31,11 +31,13 @@
         .auto-style1
         {
             font-weight: bold;
+            color:#23d6d0;
         }
         .auto-style2
         {
             width: 89px;
             font-weight: bold;
+            color:#23d6d0;
         }
         .auto-style3
         {
@@ -53,40 +55,20 @@
         }
     </style>
 </head>
-<body bgcolor=#BDBDBD>
+<body bgcolor=#25272A>
     <form id="form1" runat="server">
     <div align="center">
-    
+        <div style="height:130px;">
+             <asp:ImageButton ID="ImageButton1" OnClick="Logo_Click" OnClientClick="Logo_Click" ImageUrl="Images/PatanHospitalLogoPH.png" runat="server" style="height: 174px; width: 499px; margin-top:20px;" />
+        </div>
+        <div align="center"  style="font-size:large; font-weight:bold;margin-top:40px;">
+            <h1 style="color:white;">Edit Patient Information</h1>
+        </div>
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
         <table class="style1">
             <tr>
-                <td class="style2" colspan="4">
-                    <strong>Edit Patient Information:</strong></td>
-            </tr>
-            <tr>
-                <td class="style6">
-                    <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" style="font-weight: 700" Text="Home" Height="30px" Width="160px" />
-                </td>
-                <td class="style4">
-                    &nbsp;</td>
-                <td class="style5">
-                    &nbsp;</td>
-                <td>
-                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
-                </td>
-            </tr>
-            <tr>
-                <td class="style6">
-                    &nbsp;</td>
-                <td class="style4">
-                    &nbsp;</td>
-                <td class="style5">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
                 <td class="style3" colspan="4">
-                    <strong>Name:</strong><asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" 
+                    <strong style="color:#23d6d0;">Name:</strong><asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" 
                         DataSourceID="SqlDataSource1" DataTextField="Name" DataValueField="SSN" 
                         Height="30px" Width="160px" 
                         onselectedindexchanged="DropDownList1_SelectedIndexChanged">
@@ -101,7 +83,7 @@
             </tr>
             <tr>
                 <td class="style6" colspan="4">
-                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label1" runat="server" Text="Label" ForeColor="White"></asp:Label>
                 </td>
             </tr>
             <tr>
@@ -203,7 +185,7 @@
                         Text="Update" Width="160px" style="font-weight: 700" />
                 </td>
                 <td class="auto-style5">
-                    <asp:Button ID="Button2" runat="server" Height="30px" onclick="Button2_Click" 
+                    <asp:Button ID="Button2" runat="server" Height="30px" onclick="Logo_Click" 
                         Text="Cancel" Width="160px" CausesValidation="False" style="font-weight: 700" />
                 </td>
                 <td class="auto-style3">

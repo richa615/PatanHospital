@@ -25,9 +25,14 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div id="wrapper">
-        <div id="banner">
+   
+        <div style="height:130px;" align="center">
+            <asp:ImageButton ID="ImageButton1" ImageUrl="Images/PatanHospitalLogoPH.png" runat="server" style="height: 174px; width: 499px; margin-top:20px;" />
         </div>
+        <div align="center"  style="font-size:large; font-weight:bold;margin-top:40px;">
+            <h1 style="color:white;">Patan Hospital</h1>
+        </div>
+    <div id="wrapper">
         <div id="navigation">
             <ul id="nav">
                 <li><a href="HomePage.aspx" runat="server">Home</a></li>
@@ -38,7 +43,7 @@
 
             </ul>
         </div>
-        <div id="content_area">
+        <div id="content_area" align="center">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>

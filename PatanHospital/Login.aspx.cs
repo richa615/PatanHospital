@@ -154,5 +154,10 @@ namespace PatanHospital
         {
 
         }
+        protected void Logo_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("HomePage.aspx");
+        }
+
     }
 }

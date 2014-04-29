@@ -173,8 +173,7 @@ namespace PatanHospital
             }
 
         }
-
-        protected void Button3_Click(object sender, EventArgs e)
+        protected void Logo_Click(object sender, EventArgs e)
         {
             Response.Redirect("AdminHome.aspx");
         }

@@ -25,7 +25,7 @@
     <form id="form1" runat="server">
     <div align="center">
         <div style="height:130px;">
-            <img src="Images/PatanHospitalLogoPH.png" style="height: 174px; width: 499px; margin-top:20px;" />
+            <asp:ImageButton OnClick="Logo_Click" OnClientClick="Logo_Click" ImageUrl="Images/PatanHospitalLogoPH.png" runat="server" style="height: 174px; width: 499px; margin-top:20px;" />
         </div>
         <div align="center"  style="font-size:large; font-weight:bold;margin-top:40px;">
             <h1 style="color:white;">Delete Doctor</h1>
@@ -43,8 +43,8 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
-                    <asp:Button ID="Button5" runat="server" OnClick="Button5_Click" Text="Home" Height="30px" Width="160px" />
+                <td>
+                    
                 </td>
                 <td>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;

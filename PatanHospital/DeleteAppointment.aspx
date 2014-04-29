@@ -44,7 +44,6 @@
         <table style="width:650px" border="0" cellspacing="0" class="GridViewStyle">
         <tr class="AltRowStyle">
         <td class="auto-style5">
-            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Home" Height="30px" style="font-weight: 700" Width="160px" />
             </td>
         <td class="auto-style3">&nbsp;</td>
         <td class="auto-style4">

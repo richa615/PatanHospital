@@ -13,167 +13,91 @@
         .style2
         {
             width: 109px;
+            color:#23d6d0;
         }
         .style3
         {
+            color:#23d6d0;
             width: 268px;
         }
         .style4
         {
+            color:#23d6d0;
             width: 88px;
+        }
+        .auto-style1 {
+            color: #23d6d0;
+            width: 88px;
+            height: 30px;
+        }
+        .auto-style2 {
+            height: 30px;
         }
     </style>
 </head>
-<body bgcolor=#BDBDBD>
+<body bgcolor=#25272A>
     <form id="form1" runat="server">
     <div align="center">
-    
+        <div style="height:130px;">
+                <asp:ImageButton ID="ImageButton1" OnClick="Logo_Click" OnClientClick="Logo_Click" ImageUrl="Images/PatanHospitalLogoPH.png" runat="server" style="height: 174px; width: 499px; margin-top:20px;" />
+        </div>
+        <div align="center"  style="font-size:large; font-weight:bold;margin-top:40px;">
+            <h1 style="color:white;">Delete Patient</h1>
+        </div>
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
+        <div>
+            <strong class=auto-style1>Patient Name:</strong>
+            <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" 
+                DataSourceID="SqlDataSource1" DataTextField="Name" DataValueField="SSN" 
+                Height="30px" Width="160px">
+            </asp:DropDownList>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+                ConnectionString="<%$ ConnectionStrings:HospitalServerConnectionString %>" 
+                SelectCommand="SELECT Fname + ' ' + Lname AS Name, SSN FROM PatientCredientials">
+            </asp:SqlDataSource>
+            <asp:Button ID="Button3" runat="server" Text="Delete" onclick="Button3_Click" Height="30px" style="font-weight: 700" Width="160px" />
+        </div>
+        <div style="margin-top:10px;">
+            <asp:Label ID="Label1" runat="server" Text="Label" ForeColor="White"></asp:Label>
+        </div>
         <table class="style1">
+        </table>
+        <table>
             <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td class="style3">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
+                <td class="auto-style1">
+                    <strong>Name:</strong></td>
+                <td class="auto-style2">
+                    <asp:TextBox ID="TextBox5" runat="server" Height="20px" Width="160px"></asp:TextBox>
+                </td>
             </tr>
             <tr>
-                <td class="style2">
-                    <asp:Button ID="Button4" runat="server" OnClick="Button4_Click" style="font-weight: 700" Text="Home" Height="30px" Width="160px" />
-                </td>
-                <td class="style3">
-                    &nbsp;</td>
+                <td class="style4">
+                    <strong>SSN:</strong></td>
                 <td>
-                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Log Out</asp:HyperLink>
+                    <asp:TextBox ID="TextBox6" runat="server" Height="20px" Width="160px"></asp:TextBox>
                 </td>
-                <td>
-                    &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td class="style3">
-                    &nbsp;</td>
+                <td class="style4">
+                    <strong>Phone:</strong></td>
                 <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
+                    <asp:TextBox ID="TextBox7" runat="server" Height="20px" Width="160px"></asp:TextBox>
+                </td>
             </tr>
             <tr>
-                <td class="style2">
-                    <strong>Patient Name:</strong></td>
-                <td class="style3">
-                    <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" 
-                        DataSourceID="SqlDataSource1" DataTextField="Name" DataValueField="SSN" 
-                        Height="30px" Width="160px">
-                    </asp:DropDownList>
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
-                        ConnectionString="<%$ ConnectionStrings:HospitalServerConnectionString %>" 
-                        SelectCommand="SELECT Fname + ' ' + Lname AS Name, SSN FROM PatientCredientials">
-                    </asp:SqlDataSource>
+                <td class="auto-style1">
+                    <strong>Email:</strong></td>
+                <td class="auto-style2">
+                    <asp:TextBox ID="TextBox8" runat="server" Height="20px" Width="160px"></asp:TextBox>
                 </td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td class="style3">
-                    <asp:Button ID="Button3" runat="server" Text="Delete" onclick="Button3_Click" Height="30px" style="font-weight: 700" Width="160px" />
-                </td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td class="style3">
-                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-                </td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
             </tr>
         </table>
-    
-    </div>
-    <table id="Table2" class="style1" runat= "server" align="center">
-        <tr>
-            <td class="style4">
-                <strong>Name:</strong></td>
-            <td>
-                <asp:TextBox ID="TextBox1" runat="server" Height="20px" Width="160px"></asp:TextBox>
-            </td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td class="style4">
-                <strong>SSN:</strong></td>
-            <td>
-                <asp:TextBox ID="TextBox2" runat="server" Height="20px" Width="160px"></asp:TextBox>
-            </td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td class="style4">
-                <strong>Phone:</strong></td>
-            <td>
-                <asp:TextBox ID="TextBox3" runat="server" Height="20px" Width="160px"></asp:TextBox>
-            </td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td class="style4">
-                <strong>Email:</strong></td>
-            <td>
-                <asp:TextBox ID="TextBox4" runat="server" Height="20px" Width="160px"></asp:TextBox>
-            </td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td class="style4">
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td class="style4">
-                &nbsp;</td>
-            <td>
-                <asp:Button ID="Button1" runat="server" onclick="Button1_Click" 
+        <div>
+            <asp:Button ID="Button4" runat="server" onclick="Button1_Click" 
                     Text="Confirm Deletion" Height="30px" style="font-weight: 700" Width="160px" />
-&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="Button2" runat="server" Text="Cancel" onclick="Button2_Click" Height="30px" style="font-weight: 700" Width="160px" />
-            </td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-    </table>
+            <asp:Button ID="Button5" runat="server" Text="Cancel" onclick="Logo_Click" Height="30px" style="font-weight: 700; margin-left:5px;" Width="160px" />
+        </div>
+    </div>
     </form>
 </body>
 </html>

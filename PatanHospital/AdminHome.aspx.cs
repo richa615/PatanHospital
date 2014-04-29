@@ -57,5 +57,9 @@ namespace PatanHospital
         {
             Response.Redirect("SearchDoctor.aspx");
         }
+        protected void Logo_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Login.aspx");
+        }
     }
 }

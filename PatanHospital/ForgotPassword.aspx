@@ -34,170 +34,38 @@
         }
     </style>
 </head>
-<body bgcolor=#BDBDBD>
+<body bgcolor=#25272A>
     <form id="form1" runat="server">
     <div align="center">
-    
-        <table class="style1">
+        <div style="height:130px;">
+                <asp:ImageButton ID="ImageButton1" OnClick="Logo_Click" OnClientClick="Logo_Click" ImageUrl="Images/PatanHospitalLogoPH.png" runat="server" style="height: 174px; width: 499px; margin-top:20px;" />
+        </div>
+        <div align="center"  style="font-size:large; font-weight:bold;margin-top:40px;">
+            <h1 style="color:white;">Forgot Password</h1>
+        </div>
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Go back</asp:HyperLink>
+        <div style="padding-top:5px;">
+             <asp:Label ID="Label1" runat="server" Text="Label" ForeColor="White"></asp:Label>
+        </div>
+        <table>
             <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td class="style3">
-                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Go back</asp:HyperLink>
+                <td style="color:#23d6d0;">
+                    <strong>Email:</strong>
                 </td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style4">
-                </td>
-                <td class="style5">
-                </td>
-                <td class="style6">
-                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-                </td>
-                <td class="style6">
-                </td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td class="style3">
-                    <strong>Email:</strong></td>
                 <td>
                     <asp:TextBox ID="TextBox1" runat="server" Height="20px" Width="150px"></asp:TextBox>
                 </td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td class="style3">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td class="style3">
-                    &nbsp;</td>
-                <td>
-                    <asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="Submit" Height="30px" style="font-weight: 700" Width="160px" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="Button2" runat="server" onclick="Button2_Click" Text="Cancel" Height="30px" style="font-weight: 700" Width="160px" />
-                </td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td class="style3">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td class="style3">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td class="style3">
-                    &nbsp;</td>
-                <td>
-                    <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
-                </td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td class="style3">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td class="style3">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td class="style3">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td class="style3">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td class="style3">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td class="style3">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style2">
-                    &nbsp;</td>
-                <td class="style3">
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
-                <td>
-                    &nbsp;</td>
             </tr>
         </table>
-    
+        <div style="display:inline-block; padding-top:10px;">
+            <asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="Submit" Height="30px" style="font-weight: 700" Width="160px" />
+        </div>
+        <div style="display:inline-block">
+            <asp:Button ID="Button2" runat="server" onclick="Logo_Click" Text="Cancel" Height="30px" style="font-weight: 700" Width="160px" />
+        </div>
+        <div>
+            <asp:Label ID="Label2" runat="server" Text="Label" ForeColor="White"></asp:Label>
+        </div>
     </div>
     </form>
 </body>

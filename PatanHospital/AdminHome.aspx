@@ -66,7 +66,7 @@
     <form id="form1" runat="server">
     <div align="center">
         <div style="height:130px;">
-            <img src="Images/PatanHospitalLogoPH.png" style="height: 174px; width: 499px; margin-top:20px;" />
+                <asp:ImageButton ID="ImageButton1" OnClick="Logo_Click" OnClientClick="Logo_Click" ImageUrl="Images/PatanHospitalLogoPH.png" runat="server" style="height: 174px; width: 499px; margin-top:20px;" />
         </div>
         <div align="center"  style="font-size:large; font-weight:bold;margin-top:40px;">
             <h1 style="color:white;">Administrator</h1>
@@ -94,7 +94,7 @@
             <asp:Button ID="Button12" runat="server" Text="Delete Patients" 
                         onclick="Button12_Click" Height="30px" style="font-weight: 700" Width="175px" />
         </div>
-        <div style="width:33%; display:inline-block;">
+        <div style="width:33%; display:inline-block; padding-top:20px">
              <asp:Button ID="Button2" runat="server" onclick="Button2_Click" 
                         Text="Register a Doctor" Width="175px" Height="30px" style="font-weight: 700" />
             <asp:Button ID="Button7" runat="server" onclick="Button7_Click" 
