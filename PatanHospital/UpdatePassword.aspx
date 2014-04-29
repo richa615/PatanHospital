@@ -71,7 +71,7 @@
                     <asp:Label ID="Label3" runat="server" style="font-weight: 700" Text="Old Password:"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TextBox2" runat="server" Height="20px" Width="160px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox2" runat="server" TextMode="Password" Height="20px" Width="160px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -79,7 +79,7 @@
                     <asp:Label ID="Label4" runat="server" style="font-weight: 700" Text="New Password:"></asp:Label>
                 </td>
                 <td class="auto-style7">
-                    <asp:TextBox ID="TextBox3" runat="server" Height="20px" Width="160px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox3" runat="server" TextMode="Password" Height="20px" Width="160px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -87,7 +87,7 @@
                     <asp:Label ID="Label5" runat="server" style="font-weight: 700" Text="Re type New Password:"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TextBox4" runat="server" Height="20px" Width="160px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox4" runat="server" TextMode="Password" Height="20px" Width="160px"></asp:TextBox>
                 </td>
             </tr>
             </table>

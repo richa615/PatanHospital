@@ -18,6 +18,7 @@ namespace PatanHospital
         protected void Page_Load(object sender, EventArgs e)
         {
             Label1.Text = Session["Doctor_SSN"].ToString();
+            Label1.Visible = false;
             Bind_Grid_View();
 
         }
