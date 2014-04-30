@@ -87,13 +87,19 @@
                 <asp:TextBox ID="TextBox4" runat="server" Height="20px" Width="150px"></asp:TextBox>
             </td>
         </tr>
-        </table>
-        <div style="display:inline;">
+        <tr>
+            <td class="style2">
             <asp:Button ID="Button3" runat="server" Text="Confirm Deletion" 
                     onclick="Button3_Click" Height="30px" style="font-weight: 700" Width="150px" />
+            </td>
+            <td>
+            <asp:Button ID="Button4" runat="server" onclick="Logo_Click" Text="Cancel" Height="30px" style="font-weight: 700" Width="150px" />
+            </td>
+        </tr>
+        </table>
+        <div style="display:inline;">
         </div>
         <div style="display:inline; margin-left:10px;">
-            <asp:Button ID="Button4" runat="server" onclick="Logo_Click" Text="Cancel" Height="30px" style="font-weight: 700" Width="150px" />
         </div>
     </div>
     
