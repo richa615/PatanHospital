@@ -30,8 +30,7 @@
             <div style="height:130px;">
             <asp:ImageButton ID="ImageButton1" ImageUrl="Images/PatanHospitalLogoPH.png" runat="server" style="height: 174px; width: 499px; margin-top:20px;" />
         </div>
-        </div>
-        <div align="center"  style="font-size:large; font-weight:bold;margin-top:70px;">
+        <div align="center"  style="font-size:large; font-weight:bold;margin-top:40px;">
             <h1 style="color:white;">Patan Hospital</h1>
         </div>
     <div id="wrapper">
