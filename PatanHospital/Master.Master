@@ -27,9 +27,9 @@
     <form id="form1" runat="server">
    
         <div style="height:130px;" align="center">
-            <div id="banner">
-            <asp:ImageButton ID="ImageButton1" ImageUrl="Images/PatanHospitalLogoPH.png" runat="server" style="height: 249px; width: 615px; position:absolute; top: -18px; left: 556px;" />
-            </div>
+            <div style="height:130px;">
+            <asp:ImageButton ID="ImageButton1" ImageUrl="Images/PatanHospitalLogoPH.png" runat="server" style="height: 174px; width: 499px; margin-top:20px;" />
+        </div>
         </div>
         <div align="center"  style="font-size:large; font-weight:bold;margin-top:70px;">
             <h1 style="color:white;">Patan Hospital</h1>
