@@ -95,7 +95,7 @@ namespace PatanHospital
 
         protected void Logo_Click(object sender, EventArgs e)
         {
-            Response.Redirect("DoctorHome.aspx");
+            Response.Redirect("AdminHome.aspx");
         }
 
     }
