@@ -9,3 +9,5 @@ PatanHospital/bin/PatanHospital.dll
 *.pdb
 *.dll
 *.suo
+PatanHospital/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+*.suo
