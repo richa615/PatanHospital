@@ -1,20 +1,24 @@
 PatanHospital
 =============
 
-This is a project developed by students of Loyola University Chicago for  Open Source Computing(COMP 412). We gratefully acknowledge professor Matthew Butcher(github technosophos) for his support to build this project.
+This is a project developed by students of Loyola University Chicago for Open Source Computing(COMP 412). We gratefully acknowledge professor Matthew Butcher(github technosophos) for his support to build this project.
 
-The project is developed in Visual studio 2010. The backend server used is MS Server 2008. The server is hosted on  sql.cs.luc.edu.
+This is an application developed primarily to make interaction in the hospital environment easier. There are primarily 3 end users Administrator, Doctor and a patient. It creates a bridge among all the end users making interaction among each other easier. PatanHospital works as a basic structure that can be applied to any hospital environment and can be easily customized to meet specific requirement.
 
-To get started with this project you need to install Visual Studio 2010. Youcan easily download it from https://www.dreamspark.com/(for students)
-http://www.microsoft.com/BizSpark/(for new business) and http://www.microsoft.com/web/websitespark/(for new websites).
+The project is developed in Microsoft Visual Studio Professional 2012. The backend server used is MS Server 2008. The server is hosted on sql.cs.luc.edu.
 
-To connect to the database, you need authorization from Loyola University, Chicago. Please email me your email address with a request for authorization and I will provide you with all the authorizations.
+The latest versionof the project has the following features: Administrator can register,edit and delete patient/doctor information, reserve appointments for patients over the phone, edit the reservations.Patients can register themselves and reserve appointment with a doctor, request reservation over the phone and edit their information. Doctors can view their profile and view the appointment scheduled for a specific day. An auto generated password is mailed to doctor and patient upon registration. An email is also sent to doctors and patients upon appointment reservation. Forgot password and update password feature is also available for the doctor and patient. 
 
-You can easily use SQL Server Management Studio(comes with Visual studio package) to connect to the Database. If not, use Visual Studio to make the connection.
- In visual studio Tools ->Connect To Database -> Data Source is Microsoft SQL Server
-                  Server name -> sql.cs.luc.edu
-                  -> Use SQL Server Authentication
-                          User name: will be provided upon request
-                          Password: will be provided upon Request
-                          
-                    Database Name: HospitalServer
+For Technical Assistance
+=========================
+
+A group forum/Email list has been created using Google groups.All release information as well as ideas will be discussed on the forum. Simply submit a request and you will added to the forum thereafter. the link to the forum:
+https://groups.google.com/forum/#!forum/patenthospitalgroup
+
+
+
+To report Issues
+=================
+
+https://github.com/richa615/PatanHospital/issues
+
