@@ -1,0 +1,90 @@
+Tools and Application required:
+	1) Microsoft Visual Studio Professional 2012
+	2) Microsoft SQL Server Management Studio 2012(optional)
+Microsoft Visual Studio Professional 2012
+Requirements:
+Supported operating systems:
+•	Windows 7 SP1 (x86 and x64)
+•	Windows 8 (x86 and x64)
+•	Windows Server 2008 R2 SP1 (x64)
+•	Windows Server 2012 (x64)
+	Supported architectures
+•	32-bit (x86)
+•	64-bit (x64)
+	Hardware requirements
+•	1.6 GHz or faster processor
+•	1 GB of RAM (1.5 GB if running on a virtual machine)
+•	10 GB of available hard disk space
+•	600 MB of available hard disk space (language pack)
+•	5400 RPM hard drive
+•	DirectX 9-capable video card running at 1024 x 768 or higher display resolution
+Downloading:
+On the Official website, we can download: Microsoft Visual Studio 2012 Professional Edition: http://www.microsoft.com/en-us/download/details.aspx?id=30682
+Students:
+Students can download the Microsoft products from dreamspark.com free of cost.
+Installing:
+Windows Installation:
+	Pre installation preparation:
+•	Ensure that all of the pre-release (Beta or CTP versions) components on your machine have been removed.
+•	Disable your Anti-Virus or Anti-Spyware software.
+•	Be sure that your OS has been "patched" up – Update your computer (Windows).
+•	Complete or dismiss Windows Update before installation. Please don’t forget to turn it on later.
+
+Installation
+•	After the preparation has been done, we double-click the setup.exe file to start Visual Studio products installation.
+•	Accept the license terms to continue the installation.
+•	Select the features that you want to install and the path where you want VS2012 to be installed.
+•	The setup takes some time to install the components.
+•	The setup needs rebooting after .NET Framework 4.0 has been installed.
+•	After the rebooting, the setup starts again.
+•	The setup starts to install the rest components.
+•	The installation is completed.
+
+MAC OSX Installation
+Parallels, technically a VM is used to run Visual Studio in OSX environment. Parallels in Coherence mode completely integrates Windows 7 into OS X and .Net framework is fully supported. However the Apps you created would only run of windows computers unless they were web based.
+MacBook Air officially supports windows 7. If you purchase Windows 7(DSP), you can boot Camp assistant in OSX to designate part of the mac hardware for windows. Then you can install and run Windows 7 natively as if it were as Windows notebook.
+Microsoft SQL Server Management Studio 2012
+Requirements:
+Supported operating systems:
+•	Windows 7
+•	Windows Server 2008 R2 
+•	Windows Server 2008 R2 SP2
+•	Windows Vista Service Pack.
+	Supported architectures
+•	32-bit (x86)
+•	64-bit (x64)
+	Hardware requirements
+•	1 GHz or faster processor(2 GHz or faster is recommended)
+•	512 of RAM (1.5 GB if running on a virtual machine, 2GB is recommended)
+•	2.2 GB of available hard disk space
+Downloading:
+On the Official website, we can download: Microsoft SQL Server Management Studio 2012: http://www.microsoft.com/en-us/download/details.aspx?id=29062St
+Students:
+Students can download the Microsoft products from dreamspark.com free of cost.
+Installing:
+Installation
+•	To begin, launch the install program and choose the top option to install a new stand-alone installation. 
+•	Read and accept the license agreement and click next. At this point you can choose the features that you want to install. You can also change the install folder if you do not want to install to the default location. Click Next to continue.
+•	Now you can configure the SQL instance. If this is the first instance of SQL Server on your computer, you probably want to change this setting to Default instance.  If you already have another instance of SQL Server, you will want to use Named Instance and give it a name. Click Next to continue.
+•	The next step is server configuration. From here you can change the Windows services associated with this instance of SQL Server. You can keep the defaults here unless you want to specify different user accounts for the services. You can also change the default collation settings if you are not in the United States. Click Next to continue.
+•	Now we come to the Database Engine configuration. On the Server Configuration tab you can select whether SQL Server will only authenticate using Windows accounts or you can choose Mixed Mode which will allow Windows accounts and SQL accounts. 
+•	On the Data Directories tab you can change the locations of various files that SQL will use. Depending on your server configuration and the load that will be put on SQL, you may want to put the database and log folders on separate drives. For most people, you can leave the default values. Click Next to continue.
+•	The next step configures Reporting Services. Set this to install only if you don’t need reporting services or may need them in the future.  You can always go back and configure it later. Click Next to continue.
+•	On the Error Reporting step, you can choose whether or not you would like to send error reports to Microsoft to help them improve future releases of SQL server. Click Next to continue.
+•	At this point, SQL server will install on your computer.  This could take a while to complete depending on the computer you are using.
+MAC OSX Installation
+Parallels, can be used to operate Microsoft SQL Server Management Studio 2012 in OSX environment.
+Database Details
+	Name: HospitalServer
+The database is hosted in Loyola University Chicago. To connect to the database, you need authorization from Loyola University, Chicago. Please email your email address with a request for authorization and I will provide you with all the authorizations.
+Use SQL Server Management Studio to connect to the Database. 
+•	Run SQL Server Management Studio
+Server type: Database Engine
+Server Name: sql.cs.luc.edu
+Authentication: SQL Server Authentication
+Login: Available upon request.
+Password: Available upon request.
+Use Visual Studio to connect to Database:	
+•	In visual studio Tools -> Connect To Database -> Data Source is Microsoft SQL Server Server name -> sql.cs.luc.edu -> Use SQL Server Authentication User name: will be provided upon request Password: will be provided upon Request
+	
+
