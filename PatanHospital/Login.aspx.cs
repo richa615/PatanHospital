@@ -19,11 +19,14 @@ namespace PatanHospital
         protected void Page_Load(object sender, EventArgs e)
         {
            // Label1.Visible = false;
+            HyperLink1.Visible = false;
+            HyperLink2.Visible = false;
             
         }
 
         protected void RadioButton1_CheckedChanged(object sender, EventArgs e)
         {
+            HyperLink1.Visible = false;
             HyperLink2.Visible = false;
             Session["Status"] = RadioButton1.Text;
             
@@ -116,8 +119,6 @@ namespace PatanHospital
                 cmd.Parameters.AddWithValue("@email", TextBox1.Text);
                 cmd.Parameters.AddWithValue("@password", TextBox2.Text);
 
-                
-                
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
 
@@ -142,6 +143,12 @@ namespace PatanHospital
                     TextBox2.Text = "";
 
                 }
+            }
+            else if (RadioButton1.Checked == false || RadioButton2.Checked == false || RadioButton3.Checked == false)
+            {
+                Label1.Visible = true;
+                Label1.ForeColor = System.Drawing.Color.Red;
+                Label1.Text = "Please Check one of the Radio Button";
             }
         }
 

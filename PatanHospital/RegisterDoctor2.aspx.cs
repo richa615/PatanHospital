@@ -76,7 +76,7 @@ namespace PatanHospital
             cmd.Parameters.AddWithValue("@password", password);
             sqlConnection.Open();
             cmd.ExecuteNonQuery();
-            SendEmail(Label3.Text, "Patan Hospital Login Password", "Welcome to PatanHospital. Your passowrd to login is:" + password);
+            SendEmail(Label3.Text, "Patan Hospital Login Password", "Welcome to PatanHospital Doctor. Your passowrd to login is:" + password);
             sqlConnection.Close();
         }
 

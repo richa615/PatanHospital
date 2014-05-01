@@ -63,7 +63,7 @@ namespace PatanHospital
             Label1.Visible = true;
             Label1.ForeColor = System.Drawing.Color.Green;
             Label1.Text = "Insertion Successful";
-            SendEmail(TextBox10.Text, "Patan Hospital Login Password", "Welcome to PatanHospital. Your passowrd to login is:" + password);
+            SendEmail(TextBox10.Text, "Patan Hospital Login Password", "Welcome to PatanHospital. Your Login password is:" + password);
             Clear_Textbox();
         }
 

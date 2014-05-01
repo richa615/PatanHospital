@@ -66,9 +66,10 @@ namespace PatanHospital
                     
                     DropDownList1.DataSourceID = "SqldataSource1";
                     ClearTextBox();
+                    Label1.Visible = true;
+                    Label1.ForeColor = System.Drawing.Color.Green;
+                    Label1.Text = "Update Successful";
                 }
-
-
 
             }
 
@@ -162,8 +163,7 @@ namespace PatanHospital
             {
                 ClearTextBox();
                 FillData();
-               
-                
+                     
             }
             catch (Exception ex)
             {

@@ -18,6 +18,10 @@ namespace PatanHospital
         protected void Page_Load(object sender, EventArgs e)
         {
             Label1.Visible = false;
+            Button4.Visible = false;
+            Button5.Visible = false;
+
+            table2.Visible = false;
             if (!IsPostBack)
             {
                 DropDownList1.AppendDataBoundItems = true;
@@ -41,8 +45,12 @@ namespace PatanHospital
 
         protected void Button3_Click(object sender, EventArgs e)
         {
+            table2.Visible = true;
+            Button4.Visible = true;
+            Button5.Visible = true;
             try
             {
+                
                 Fill_Data();
             }
             catch (Exception ex)

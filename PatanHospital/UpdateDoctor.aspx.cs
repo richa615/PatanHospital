@@ -186,6 +186,7 @@ namespace PatanHospital
             string Query2 = "Update DoctorAddress SET Address1 = '" + TextBox7.Text + "', Address2 ='" + TextBox8.Text + "', City ='" + TextBox9.Text + "',  State = '" + TextBox10.Text + "', ZipCode = '" + TextBox11.Text + "' where DSSN ='" + this.DropDownList1.SelectedValue + "'; ";
             SqlCommand cmd2 = new SqlCommand(Query2, sqlConnection);
             cmd2.ExecuteNonQuery();
+            
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -217,11 +218,17 @@ namespace PatanHospital
                 {
                     UpdateAddress();
                     UpdateData();
-                    DropDownList1.DataBind();
-                    Response.Redirect("UpdateDoctor.aspx");
+                    DropDownList1.Items.Clear();
+                    DropDownList1.AppendDataBoundItems = true;
+                    DropDownList1.Items.Insert(0, new ListItem(String.Empty, String.Empty));
+                    DropDownList1.SelectedIndex = 0;
+                    DropDownList1.DataSourceID = "SqldataSource1";
+                   // Response.Redirect("UpdateDoctor.aspx");
                     Label1.Visible = true;
                     Label1.ForeColor = System.Drawing.Color.Green;
                     Label1.Text = "Update Successful";
+                    ClearTextBox();
+                    
                 }
             }
             catch (Exception ex)

@@ -62,7 +62,7 @@
         </div>
         <table class="style1">
         </table>
-        <table>
+        <table id ="table2" runat="server">
             <tr>
                 <td class="auto-style1">
                     <strong>Name:</strong></td>
@@ -91,12 +91,13 @@
                     <asp:TextBox ID="TextBox4" runat="server" Height="20px" Width="160px"></asp:TextBox>
                 </td>
             </tr>
-        </table>
+         </table>
         <div>
             <asp:Button ID="Button4" runat="server" onclick="Button1_Click" 
                     Text="Confirm Deletion" Height="30px" style="font-weight: 700" Width="160px" />
             <asp:Button ID="Button5" runat="server" Text="Cancel" onclick="Logo_Click" Height="30px" style="font-weight: 700; margin-left:5px;" Width="160px" />
         </div>
+           
     </div>
     </form>
 </body>
