@@ -337,7 +337,12 @@ namespace PatanHospital
 
            }
 
-
+           else if (RadioButton4.Checked == false || RadioButton3.Checked == false)
+           {
+               Label1.Visible = true;
+               Label1.ForeColor = System.Drawing.Color.Red;
+               Label1.Text = "Please Check one of the Radio Button.";
+           }
         }
 
         protected void Logo_Click(object sender, EventArgs e)

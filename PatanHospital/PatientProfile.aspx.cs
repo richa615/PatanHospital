@@ -53,5 +53,10 @@ namespace PatanHospital
         {
             Response.Redirect("PatientHome.aspx");
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("PatientHome.aspx");
+        }
     }
 }

@@ -44,6 +44,7 @@
         <table style="width:650px" border="0" cellspacing="0" class="GridViewStyle">
         <tr class="AltRowStyle">
         <td class="auto-style5">
+            <asp:Button ID="Button1" runat="server" Height="30px" OnClick="Button1_Click" style="font-weight: 700" Text="Home" Width="160px" />
             </td>
         <td class="auto-style3">&nbsp;</td>
         <td class="auto-style4">
@@ -109,6 +110,8 @@
         </td>
         </tr>
         </table>
+        
+        <asp:Button ID="Button2" runat="server" Height="30px" OnClick="Button2_Click" style="font-weight: 700"  Text="Cancel" Width="160px" />
         
         <br />
         <asp:SqlDataSource ID="sqlDataSourcePatientName" runat="server" 

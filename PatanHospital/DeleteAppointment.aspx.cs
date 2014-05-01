@@ -17,7 +17,7 @@ namespace PatanHospital
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+          
         }
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -32,6 +32,10 @@ namespace PatanHospital
         {
             Response.Redirect("AdminHome.aspx");
         }
-        
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AdminHome.aspx");
+        }
 }
 }
